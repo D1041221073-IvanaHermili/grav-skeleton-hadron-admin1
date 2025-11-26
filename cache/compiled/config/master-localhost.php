@@ -1,10 +1,14 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1764037273,
-    'checksum' => '20e852b0c916c5798418675290c01957',
+    'timestamp' => 1764147237,
+    'checksum' => 'd0a4cf0d9bfcee0df3238e77e04444a4',
     'files' => [
         'user/localhost/config' => [
+            'plugins/snipcart' => [
+                'file' => 'user/localhost/config/plugins/snipcart.yaml',
+                'modified' => 1764147237
+            ],
             'security' => [
                 'file' => 'user/localhost/config/security.yaml',
                 'modified' => 1763449520
@@ -1125,7 +1129,7 @@ return [
                 'date_type' => 'page_date'
             ],
             'snipcart' => [
-                'enabled' => true,
+                'enabled' => false,
                 'api_key' => 'DOPPLER_SNIPCART_API_KEY',
                 'version' => NULL,
                 'built_in_css' => true,

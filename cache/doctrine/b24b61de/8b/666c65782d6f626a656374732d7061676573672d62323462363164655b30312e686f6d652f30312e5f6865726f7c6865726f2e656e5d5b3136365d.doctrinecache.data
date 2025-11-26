@@ -1,4 +1,4 @@
-1764144914
+1764147803
 O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:10:"home/_hero";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:4:"Hero";s:12:"hero_classes";s:19:"parallax text-light";s:10:"hero_image";s:11:"header.webp";}s:11:"frontmatter";s:69:"title: Hero
 hero_classes: parallax text-light
 hero_image: header.webp";s:8:"markdown";s:610:"# learn about [span class="hadron-font"]**Hadron**[/span]

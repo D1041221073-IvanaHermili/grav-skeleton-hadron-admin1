@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/xampp/htdocs/grav/grav-skeleton-hadron+admin1/user/data/flex/indexes/pages.json',
-    'modified' => 1764144150,
+    'modified' => 1764147472,
     'size' => 27219,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1764144150,
+        'timestamp' => 1764147472,
         'count' => 91,
         'index' => [
             '' => [
@@ -50,16 +50,16 @@ return [
                 'key' => 'home/_hero',
                 'storage_key' => '01.home/01._hero',
                 'template' => 'hero',
-                'storage_timestamp' => 1754217411,
+                'storage_timestamp' => 1764147472,
                 'markdown' => [
                     'de' => [
                         'hero' => 1754217411
                     ],
                     'en' => [
-                        'hero' => 1754217411
+                        'hero' => 1764147472
                     ]
                 ],
-                'checksum' => '7bbe45b4a651e7762c88c0db835355e3'
+                'checksum' => '367b75d59b486fdddb177111d10c9bbf'
             ],
             '01.home/02._highlights' => [
                 'key' => 'home/_highlights',
