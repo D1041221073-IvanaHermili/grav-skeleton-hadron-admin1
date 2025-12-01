@@ -119,7 +119,7 @@ class __TwigTemplate_15e08f4eb930a5ccb69f818ff1ce34782f25e6fee32eb0f44353e04d026
         echo "
 \t\t\t";
         // line 34
-        $this->loadTemplate("item.html.twig", "item.html.twig", 34, "271108844")->display($context);
+        $this->loadTemplate("item.html.twig", "item.html.twig", 34, "860170901")->display($context);
         // line 42
         echo "
 \t\t</section>
@@ -152,13 +152,13 @@ class __TwigTemplate_15e08f4eb930a5ccb69f818ff1ce34782f25e6fee32eb0f44353e04d026
 
     public function getSourceContext()
     {
-        return new Source("", "item.html.twig", "C:\\xampp\\htdocs\\grav\\grav-skeleton-hadron+admin1\\user\\themes\\hadron\\templates\\item.html.twig");
+        return new Source("", "item.html.twig", "C:\\xampp\\htdocs\\grav-skeleton-hadron-admin1\\user\\themes\\hadron\\templates\\item.html.twig");
     }
 }
 
 
 /* item.html.twig */
-class __TwigTemplate_15e08f4eb930a5ccb69f818ff1ce34782f25e6fee32eb0f44353e04d026d1d19___271108844 extends \Twig\Template
+class __TwigTemplate_15e08f4eb930a5ccb69f818ff1ce34782f25e6fee32eb0f44353e04d026d1d19___860170901 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -227,6 +227,6 @@ class __TwigTemplate_15e08f4eb930a5ccb69f818ff1ce34782f25e6fee32eb0f44353e04d026
 
     public function getSourceContext()
     {
-        return new Source("", "item.html.twig", "C:\\xampp\\htdocs\\grav\\grav-skeleton-hadron+admin1\\user\\themes\\hadron\\templates\\item.html.twig");
+        return new Source("", "item.html.twig", "C:\\xampp\\htdocs\\grav-skeleton-hadron-admin1\\user\\themes\\hadron\\templates\\item.html.twig");
     }
 }

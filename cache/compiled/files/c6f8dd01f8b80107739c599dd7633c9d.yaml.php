@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'themes://hadron/hadron.yaml',
-    'modified' => 1754217416,
-    'size' => 1463,
+    'modified' => 1764176808,
+    'size' => 1526,
     'data' => [
         'streams' => [
             'schemes' => [

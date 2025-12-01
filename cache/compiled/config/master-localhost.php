@@ -1,333 +1,333 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1764147237,
-    'checksum' => 'd0a4cf0d9bfcee0df3238e77e04444a4',
+    'timestamp' => 1764597029,
+    'checksum' => 'dd39791fa5af8ecbe0c551180194007d',
     'files' => [
         'user/localhost/config' => [
             'plugins/snipcart' => [
                 'file' => 'user/localhost/config/plugins/snipcart.yaml',
-                'modified' => 1764147237
+                'modified' => 1764176804
             ],
             'security' => [
                 'file' => 'user/localhost/config/security.yaml',
-                'modified' => 1763449520
+                'modified' => 1764176804
             ],
             'themes/hadron' => [
                 'file' => 'user/localhost/config/themes/hadron.yaml',
-                'modified' => 1763461120
+                'modified' => 1764176804
             ]
         ],
         'user/config' => [
             'backups' => [
                 'file' => 'user/config/backups.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'groups' => [
                 'file' => 'user/config/groups.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'media' => [
                 'file' => 'user/config/media.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/admin' => [
                 'file' => 'user/config/plugins/admin.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/archives' => [
                 'file' => 'user/config/plugins/archives.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/breadcrumbs' => [
                 'file' => 'user/config/plugins/breadcrumbs.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/dotenv' => [
                 'file' => 'user/config/plugins/dotenv.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/email-sendgrid' => [
                 'file' => 'user/config/plugins/email-sendgrid.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/external_links' => [
                 'file' => 'user/config/plugins/external_links.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/feed' => [
                 'file' => 'user/config/plugins/feed.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/form' => [
                 'file' => 'user/config/plugins/form.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/healthcheck' => [
                 'file' => 'user/config/plugins/healthcheck.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/login' => [
                 'file' => 'user/config/plugins/login.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/page-toc' => [
                 'file' => 'user/config/plugins/page-toc.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/quick-tray-links' => [
                 'file' => 'user/config/plugins/quick-tray-links.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/shortcode-core' => [
                 'file' => 'user/config/plugins/shortcode-core.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/shortcode-gallery-plusplus' => [
                 'file' => 'user/config/plugins/shortcode-gallery-plusplus.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/sitemap' => [
                 'file' => 'user/config/plugins/sitemap.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/snipcart' => [
                 'file' => 'user/config/plugins/snipcart.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/taxonomylist' => [
                 'file' => 'user/config/plugins/taxonomylist.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/tntsearch' => [
                 'file' => 'user/config/plugins/tntsearch.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/translate-date' => [
                 'file' => 'user/config/plugins/translate-date.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/umami-analytics' => [
                 'file' => 'user/config/plugins/umami-analytics.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'plugins/youtube' => [
                 'file' => 'user/config/plugins/youtube.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'scheduler' => [
                 'file' => 'user/config/scheduler.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1764037273
+                'modified' => 1764177756
             ],
             'themes/hadron' => [
                 'file' => 'user/config/themes/hadron.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'themes/local' => [
                 'file' => 'user/config/themes/local.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176804
             ]
         ],
         'system/config' => [
             'backups' => [
                 'file' => 'system/config/backups.yaml',
-                'modified' => 1730115073
+                'modified' => 1764176804
             ],
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1730115073
+                'modified' => 1764176804
             ],
             'mime' => [
                 'file' => 'system/config/mime.yaml',
-                'modified' => 1730115073
+                'modified' => 1764176804
             ],
             'permissions' => [
                 'file' => 'system/config/permissions.yaml',
-                'modified' => 1730115073
+                'modified' => 1764176804
             ],
             'security' => [
                 'file' => 'system/config/security.yaml',
-                'modified' => 1730115073
+                'modified' => 1764176804
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1730115073
+                'modified' => 1764176804
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1730115073
+                'modified' => 1764176804
             ]
         ],
         'user/plugins' => [
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1754217427
+                'modified' => 1764176805
             ],
             'plugins/archives' => [
                 'file' => 'user/plugins/archives/archives.yaml',
-                'modified' => 1754217413
+                'modified' => 1764176806
             ],
             'plugins/auto-date' => [
                 'file' => 'user/plugins/auto-date/auto-date.yaml',
-                'modified' => 1754217413
+                'modified' => 1764176806
             ],
             'plugins/autoseo' => [
                 'file' => 'user/plugins/autoseo/autoseo.yaml',
-                'modified' => 1754217413
+                'modified' => 1764176806
             ],
             'plugins/breadcrumbs' => [
                 'file' => 'user/plugins/breadcrumbs/breadcrumbs.yaml',
-                'modified' => 1754217413
+                'modified' => 1764176806
             ],
             'plugins/dotenv' => [
                 'file' => 'user/plugins/dotenv/dotenv.yaml',
-                'modified' => 1754217414
+                'modified' => 1764176806
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1754217414
+                'modified' => 1764176806
             ],
             'plugins/email-sendgrid' => [
                 'file' => 'user/plugins/email-sendgrid/email-sendgrid.yaml',
-                'modified' => 1754217414
+                'modified' => 1764176806
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1754217414
+                'modified' => 1764176806
             ],
             'plugins/external_links' => [
                 'file' => 'user/plugins/external_links/external_links.yaml',
-                'modified' => 1754217415
+                'modified' => 1764176806
             ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/feed.yaml',
-                'modified' => 1754217415
+                'modified' => 1764176806
             ],
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/flex-objects.yaml',
-                'modified' => 1754217415
+                'modified' => 1764176806
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1754217416
+                'modified' => 1764176806
             ],
             'plugins/healthcheck' => [
                 'file' => 'user/plugins/healthcheck/healthcheck.yaml',
-                'modified' => 1754217416
+                'modified' => 1764176807
             ],
             'plugins/image-captions' => [
                 'file' => 'user/plugins/image-captions/image-captions.yaml',
-                'modified' => 1754217416
+                'modified' => 1764176807
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1754217417
+                'modified' => 1764176807
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1754217417
+                'modified' => 1764176807
             ],
             'plugins/page-toc' => [
                 'file' => 'user/plugins/page-toc/page-toc.yaml',
-                'modified' => 1754217417
+                'modified' => 1764176807
             ],
             'plugins/pagination' => [
                 'file' => 'user/plugins/pagination/pagination.yaml',
-                'modified' => 1754217417
+                'modified' => 1764176807
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1754217418
+                'modified' => 1764176807
             ],
             'plugins/quick-tray-links' => [
                 'file' => 'user/plugins/quick-tray-links/quick-tray-links.yaml',
-                'modified' => 1754217418
+                'modified' => 1764176807
             ],
             'plugins/shortcode-core' => [
                 'file' => 'user/plugins/shortcode-core/shortcode-core.yaml',
-                'modified' => 1754217419
+                'modified' => 1764176807
             ],
             'plugins/shortcode-gallery-plusplus' => [
                 'file' => 'user/plugins/shortcode-gallery-plusplus/shortcode-gallery-plusplus.yaml',
-                'modified' => 1754217419
+                'modified' => 1764176807
             ],
             'plugins/shortcode-media' => [
                 'file' => 'user/plugins/shortcode-media/shortcode-media.yaml',
-                'modified' => 1754217419
+                'modified' => 1764176807
             ],
             'plugins/shortcode-owl-carousel' => [
                 'file' => 'user/plugins/shortcode-owl-carousel/shortcode-owl-carousel.yaml',
-                'modified' => 1754217419
+                'modified' => 1764176807
             ],
             'plugins/shortcode-ui' => [
                 'file' => 'user/plugins/shortcode-ui/shortcode-ui.yaml',
-                'modified' => 1754217420
+                'modified' => 1764176808
             ],
             'plugins/sitemap' => [
                 'file' => 'user/plugins/sitemap/sitemap.yaml',
-                'modified' => 1754217420
+                'modified' => 1764176808
             ],
             'plugins/snipcart' => [
                 'file' => 'user/plugins/snipcart/snipcart.yaml',
-                'modified' => 1754217420
+                'modified' => 1764176808
             ],
             'plugins/taxonomylist' => [
                 'file' => 'user/plugins/taxonomylist/taxonomylist.yaml',
-                'modified' => 1754217420
+                'modified' => 1764176808
             ],
             'plugins/tntsearch' => [
                 'file' => 'user/plugins/tntsearch/tntsearch.yaml',
-                'modified' => 1754217421
+                'modified' => 1764176808
             ],
             'plugins/translate-date' => [
                 'file' => 'user/plugins/translate-date/translate-date.yaml',
-                'modified' => 1754217421
+                'modified' => 1764176808
             ],
             'plugins/umami-analytics' => [
                 'file' => 'user/plugins/umami-analytics/umami-analytics.yaml',
-                'modified' => 1754217422
+                'modified' => 1764176808
             ],
             'plugins/youtube' => [
                 'file' => 'user/plugins/youtube/youtube.yaml',
-                'modified' => 1754217422
+                'modified' => 1764176808
             ],
             'plugins/zooming' => [
                 'file' => 'user/plugins/zooming/zooming.yaml',
-                'modified' => 1754217422
+                'modified' => 1764176808
             ]
         ],
         'user/themes' => [
             'themes/hadron' => [
                 'file' => 'user/themes/hadron/hadron.yaml',
-                'modified' => 1754217416
+                'modified' => 1764176808
             ],
             'themes/local' => [
                 'file' => 'user/themes/local/local.yaml',
-                'modified' => 1754217411
+                'modified' => 1764176808
             ],
             'themes/quark' => [
                 'file' => 'user/themes/quark/quark.yaml',
-                'modified' => 1754217418
+                'modified' => 1764176808
             ]
         ]
     ],
@@ -4702,7 +4702,7 @@ node_modules',
             'param_sep' => ':',
             'wrapped_site' => false,
             'reverse_proxy_setup' => false,
-            'force_ssl' => true,
+            'force_ssl' => false,
             'force_lowercase_urls' => true,
             'custom_base_url' => NULL,
             'username_regex' => '^[a-z0-9_-]{3,16}$',

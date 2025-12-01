@@ -140,6 +140,6 @@ class __TwigTemplate_3fd646721519f9c4d867d76118aa9d496f38cde004c1cef75e9520ca647
 
     public function getSourceContext()
     {
-        return new Source("", "partials/tntsearch.html.twig", "C:\\xampp\\htdocs\\grav\\grav-skeleton-hadron+admin1\\user\\plugins\\tntsearch\\templates\\partials\\tntsearch.html.twig");
+        return new Source("", "partials/tntsearch.html.twig", "C:\\xampp\\htdocs\\grav-skeleton-hadron-admin1\\user\\plugins\\tntsearch\\templates\\partials\\tntsearch.html.twig");
     }
 }

@@ -276,6 +276,6 @@ class __TwigTemplate_d7cd9180d71c501d5489df09e844c4d15532ce354a2e3db8ce23cd9bd8e
 
     public function getSourceContext()
     {
-        return new Source("", "partials/langauge-switcher.html.twig", "C:\\xampp\\htdocs\\grav\\grav-skeleton-hadron+admin1\\user\\themes\\hadron\\templates\\partials\\langauge-switcher.html.twig");
+        return new Source("", "partials/langauge-switcher.html.twig", "C:\\xampp\\htdocs\\grav-skeleton-hadron-admin1\\user\\themes\\hadron\\templates\\partials\\langauge-switcher.html.twig");
     }
 }

@@ -103,7 +103,7 @@ class __TwigTemplate_1aa01b98fc9645b12c33a2b5b75ab290722264e1899278997c3baf51e33
             echo "\t\t<div class=\"sidebar-content\">
 \t\t\t";
             // line 10
-            $this->loadTemplate("partials/sidebar.html.twig", "partials/sidebar.html.twig", 10, "1813592518")->display(twig_array_merge($context, ["limit" => 10, "snippet" => 150, "min" => 3, "search_type" => "auto", "dropdown" => true]));
+            $this->loadTemplate("partials/sidebar.html.twig", "partials/sidebar.html.twig", 10, "2098863135")->display(twig_array_merge($context, ["limit" => 10, "snippet" => 150, "min" => 3, "search_type" => "auto", "dropdown" => true]));
             // line 11
             echo "\t\t</div>
 \t";
@@ -318,13 +318,13 @@ class __TwigTemplate_1aa01b98fc9645b12c33a2b5b75ab290722264e1899278997c3baf51e33
 
     public function getSourceContext()
     {
-        return new Source("", "partials/sidebar.html.twig", "C:\\xampp\\htdocs\\grav\\grav-skeleton-hadron+admin1\\user\\themes\\hadron\\templates\\partials\\sidebar.html.twig");
+        return new Source("", "partials/sidebar.html.twig", "C:\\xampp\\htdocs\\grav-skeleton-hadron-admin1\\user\\themes\\hadron\\templates\\partials\\sidebar.html.twig");
     }
 }
 
 
 /* partials/sidebar.html.twig */
-class __TwigTemplate_1aa01b98fc9645b12c33a2b5b75ab290722264e1899278997c3baf51e33133b8___1813592518 extends \Twig\Template
+class __TwigTemplate_1aa01b98fc9645b12c33a2b5b75ab290722264e1899278997c3baf51e33133b8___2098863135 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -371,6 +371,6 @@ class __TwigTemplate_1aa01b98fc9645b12c33a2b5b75ab290722264e1899278997c3baf51e33
 
     public function getSourceContext()
     {
-        return new Source("", "partials/sidebar.html.twig", "C:\\xampp\\htdocs\\grav\\grav-skeleton-hadron+admin1\\user\\themes\\hadron\\templates\\partials\\sidebar.html.twig");
+        return new Source("", "partials/sidebar.html.twig", "C:\\xampp\\htdocs\\grav-skeleton-hadron-admin1\\user\\themes\\hadron\\templates\\partials\\sidebar.html.twig");
     }
 }
