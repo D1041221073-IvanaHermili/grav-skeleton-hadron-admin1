@@ -65,6 +65,6 @@ class __TwigTemplate_a5dd7b868d98553596a2eddd6d9336e66a038d64931ba89a73e2a365d8d
 
     public function getSourceContext()
     {
-        return new Source("", "partials/owl-carousel.html.twig", "C:\\xampp\\htdocs\\grav\\grav-skeleton-hadron+admin1\\user\\plugins\\shortcode-owl-carousel\\templates\\partials\\owl-carousel.html.twig");
+        return new Source("", "partials/owl-carousel.html.twig", "C:\\xampp\\htdocs\\grav-skeleton-hadron-admin1\\user\\plugins\\shortcode-owl-carousel\\templates\\partials\\owl-carousel.html.twig");
     }
 }

@@ -1,0 +1,1098 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+
+/* item.html.twig */
+class __TwigTemplate_15e08f4eb930a5ccb69f818ff1ce34782f25e6fee32eb0f44353e04d026d1d19 extends \Twig\Template
+{
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->blocks = [
+            'content' => [$this, 'block_content'],
+        ];
+    }
+
+    protected function doGetParent(array $context)
+    {
+        // line 1
+        return "partials/base.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $this->parent = $this->loadTemplate("partials/base.html.twig", "item.html.twig", 1);
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 3
+    public function block_content($context, array $blocks = [])
+    {
+        // line 4
+        echo "
+<style>
+/* RESET & BASE */
+body {
+  background: #f5f5f5;
+}
+
+/* HERO SECTION WITH IMAGE */
+.article-hero {
+  width: 100%;
+  background: #1a1a1a;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.article-hero-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.article-hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%);
+  padding: 60px 20px 40px;
+}
+
+.article-hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* HIDE CATEGORY BADGE */
+.article-hero-category {
+  display: none;
+}
+
+.article-hero-title {
+  font-size: 42px;
+  line-height: 1.2;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* PUBLISH DATE - NEW */
+.article-publish-date {
+  font-size: 15px;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.article-publish-date i {
+  font-size: 16px;
+}
+
+.article-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.9);
+}
+
+.article-hero-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.article-hero-meta-icon {
+  font-size: 16px;
+}
+
+/* ARTIKEL CONTAINER */
+.article-container {
+  max-width: 800px;
+  margin: -60px auto 0;
+  padding: 0 20px 60px;
+  position: relative;
+  z-index: 10;
+}
+
+/* CONTENT CARD */
+.article-card {
+  background: white;
+  border-radius: 12px;
+  padding: 50px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* BREADCRUMB */
+.article-breadcrumb {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.article-breadcrumb a {
+  color: #16a34a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.article-breadcrumb a:hover {
+  color: #15803d;
+}
+
+.article-breadcrumb span {
+  margin: 0 8px;
+  color: #d1d5db;
+}
+
+/* KONTEN ARTIKEL */
+.article-content {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #1f2937;
+  font-family: 'Georgia', serif;
+}
+
+.article-content p {
+  margin-bottom: 24px;
+}
+
+.article-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #14532d;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #dcfce7;
+}
+
+.article-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #15803d;
+  margin-top: 35px;
+  margin-bottom: 18px;
+}
+
+.article-content ul, .article-content ol {
+  margin-left: 35px;
+  margin-bottom: 24px;
+}
+
+.article-content li {
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+.article-content blockquote {
+  border-left: 5px solid #16a34a;
+  padding-left: 25px;
+  margin: 35px 0;
+  font-style: italic;
+  color: #4b5563;
+  background: #f9fafb;
+  padding: 25px;
+  border-radius: 0 8px 8px 0;
+  font-size: 19px;
+}
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 35px 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.article-content a {
+  color: #16a34a;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.article-content a:hover {
+  color: #15803d;
+}
+
+/* AUTHOR BOX - ENHANCED */
+.article-author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 25px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #f0fdf4 100%);
+  border-radius: 16px;
+  border: 2px solid #bbf7d0;
+  margin: 30px 0;
+  box-shadow: 0 2px 10px rgba(22, 163, 74, 0.08);
+}
+
+.article-author-avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+  border: 3px solid white;
+}
+
+.article-author-info h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #14532d;
+  margin-bottom: 5px;
+  margin: 0;
+}
+
+.article-author-info p {
+  font-size: 14px;
+  color: #15803d;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* INTERAKSI BOX - CENTERED */
+.article-interaction-box {
+  margin: 20px 0;
+  padding: 10px 25px;
+}
+
+.interaction-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* CENTER THE BUTTONS */
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* BUTTON REACT (LIKE/DISLIKE) */
+.btn-react {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: white;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-react i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.btn-react:hover {
+  background: white;
+  border-color: #16a34a;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.2);
+}
+
+.btn-react:hover i {
+  transform: scale(1.2);
+}
+
+.btn-react:active {
+  transform: translateY(-1px);
+}
+
+/* LIKE BUTTON SPECIFIC */
+#likeBtn:hover {
+  color: #16a34a;
+  border-color: #16a34a;
+}
+
+#likeBtn:hover i {
+  color: #16a34a;
+}
+
+#likeBtn.active {
+  background: #dcfce7;
+  color: #16a34a;
+  border-color: #16a34a;
+}
+
+/* DISLIKE BUTTON SPECIFIC */
+#dislikeBtn:hover {
+  color: #dc2626;
+  border-color: #dc2626;
+}
+
+#dislikeBtn:hover i {
+  color: #dc2626;
+}
+
+#dislikeBtn.active {
+  background: #fee2e2;
+  color: #dc2626;
+  border-color: #dc2626;
+}
+
+/* SHARE BUTTON */
+.btn-share {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  border: 2px solid #16a34a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
+.btn-share i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.btn-share:hover {
+  background: linear-gradient(135deg, #15803d, #16a34a);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(22, 163, 74, 0.4);
+}
+
+.btn-share:hover i {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.btn-share::after {
+  content: 'Bagikan';
+  margin-left: 4px;
+}
+
+/* SHARE MENU - ENHANCED */
+.share-menu {
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 12px 8px;
+  min-width: 200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  animation: slideDown 0.3s ease;
+}
+
+.share-menu::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid white;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.share-menu.active {
+  display: block;
+}
+
+.share-menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: #374151;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.share-menu a i {
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.share-menu a:hover {
+  background: #f3f4f6;
+  transform: translateX(5px);
+}
+
+.share-menu a:hover i {
+  transform: scale(1.2);
+}
+
+/* SOCIAL MEDIA COLORS */
+.share-menu a[href*=\"facebook\"]:hover {
+  background: #eff6ff;
+  color: #1877f2;
+}
+
+.share-menu a[href*=\"facebook\"]:hover i {
+  color: #1877f2;
+}
+
+.share-menu a[href*=\"whatsapp\"]:hover {
+  background: #f0fdf4;
+  color: #25d366;
+}
+
+.share-menu a[href*=\"whatsapp\"]:hover i {
+  color: #25d366;
+}
+
+.share-menu a[href*=\"twitter\"]:hover {
+  background: #eff6ff;
+  color: #1da1f2;
+}
+
+.share-menu a[href*=\"twitter\"]:hover i {
+  color: #1da1f2;
+}
+
+.share-menu a[href*=\"mailto\"]:hover {
+  background: #fef3c7;
+  color: #f59e0b;
+}
+
+.share-menu a[href*=\"mailto\"]:hover i {
+  color: #f59e0b;
+}
+
+.share-menu a#copyLink:hover {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+.share-menu a#copyLink:hover i {
+  color: #16a34a;
+}
+
+/* TEXT LABELS FOR SHARE MENU - FIXED */
+.share-menu a span {
+  font-size: 14px;
+}
+
+.share-menu-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 8px 0;
+}
+
+/* COUNT BADGE */
+.btn-react span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 24px;
+  padding: 0 8px;
+  background: #f3f4f6;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #6b7280;
+  transition: all 0.3s ease;
+}
+
+#likeBtn:hover span {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+#dislikeBtn:hover span {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+#likeBtn.active span {
+  background: #16a34a;
+  color: white;
+}
+
+#dislikeBtn.active span {
+  background: #dc2626;
+  color: white;
+}
+
+/* TAGS */
+.article-tags {
+  margin: 35px 0;
+  padding: 25px 0;
+  border-top: 2px solid #e5e7eb;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.article-tags-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #6b7280;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.article-tag {
+  display: inline-block;
+  background: #f3f4f6;
+  color: #4b5563;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 1px solid #e5e7eb;
+}
+
+.article-tag:hover {
+  background: #dcfce7;
+  color: #15803d;
+  border-color: #16a34a;
+}
+
+/* NAVIGATION */
+.article-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.article-nav-btn {
+  flex: 1;
+  padding: 25px;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.article-nav-btn:hover {
+  background: #f0fdf4;
+  border-color: #16a34a;
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.15);
+  transform: translateY(-3px);
+}
+
+.article-nav-label {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.article-nav-title {
+  font-size: 17px;
+  color: #1f2937;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.article-nav-btn-prev {
+  text-align: left;
+}
+
+.article-nav-btn-next {
+  text-align: right;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .article-hero-image {
+    height: 300px;
+  }
+  
+  .article-hero-title {
+    font-size: 28px;
+  }
+  
+  .article-hero-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .article-container {
+    margin-top: -30px;
+    padding: 0 15px 40px;
+  }
+  
+  .article-card {
+    padding: 30px 20px;
+  }
+  
+  .article-content {
+    font-size: 16px;
+  }
+  
+  .article-content h2 {
+    font-size: 24px;
+  }
+  
+  .article-content h3 {
+    font-size: 20px;
+  }
+  
+  .article-navigation {
+    flex-direction: column;
+  }
+  
+  .article-author {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .article-interaction-box {
+    padding: 18px 15px;
+  }
+  
+  .interaction-buttons {
+    gap: 12px;
+  }
+  
+  .btn-react, .btn-share {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  
+  .btn-share::after {
+    display: none;
+  }
+  
+  .share-menu {
+    min-width: 180px;
+    left: auto;
+    right: 0;
+    transform: none;
+  }
+  
+  .share-menu::before {
+    left: auto;
+    right: 20px;
+    transform: none;
+  }
+}
+</style>
+
+<!-- HERO SECTION WITH IMAGE -->
+<div class=\"article-hero\">
+  ";
+        // line 696
+        if (twig_first($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), "images", []))) {
+            // line 697
+            echo "    <img src=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute(twig_first($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), "images", [])), "url", []), "html", null, true);
+            echo "\" alt=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "title", []), "html", null, true);
+            echo "\" class=\"article-hero-image\">
+  ";
+        } else {
+            // line 699
+            echo "    <img src=\"https://via.placeholder.com/1200x500/16a34a/ffffff?text=";
+            echo twig_escape_filter($this->env, twig_urlencode_filter($this->getAttribute(($context["page"] ?? null), "title", [])), "html", null, true);
+            echo "\" alt=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "title", []), "html", null, true);
+            echo "\" class=\"article-hero-image\">
+  ";
+        }
+        // line 701
+        echo "  
+  <div class=\"article-hero-overlay\">
+    <div class=\"article-hero-content\">
+      <h1 class=\"article-hero-title\">";
+        // line 704
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "title", []), "html", null, true);
+        echo "</h1>
+      
+      <!-- PUBLISH DATE -->
+      <div class=\"article-publish-date\">
+        <i class=\"fas fa-calendar-alt\"></i>
+        <span>Dipublikasikan pada ";
+        // line 709
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute(($context["page"] ?? null), "date", []), "d F Y"), "html", null, true);
+        echo "</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ARTIKEL CONTAINER -->
+<div class=\"article-container\">
+  <article class=\"article-card\">
+    
+    <!-- BREADCRUMB -->
+    <nav class=\"article-breadcrumb\">
+      <a href=\"";
+        // line 721
+        echo twig_escape_filter($this->env, ($context["base_url"] ?? null), "html", null, true);
+        echo "\">Beranda</a>
+      <span>›</span>
+      <a href=\"";
+        // line 723
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "parent", []), "url", []), "html", null, true);
+        echo "\">Berita</a>
+      <span>›</span>
+      <span>";
+        // line 725
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "title", []), "html", null, true);
+        echo "</span>
+    </nav>
+
+    <!-- KONTEN ARTIKEL -->
+    <div class=\"article-content\">
+      ";
+        // line 730
+        echo $this->getAttribute(($context["page"] ?? null), "content", []);
+        echo "
+    </div>
+
+    <!-- AUTHOR BOX -->
+    <div class=\"article-author\">
+      <div class=\"article-author-avatar\">
+        👤
+      </div>
+      <div class=\"article-author-info\">
+        <h4>Admin DPMD Kalimantan Barat</h4>
+        <p>Dinas Pemberdayaan Masyarakat dan Desa Provinsi Kalimantan Barat</p>
+      </div>
+    </div>
+
+    <!-- TAGS -->
+    ";
+        // line 745
+        if ($this->getAttribute($this->getAttribute(($context["page"] ?? null), "taxonomy", []), "tag", [])) {
+            // line 746
+            echo "    <div class=\"article-tags\">
+      <div class=\"article-tags-title\">Tag Artikel:</div>
+      ";
+            // line 748
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "taxonomy", []), "tag", []));
+            foreach ($context['_seq'] as $context["_key"] => $context["tag"]) {
+                // line 749
+                echo "        <a href=\"";
+                echo twig_escape_filter($this->env, ($context["base_url"] ?? null), "html", null, true);
+                echo "/tag:";
+                echo twig_escape_filter($this->env, $context["tag"], "html", null, true);
+                echo "\" class=\"article-tag\">#";
+                echo twig_escape_filter($this->env, $context["tag"], "html", null, true);
+                echo "</a>
+      ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tag'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 751
+            echo "    </div>
+    ";
+        }
+        // line 753
+        echo "
+    <!-- INTERAKSI - CENTERED -->
+    <div class=\"article-interaction-box\">
+      <div class=\"interaction-buttons\">
+        
+        <!-- LIKE -->
+        <div class=\"btn-react\" id=\"likeBtn\">
+          <i class=\"fas fa-thumbs-up\"></i>
+          <span id=\"likeCount\">0</span>
+        </div>
+
+        <!-- DISLIKE -->
+        <div class=\"btn-react\" id=\"dislikeBtn\">
+          <i class=\"fas fa-thumbs-down\"></i>
+          <span id=\"dislikeCount\">0</span>
+        </div>
+
+        <!-- SHARE BUTTON -->
+        <div class=\"btn-share\" id=\"shareBtn\">
+          <i class=\"fas fa-share-alt\"></i>
+          
+          <div class=\"share-menu\" id=\"shareMenu\">
+            <a href=\"https://www.facebook.com/sharer/sharer.php?u=";
+        // line 775
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "url", [0 => true], "method"), "html", null, true);
+        echo "\" target=\"_blank\">
+              <i class=\"fab fa-facebook-f\"></i>
+              <span>Facebook</span>
+            </a>
+            
+            <a href=\"https://wa.me/?text=";
+        // line 780
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "title", []), "html", null, true);
+        echo " ";
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "url", [0 => true], "method"), "html", null, true);
+        echo "\" target=\"_blank\">
+              <i class=\"fab fa-whatsapp\"></i>
+              <span>WhatsApp</span>
+            </a>
+            
+            <a href=\"https://twitter.com/intent/tweet?url=";
+        // line 785
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "url", [0 => true], "method"), "html", null, true);
+        echo "&text=";
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "title", []), "html", null, true);
+        echo "\" target=\"_blank\">
+              <i class=\"fab fa-twitter\"></i>
+              <span>Twitter</span>
+            </a>
+            
+            <a href=\"mailto:?subject=";
+        // line 790
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "title", []), "html", null, true);
+        echo "&body=";
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "url", [0 => true], "method"), "html", null, true);
+        echo "\">
+              <i class=\"fas fa-envelope\"></i>
+              <span>Email</span>
+            </a>
+            
+            <a id=\"copyLink\">
+              <i class=\"fas fa-link\"></i>
+              <span>Salin Link</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class=\"article-navigation\">
+      ";
+        // line 807
+        if ($this->getAttribute(($context["page"] ?? null), "prevSibling", [])) {
+            // line 808
+            echo "      <a href=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "prevSibling", []), "url", []), "html", null, true);
+            echo "\" class=\"article-nav-btn article-nav-btn-prev\">
+        <span class=\"article-nav-label\">← Berita Sebelumnya</span>
+        <div class=\"article-nav-title\">";
+            // line 810
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "prevSibling", []), "title", []), "html", null, true);
+            echo "</div>
+      </a>
+      ";
+        } else {
+            // line 813
+            echo "      <div></div>
+      ";
+        }
+        // line 815
+        echo "      
+      ";
+        // line 816
+        if ($this->getAttribute(($context["page"] ?? null), "nextSibling", [])) {
+            // line 817
+            echo "      <a href=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "nextSibling", []), "url", []), "html", null, true);
+            echo "\" class=\"article-nav-btn article-nav-btn-next\">
+        <span class=\"article-nav-label\">Berita Selanjutnya →</span>
+        <div class=\"article-nav-title\">";
+            // line 819
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["page"] ?? null), "nextSibling", []), "title", []), "html", null, true);
+            echo "</div>
+      </a>
+      ";
+        }
+        // line 822
+        echo "    </nav>
+
+  </article>
+</div>
+
+<script>
+// LIKE & DISLIKE FUNCTIONALITY
+let likeBtn = document.getElementById(\"likeBtn\");
+let dislikeBtn = document.getElementById(\"dislikeBtn\");
+let likeCount = document.getElementById(\"likeCount\");
+let dislikeCount = document.getElementById(\"dislikeCount\");
+
+let pageID = \"";
+        // line 834
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "id", []), "html", null, true);
+        echo "\";
+let savedLikes = localStorage.getItem(\"likes_\" + pageID) || 0;
+let savedDislikes = localStorage.getItem(\"dislikes_\" + pageID) || 0;
+let userLiked = localStorage.getItem(\"userLiked_\" + pageID) === \"true\";
+let userDisliked = localStorage.getItem(\"userDisliked_\" + pageID) === \"true\";
+
+likeCount.innerText = savedLikes;
+dislikeCount.innerText = savedDislikes;
+
+if (userLiked) likeBtn.classList.add(\"active\");
+if (userDisliked) dislikeBtn.classList.add(\"active\");
+
+likeBtn.addEventListener(\"click\", () => {
+  if (userLiked) {
+    savedLikes--;
+    userLiked = false;
+    likeBtn.classList.remove(\"active\");
+  } else {
+    savedLikes++;
+    userLiked = true;
+    likeBtn.classList.add(\"active\");
+    
+    if (userDisliked) {
+      savedDislikes--;
+      userDisliked = false;
+      dislikeBtn.classList.remove(\"active\");
+      localStorage.setItem(\"userDisliked_\" + pageID, \"false\");
+      dislikeCount.innerText = savedDislikes;
+      localStorage.setItem(\"dislikes_\" + pageID, savedDislikes);
+    }
+  }
+  
+  likeCount.innerText = savedLikes;
+  localStorage.setItem(\"likes_\" + pageID, savedLikes);
+  localStorage.setItem(\"userLiked_\" + pageID, userLiked);
+});
+
+dislikeBtn.addEventListener(\"click\", () => {
+  if (userDisliked) {
+    savedDislikes--;
+    userDisliked = false;
+    dislikeBtn.classList.remove(\"active\");
+  } else {
+    savedDislikes++;
+    userDisliked = true;
+    dislikeBtn.classList.add(\"active\");
+    
+    if (userLiked) {
+      savedLikes--;
+      userLiked = false;
+      likeBtn.classList.remove(\"active\");
+      localStorage.setItem(\"userLiked_\" + pageID, \"false\");
+      likeCount.innerText = savedLikes;
+      localStorage.setItem(\"likes_\" + pageID, savedLikes);
+    }
+  }
+  
+  dislikeCount.innerText = savedDislikes;
+  localStorage.setItem(\"dislikes_\" + pageID, savedDislikes);
+  localStorage.setItem(\"userDisliked_\" + pageID, userDisliked);
+});
+
+// SHARE MENU FUNCTIONALITY
+const shareBtn = document.getElementById(\"shareBtn\");
+const shareMenu = document.getElementById(\"shareMenu\");
+
+shareBtn.addEventListener(\"click\", (e) => {
+  e.stopPropagation();
+  shareMenu.classList.toggle(\"active\");
+});
+
+document.addEventListener(\"click\", (e) => {
+  if (!shareBtn.contains(e.target)) {
+    shareMenu.classList.remove(\"active\");
+  }
+});
+
+// COPY LINK FUNCTIONALITY
+document.getElementById(\"copyLink\").addEventListener(\"click\", () => {
+  navigator.clipboard.writeText(\"";
+        // line 913
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "url", [0 => true], "method"), "html", null, true);
+        echo "\");
+  
+  const copyBtn = document.getElementById(\"copyLink\");
+  const originalHTML = copyBtn.innerHTML;
+  
+  copyBtn.innerHTML = '<i class=\"fas fa-check\"></i><span>Tersalin!</span>';
+  copyBtn.style.background = \"#dcfce7\";
+  copyBtn.style.color = \"#16a34a\";
+  
+  setTimeout(() => {
+    copyBtn.innerHTML = originalHTML;
+    copyBtn.style.background = \"\";
+    copyBtn.style.color = \"\";
+  }, 2000);
+});
+</script>
+
+";
+    }
+
+    public function getTemplateName()
+    {
+        return "item.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  1050 => 913,  968 => 834,  954 => 822,  948 => 819,  942 => 817,  940 => 816,  937 => 815,  933 => 813,  927 => 810,  921 => 808,  919 => 807,  897 => 790,  887 => 785,  877 => 780,  869 => 775,  845 => 753,  841 => 751,  828 => 749,  824 => 748,  820 => 746,  818 => 745,  800 => 730,  792 => 725,  787 => 723,  782 => 721,  767 => 709,  759 => 704,  754 => 701,  746 => 699,  738 => 697,  736 => 696,  42 => 4,  39 => 3,  29 => 1,);
+    }
+
+    /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
+    public function getSource()
+    {
+        @trigger_error('The '.__METHOD__.' method is deprecated since version 1.27 and will be removed in 2.0. Use getSourceContext() instead.', E_USER_DEPRECATED);
+
+        return $this->getSourceContext()->getCode();
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("", "item.html.twig", "C:\\xampp\\htdocs\\grav-skeleton-hadron-admin1\\user\\themes\\hadron\\templates\\item.html.twig");
+    }
+}

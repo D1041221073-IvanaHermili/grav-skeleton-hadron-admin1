@@ -144,6 +144,6 @@ $context["paginate"], "isDeltaBorder", [])) {
 
     public function getSourceContext()
     {
-        return new Source("", "partials/pagination.html.twig", "C:\\xampp\\htdocs\\grav\\grav-skeleton-hadron+admin1\\user\\plugins\\pagination\\templates\\partials\\pagination.html.twig");
+        return new Source("", "partials/pagination.html.twig", "C:\\xampp\\htdocs\\grav-skeleton-hadron-admin1\\user\\plugins\\pagination\\templates\\partials\\pagination.html.twig");
     }
 }

@@ -83,7 +83,6 @@ a {
 
 .news-card:hover{
   transform:translateY(-10px) scale(1.02);
-  box-shadow:0 20px 50px rgba(16,185,129,0.3);
   border-color:rgba(34,197,94,0.45);
 }
 
@@ -170,42 +169,42 @@ a {
   <div class=\"owl-carousel\">
 
   ";
-        // line 143
+        // line 142
         $context["blog"] = (($this->getAttribute(($context["page"] ?? null), "find", [0 => "/en/blog"], "method")) ? ($this->getAttribute(($context["page"] ?? null), "find", [0 => "/en/blog"], "method")) : ($this->getAttribute(($context["page"] ?? null), "find", [0 => "/blog"], "method")));
-        // line 144
+        // line 143
         echo "  ";
         $context["posts"] = $this->getAttribute($this->getAttribute($this->getAttribute(($context["blog"] ?? null), "children", []), "order", [0 => "date", 1 => "desc"], "method"), "slice", [0 => 0, 1 => 6], "method");
-        // line 145
+        // line 144
         echo "
   ";
-        // line 146
+        // line 145
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["posts"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
-            // line 147
+            // line 146
             echo "    <div class=\"news-card\">
       ";
-            // line 148
+            // line 147
             if (twig_first($this->env, $this->getAttribute($this->getAttribute($context["post"], "media", []), "images", []))) {
-                // line 149
+                // line 148
                 echo "        <img src=\"";
                 echo twig_escape_filter($this->env, $this->getAttribute(twig_first($this->env, $this->getAttribute($this->getAttribute($context["post"], "media", []), "images", [])), "url", []), "html", null, true);
                 echo "\" alt=\"\">
       ";
             } else {
-                // line 151
+                // line 150
                 echo "        <img src=\"https://via.placeholder.com/600x300?text=No+Image\" alt=\"\">
       ";
             }
-            // line 153
+            // line 152
             echo "
       <h4>";
-            // line 154
+            // line 153
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "title", []), "html", null, true);
             echo "</h4>
 
       <a href=\"";
-            // line 156
+            // line 155
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "url", [0 => true], "method"), "html", null, true);
             echo "\" class=\"read-more\">
         Selengkapnya
@@ -216,7 +215,7 @@ a {
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 161
+        // line 160
         echo "
   </div>
 
@@ -255,7 +254,7 @@ a {
 
     public function getDebugInfo()
     {
-        return array (  220 => 161,  209 => 156,  204 => 154,  201 => 153,  197 => 151,  191 => 149,  189 => 148,  186 => 147,  182 => 146,  179 => 145,  176 => 144,  174 => 143,  30 => 1,);
+        return array (  219 => 160,  208 => 155,  203 => 153,  200 => 152,  196 => 150,  190 => 148,  188 => 147,  185 => 146,  181 => 145,  178 => 144,  175 => 143,  173 => 142,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -268,6 +267,6 @@ a {
 
     public function getSourceContext()
     {
-        return new Source("", "modular/highlights.html.twig", "C:\\xampp\\htdocs\\grav\\grav-skeleton-hadron+admin1\\user\\themes\\hadron\\templates\\modular\\highlights.html.twig");
+        return new Source("", "modular/highlights.html.twig", "C:\\xampp\\htdocs\\grav-skeleton-hadron-admin1\\user\\themes\\hadron\\templates\\modular\\highlights.html.twig");
     }
 }

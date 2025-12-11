@@ -14,29 +14,44 @@ media_order: 'a1-program-kegiatan.pdf'
 ---
 
 <style>
-/* HERO SECTION */
-.profile-hero {
-  text-align:center;
-  padding: 60px 20px;
-  margin-bottom:40px;
-  background: linear-gradient(135deg, #064e3b, #15803d);
-  color: white;
-  border-radius: 18px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+/* ===== GOOGLE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+/* ===== BASE ===== */
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
-.profile-hero h1 {
-  margin:0;
-  font-size:2.6rem;
-  font-weight:700;
-  color:#fff;
+/* ===== TITLE WRAPPER ===== */
+.section-title {
+  text-align: center;
+  margin: 0 0 40px 0;
+  padding: 25px 30px;
+  background: linear-gradient(135deg, #0d6e4f 0%, #0a5540 100%);
+  border-radius: 20px;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(13, 110, 79, 0.25);
+  position: relative;
+  overflow: hidden;
 }
 
-.profile-hero p {
-  margin-top:10px;
-  font-size:1.2rem;
-  opacity:0.95;
-  line-height:1.5;
+.section-title::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+  transform: rotate(45deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
 }
 
 /* CARD SECTION */
@@ -79,14 +94,8 @@ media_order: 'a1-program-kegiatan.pdf'
 }
 </style>
 
-<!-- HERO SECTION -->
-<div class="profile-hero">
-  <h1>Kegiatan & Laporan</h1>
-  <p>
-    Dokumen dan kalender kegiatan Dinas Pemberdayaan Masyarakat dan Desa <br>
-    Provinsi Kalimantan Barat
-  </p>
-</div>
+<!-- HEADER BARU -->
+<div class="section-title">Kegiatan & Laporan</div>
 
 <!-- KALENDER KEGIATAN -->
 <div class="profile-card">
@@ -95,9 +104,7 @@ media_order: 'a1-program-kegiatan.pdf'
     Berikut adalah dokumen program kegiatan yang dapat diunduh:
   </p>
 
-  <!-- HARUS PAKAI MARKDOWN TAG supaya Grav render link PDF -->
   {% markdown %}
 [Program Kegiatan](a1-program-kegiatan.pdf){.pdf-link}
   {% endmarkdown %}
-
 </div>

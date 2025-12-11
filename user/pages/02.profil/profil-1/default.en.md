@@ -7,101 +7,191 @@ sidebar:
 ---
 
 <style>
-/* ===== PAGE WRAPPER (BIAR KONTEN DI TENGAH) ===== */
+/* ===== GLOBAL VARIABLES & RESET ===== */
+:root {
+  --primary-color: #0d6e4f;
+  --primary-light: #e6f5f0;
+  --text-dark: #1f2937;
+  --text-muted: #4b5563;
+  --radius-card: 16px;
+  --shadow-sm: 0 2px 8px rgba(13, 110, 79, 0.08);
+  --shadow-hover: 0 8px 20px rgba(13, 110, 79, 0.15);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* ===== PAGE WRAPPER ===== */
 .page-wrapper {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 40px 20px;
 }
 
-/* ===== TITLE WRAPPER ===== */
-.section-title {
+/* ===== TITLE STYLE ===== */
+.header-container {
   text-align: center;
-  margin: 0 0 40px 0;
-  padding-bottom: 15px;
-  border-bottom: 3px solid #0d6e4f;
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #0d6e4f;
+  margin-bottom: 50px;
+  position: relative;
 }
 
-/* ===== CARD SECTION STYLE ===== */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 16px;
+  background: var(--primary-light);
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== CARD STYLE ===== */
 .section-card {
   background: #ffffff;
-  padding: 30px 35px;
-  margin-bottom: 35px;
-  border-radius: 18px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(13, 110, 79, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ===== HEADINGS ===== */
+.section-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
 .section-card h2 {
-  color: #0d6e4f;
+  color: var(--primary-color);
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 18px;
-  font-size: 1.65rem;
+  margin-bottom: 25px;
+  font-size: 1.75rem;
+  border-bottom: 2px solid var(--primary-light);
+  padding-bottom: 10px;
+  display: inline-block;
 }
 
-/* ===== TEXT ===== */
-.section-card p {
-  color: #444;
-  line-height: 1.65;
+/* ===== VISI STYLE ===== */
+.visi-box {
+  background: linear-gradient(135deg, var(--primary-color), #095039);
+  color: white;
+  padding: 40px;
+  border-radius: var(--radius-card);
+  text-align: center;
+  box-shadow: var(--shadow-hover);
+  margin-bottom: 30px;
+}
+
+.visi-label {
+  font-size: 1rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   margin-bottom: 15px;
+  display: block;
+  font-weight: bold;
+}
+
+.visi-text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-weight: 600;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ===== (UPDATED) LIST STYLE – SAMA DENGAN TEMPLATE BIDANG PEMDES ===== */
+ul.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.custom-list li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+ul.custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #88c6b8, #4f7f72);
+  box-shadow: 0 0 4px rgba(79, 127, 114, 0.4);
+}
+
+/* ===== GRID FOR FUNGSIONAL LIST ===== */
+.grid-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+  }
+}
+
+/* ===== TEXT STYLING ===== */
+p.intro-text {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.7;
   text-align: justify;
 }
 
-/* ===== LISTS ===== */
-.section-card ul {
-  margin-left: 20px;
-  margin-bottom: 10px;
+.regulasi-box {
+  background-color: var(--primary-light);
+  padding: 15px 20px;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 25px;
 }
 
-.section-card ul li {
-  margin-bottom: 8px;
-  color: #444;
-  line-height: 1.55;
-}
-
-/* ===== VISI & MISI HIGHLIGHT BOXES ===== */
-.highlight-box {
-  background: #f0fdf4;
-  border-left: 6px solid #0d6e4f;
-  padding: 22px;
-  border-radius: 12px;
-}
-
-.highlight-box p,
-.highlight-box li {
-  color: #064e3b;
-  font-size: 1.07rem;
-  margin: 0;
+.regulasi-box strong {
+  color: var(--primary-color);
 }
 </style>
 
 <div class="page-wrapper">
 
-<div class="section-title">Profil Badan</div>
-
-<!-- ===================== -->
-<!--        VISI          -->
-<!-- ===================== -->
-<div class="section-card">
-  <h2>Visi</h2>
-
-  <div class="highlight-box">
-    <p><em>“Terwujudnya Kesejahteraan Masyarakat Kalimantan Barat melalui Percepatan Pembangunan Infrastruktur dan Perbaikan Tata Kelola Pemerintahan”</em></p>
+  <div class="header-container">
+    <div class="section-title">Profil Badan</div>
+    <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
   </div>
-</div>
 
-<!-- ===================== -->
-<!--        MISI          -->
-<!-- ===================== -->
-<div class="section-card">
-  <h2>Misi</h2>
+  <div class="visi-box">
+    <span class="visi-label">Visi</span>
+    <p class="visi-text">“Terwujudnya Kesejahteraan Masyarakat Kalimantan Barat melalui Percepatan Pembangunan Infrastruktur dan Perbaikan Tata Kelola Pemerintahan”</p>
+  </div>
 
-  <div class="highlight-box">
-    <ul>
+  <div class="section-card">
+    <h2>Misi</h2>
+    <ul class="custom-list">
       <li>Mewujudkan percepatan pembangunan infrastruktur.</li>
       <li>Mewujudkan tata kelola pemerintahan berkualitas dengan prinsip Good Governance.</li>
       <li>Mewujudkan kualitas hidup masyarakat.</li>
@@ -110,31 +200,33 @@ sidebar:
       <li>Mewujudkan pembangunan berwawasan lingkungan.</li>
     </ul>
   </div>
-</div>
 
-<!-- =============================== -->
-<!--   TUGAS POKOK & FUNGSI         -->
-<!-- =============================== -->
-<div class="section-card">
-  <h2>Tugas Pokok dan Fungsi</h2>
+  <div class="section-card">
+    <h2>Tugas Pokok & Fungsi</h2>
 
-  <p><strong>Berdasarkan Peraturan Gubernur Kalimantan Barat Nomor 122 Tahun 2021</strong> tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi, serta Tata Kerja Dinas Pemberdayaan Masyarakat dan Desa Provinsi Kalimantan Barat.</p>
+    <div class="regulasi-box">
+      <p style="margin:0; font-size:0.95rem;">
+        <strong>Dasar Hukum:</strong> Peraturan Gubernur Kalimantan Barat Nomor 122 Tahun 2021 tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi.
+      </p>
+    </div>
 
-  <p>Dinas Pemberdayaan Masyarakat dan Desa Provinsi Kalimantan Barat mempunyai tugas membantu Gubernur melaksanakan urusan pemerintahan yang menjadi kewenangan daerah di bidang pemberdayaan masyarakat dan desa.</p>
+    <p class="intro-text">
+      Dinas Pemberdayaan Masyarakat dan Desa Provinsi Kalimantan Barat mempunyai tugas membantu Gubernur melaksanakan urusan pemerintahan yang menjadi kewenangan daerah di bidang pemberdayaan masyarakat dan desa.
+    </p>
 
-  <h3 style="color:#0d6e4f; margin-top:25px;">Fungsi Dinas</h3>
-
-  <ul>
-    <li>Perumusan program kerja di bidang pemberdayaan masyarakat dan desa.</li>
-    <li>Perumusan kebijakan pemerintahan desa, penataan dan kerjasama desa, serta pembangunan dan pemberdayaan masyarakat desa.</li>
-    <li>Pelaksanaan kebijakan di bidang pemerintahan desa dan pemberdayaan masyarakat desa.</li>
-    <li>Penyelenggaraan urusan pemerintahan bidang desa sesuai ketentuan.</li>
-    <li>Koordinasi dan pembinaan teknis di bidang pemerintahan desa.</li>
-    <li>Pelaksanaan evaluasi dan pelaporan bidang pemerintahan desa.</li>
-    <li>Pelaksanaan reformasi birokrasi, SAKIP, dan pelayanan publik.</li>
-    <li>Pelaksanaan administrasi di lingkungan Dinas.</li>
-    <li>Pelaksanaan tugas lain yang diberikan oleh Gubernur.</li>
-  </ul>
-</div>
+    <h3 style="color:#0d6e4f; margin-top:30px; font-size:1.3rem;">Fungsi Dinas</h3>
+    
+    <ul class="custom-list grid-list">
+      <li>Perumusan program kerja bidang pemberdayaan masyarakat & desa.</li>
+      <li>Perumusan kebijakan pemerintahan desa & kerjasama desa.</li>
+      <li>Pelaksanaan kebijakan pemerintahan & pemberdayaan desa.</li>
+      <li>Penyelenggaraan urusan pemerintahan bidang desa.</li>
+      <li>Koordinasi dan pembinaan teknis pemerintahan desa.</li>
+      <li>Pelaksanaan evaluasi dan pelaporan bidang desa.</li>
+      <li>Pelaksanaan reformasi birokrasi, SAKIP, dan pelayanan publik.</li>
+      <li>Pelaksanaan administrasi di lingkungan Dinas.</li>
+      <li>Pelaksanaan tugas lain yang diberikan oleh Gubernur.</li>
+    </ul>
+  </div>
 
 </div>

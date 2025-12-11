@@ -233,6 +233,6 @@ class __TwigTemplate_8f7c5953cae84e96c59d333f2d81c0ebff00af3960fce8e4b7596968fab
 
     public function getSourceContext()
     {
-        return new Source("", "partials/blog-list-item.html.twig", "C:\\xampp\\htdocs\\grav\\grav-skeleton-hadron+admin1\\user\\themes\\hadron\\templates\\partials\\blog-list-item.html.twig");
+        return new Source("", "partials/blog-list-item.html.twig", "C:\\xampp\\htdocs\\grav-skeleton-hadron-admin1\\user\\themes\\hadron\\templates\\partials\\blog-list-item.html.twig");
     }
 }
