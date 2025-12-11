@@ -126,7 +126,7 @@ class __TwigTemplate_8bcfb21119fe0e1ec4933176a05834249564e1489c17911cda6c6785504
         echo "
 \t\t\t";
         // line 45
-        $this->loadTemplate("blog.html.twig", "blog.html.twig", 45, "1817922238")->display(twig_array_merge($context, ["blog" => ($context["page"] ?? null)]));
+        $this->loadTemplate("blog.html.twig", "blog.html.twig", 45, "2125145515")->display(twig_array_merge($context, ["blog" => ($context["page"] ?? null)]));
         // line 95
         echo "\t\t</section>
 \t</section>
@@ -169,13 +169,13 @@ class __TwigTemplate_8bcfb21119fe0e1ec4933176a05834249564e1489c17911cda6c6785504
 
     public function getSourceContext()
     {
-        return new Source("", "blog.html.twig", "C:\\xampp\\htdocs\\grav\\grav-skeleton-hadron+admin1\\user\\themes\\hadron\\templates\\blog.html.twig");
+        return new Source("", "blog.html.twig", "C:\\xampp\\htdocs\\grav-skeleton-hadron-admin1\\user\\themes\\hadron\\templates\\blog.html.twig");
     }
 }
 
 
 /* blog.html.twig */
-class __TwigTemplate_8bcfb21119fe0e1ec4933176a05834249564e1489c17911cda6c678550433341___1817922238 extends \Twig\Template
+class __TwigTemplate_8bcfb21119fe0e1ec4933176a05834249564e1489c17911cda6c678550433341___2125145515 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
@@ -394,6 +394,6 @@ class __TwigTemplate_8bcfb21119fe0e1ec4933176a05834249564e1489c17911cda6c6785504
 
     public function getSourceContext()
     {
-        return new Source("", "blog.html.twig", "C:\\xampp\\htdocs\\grav\\grav-skeleton-hadron+admin1\\user\\themes\\hadron\\templates\\blog.html.twig");
+        return new Source("", "blog.html.twig", "C:\\xampp\\htdocs\\grav-skeleton-hadron-admin1\\user\\themes\\hadron\\templates\\blog.html.twig");
     }
 }

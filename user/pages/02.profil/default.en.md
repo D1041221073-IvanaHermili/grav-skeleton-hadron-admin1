@@ -15,6 +15,47 @@ sidebar:
 ---
 
 <style>
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+/* ===== BASE ===== */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== HEADER STYLE (DIAMBIL DARI KODE YANG KAMU MAU) ===== */
+.section-title {
+  text-align: center;
+  margin: 0 0 50px 0;
+  padding: 25px 30px;
+  background: linear-gradient(135deg, #0d6e4f 0%, #0a5540 100%);
+  border-radius: 20px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(13, 110, 79, 0.25);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+  transform: rotate(45deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
 /* ===== GLOBAL CARD STYLE ===== */
 .profile-card {
   background: #ffffff;
@@ -24,7 +65,6 @@ sidebar:
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-/* TITLE STYLE */
 .profile-card h2 {
   text-align:center;
   margin-top:0;
@@ -32,58 +72,24 @@ sidebar:
   font-weight:700;
 }
 
-/* TEXT */
 .profile-card p {
   color:#444;
   line-height:1.65;
   margin-bottom:14px;
 }
-
-/* HERO */
-.profile-hero {
-  text-align:center;
-  padding: 55px 20px;
-  margin-bottom:40px;
-  background: linear-gradient(135deg, #064e3b, #15803d);
-  color: white;
-  border-radius: 18px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.20);
-}
-
-.profile-hero h1 {
-  margin:0;
-  font-size:2.4rem;
-  font-weight:700;
-  color:#ffff;
-}
-
-.profile-hero p {
-  margin-top:10px;
-  font-size:1.15rem;
-  opacity:0.95;
-}
 </style>
-
 
 [div class="columns"]
 [div class="column col-12"]
 
-<!-- ===== HERO SECTION ===== -->
-<div class="profile-hero">
-  <h1>Profil Dinas PMD</h1>
-  <p>
-    Dinas Pemberdayaan Masyarakat dan Desa <br>
-    Provinsi Kalimantan Barat
-  </p>
+<!-- ===== NEW HEADER (SECTION TITLE) ===== -->
+<div class="section-title">
+  Profil Dinas PMD
 </div>
-
 
 <!-- ===== STRUKTUR ORGANISASI ===== -->
 <div class="profile-card">
   <h2>Struktur Organisasi</h2>
-  <p style="text-align:center; color:#555;">
-    Berikut adalah struktur organisasi Dinas PMD Provinsi Kalimantan Barat:
-  </p>
 
   <div style="text-align:center; margin-top:25px;">
   {% markdown %}
@@ -91,7 +97,6 @@ sidebar:
   {% endmarkdown %}
   </div>
 </div>
-
 
 <!-- ===== SEJARAH ===== -->
 <div class="profile-card">

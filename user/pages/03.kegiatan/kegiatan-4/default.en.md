@@ -1,5 +1,5 @@
 ---
-title: Sekretariat
+title: 'Sekretariat'
 date: '26-11-2025 06:26'
 visible: true
 process:
@@ -8,222 +8,288 @@ process:
 ---
 
 <style>
-/* ================================
-   WRAPPER HALAMAN
-================================ */
+/* =====================================
+   GLOBAL VARIABLES (SAMA TEMPLATE)
+===================================== */
+:root {
+  --primary-color: #0d6e4f;
+  --primary-light: #e6f5f0;
+  --text-dark: #1f2937;
+  --text-muted: #4b5563;
+  --radius-card: 16px;
+  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
+  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* WRAPPER */
 .page-wrapper {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 40px 20px;
 }
 
-/* ================================
-   TITLE STYLE
-================================ */
-.section-title {
+/* HEADER */
+.header-container {
   text-align: center;
-  margin: 0 0 40px 0;
-  padding-bottom: 15px;
-  border-bottom: 3px solid #0d6e4f;
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #0d6e4f;
+  margin-bottom: 45px;
 }
 
-/* ================================
-   CARD STYLE
-================================ */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 16px;
+  background: var(--primary-light);
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CARD */
 .section-card {
   background: #ffffff;
-  padding: 30px 35px;
-  margin-bottom: 35px;
-  border-radius: 18px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(13,110,79,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ================================
-   HEADING STYLE
-================================ */
+.section-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
 .section-card h2 {
-  color: #0d6e4f;
+  color: var(--primary-color);
   font-weight: 700;
+  font-size: 1.75rem;
+  border-bottom: 2px solid var(--primary-light);
+  padding-bottom: 10px;
+  display: inline-block;
   margin-top: 0;
-  margin-bottom: 18px;
-  font-size: 1.65rem;
+  margin-bottom: 25px;
 }
 
-/* ================================
-   TEXT STYLE
-================================ */
+/* PARAGRAPH */
 .section-card p {
-  color: #444;
-  line-height: 1.65;
-  margin-bottom: 15px;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  line-height: 1.7;
   text-align: justify;
+  margin-bottom: 18px;
 }
 
-/* ================================
-   PRETTY NUMBER LIST
-================================ */
-.pretty-list {
+/* LIST STYLE — TEMPLATE STYLE */
+ul.custom-list {
   list-style: none;
-  counter-reset: my-counter;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.pretty-list li {
-  counter-increment: my-counter;
-  background: #f0fdf4;
-  margin-bottom: 14px;
-  padding: 16px 20px 16px 55px;
-  border-radius: 12px;
-  border-left: 6px solid #0d6e4f;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  color: #064e3b;
-  font-size: 1.07rem;
-  line-height: 1.55;
+ul.custom-list li {
   position: relative;
+  padding-left: 32px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-dark);
 }
 
-.pretty-list li::before {
-  content: counter(my-counter) ".";
+ul.custom-list li::before {
+  content: "";
   position: absolute;
-  left: 18px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #0d6e4f;
-  font-weight: 800;
-  font-size: 1.2rem;
+  left: 0;
+  top: 7px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #88c6b8, #4f7f72);
+  box-shadow: 0 0 4px rgba(79,127,114,0.4);
 }
 
-/* ================================
-   LINK LIST (RENJA)
-================================ */
+/* GRID LIST UNTUK LIST PANJANG */
+.grid-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+  }
+}
+
+/* LINK LIST (RENJA) */
 .link-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 20px;
 }
 
-.link-item {
-  background: #0d6e4f !important;
-  color: #ffffff !important;
-  padding: 14px 18px;
-  border-radius: 12px;
-  text-align: center;
-  font-weight: 600;
-  transition: 0.25s ease;
-  display: block;
-  width: 100%;
+.link-btn {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 20px;
+  border-radius:12px;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  text-decoration:none !important;
+  transition: .2s ease;
 }
 
-.link-item:hover {
-  background: #0b5d42;
+.link-btn:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-hover);
   transform: translateY(-2px);
 }
 
+.btn-content {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.icon-box {
+  width:40px;
+  height:40px;
+  background:var(--primary-light);
+  border-radius:8px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:var(--primary-color);
+  font-size: 20px;
+}
+
+.btn-text {
+  font-weight:600;
+  color:var(--text-dark);
+}
+
+.btn-arrow {
+  color:var(--text-muted);
+  transition:.2s;
+}
+
+.link-btn:hover .btn-arrow {
+  color:var(--primary-color);
+  transform:translateX(4px);
+}
 </style>
+
 
 <div class="page-wrapper">
 
-<div class="section-title">Sekretariat</div>
+  <!-- HEADER -->
+  <div class="header-container">
+    <div class="section-title">Sekretariat</div>
+    <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
+  </div>
 
-<!-- =============================
-        T U P O K S I
-============================== -->
-<div class="section-card">
-<h2>Tupoksi Sekretariat</h2>
+  <!-- TUPoksi -->
+  <div class="section-card">
+    <h2>Tupoksi Sekretariat</h2>
 
-<p>Sekretariat mempunyai tugas menyiapkan bahan perumusan kebijakan di bidang rencana kerja, pengelolaan keuangan dan aset, monitoring dan evaluasi, umum dan administrasi kepegawaian serta bertanggungjawab memimpin pelaksanaan seluruh kegiatan pelayanan dan administrasi di lingkungan Dinas.</p>
+    <p>Sekretariat mempunyai tugas menyiapkan bahan perumusan kebijakan di bidang rencana kerja, pengelolaan keuangan dan aset, monitoring dan evaluasi, umum dan administrasi kepegawaian serta bertanggungjawab memimpin pelaksanaan seluruh kegiatan pelayanan dan administrasi di lingkungan Dinas.</p>
 
-<p>Untuk melaksanakan tugas sebagaimana dimaksud dalam Pasal 9, Sekretariat mempunyai fungsi:</p>
+    <p>Untuk melaksanakan tugas tersebut, Sekretariat mempunyai fungsi:</p>
 
-<ul class="pretty-list">
-  <li>Penyusunan program kerja di bidang kesekretariatan.</li>
-  <li>Penyiapan bahan dan perumusan kebijakan di bidang rencana kerja, keuangan dan aset, monitoring dan evaluasi, serta umum dan aparatur.</li>
-  <li>Penyelenggaraan urusan dan pelayanan di bidang rencana kerja, keuangan dan aset, monitoring dan evaluasi, serta umum dan aparatur di lingkungan Dinas sesuai ketentuan peraturan perundang-undangan.</li>
-  <li>Pengoordinasian dan fasilitasi di bidang rencana kerja, keuangan dan aset, monitoring dan evaluasi, serta umum dan aparatur.</li>
-  <li>Pemberian dukungan pelayanan administrasi di bidang rencana kerja, pengelolaan keuangan dan aset, monitoring dan evaluasi, serta umum dan aparatur di lingkungan Dinas.</li>
-  <li>Penyelarasan dan kompilasi penyusunan rencana kerja di lingkungan Dinas sesuai ketentuan peraturan perundang-undangan.</li>
-  <li>Pelaporan terhadap pelaksanaan reformasi birokrasi, SAKIP, dan pelayanan publik di lingkungan Dinas.</li>
-  <li>Pengawasan terhadap pelaksanaan tugas dan fungsi di lingkungan sekretariat.</li>
-  <li>Pemberian saran dan pertimbangan kepada Kepala Dinas berkenaan dengan tugas dan fungsi di bidang kesekretariatan.</li>
-  <li>Pelaksanaan monitoring, evaluasi dan pelaporan terhadap pelaksanaan tugas dan fungsi di lingkungan Dinas.</li>
-  <li>Pelaksanaan fungsi lain di bidang kesekretariatan sesuai ketentuan peraturan.</li>
-</ul>
-</div>
+    <ul class="custom-list grid-list">
+      <li>Penyusunan program kerja di bidang kesekretariatan.</li>
+      <li>Penyiapan bahan dan perumusan kebijakan di bidang rencana kerja, keuangan dan aset, monitoring dan evaluasi, serta umum dan aparatur.</li>
+      <li>Penyelenggaraan urusan pelayanan administrasi sesuai ketentuan.</li>
+      <li>Koordinasi dan fasilitasi bidang rencana kerja, keuangan dan aset, serta umum dan aparatur.</li>
+      <li>Dukungan pelayanan administrasi di lingkungan Dinas.</li>
+      <li>Penyelarasan penyusunan rencana kerja Dinas.</li>
+      <li>Pelaporan reformasi birokrasi, SAKIP, dan pelayanan publik.</li>
+      <li>Pengawasan terhadap pelaksanaan tugas sekretariat.</li>
+      <li>Pemberian saran dan pertimbangan kepada Kepala Dinas.</li>
+      <li>Monitoring, evaluasi dan pelaporan pelaksanaan tugas.</li>
+      <li>Pelaksanaan fungsi lain sesuai ketentuan.</li>
+    </ul>
+  </div>
 
+  <!-- BAGIAN 1 -->
+  <div class="section-card">
+    <h2>Bagian Rencana Kerja, Keuangan dan Aset</h2>
 
-<!-- =============================
-     BAGIAN 1
-============================== -->
-<div class="section-card">
-<h2>1. Bagian Rencana Kerja, Keuangan dan Aset</h2>
+    <p>Mempunyai tugas mengumpulkan dan mengolah bahan kebijakan di bidang penyusunan rencana kerja, keuangan dan aset, monitoring dan evaluasi.</p>
 
-<p>Mempunyai tugas mengumpulkan dan mengolah bahan kebijakan di bidang penyusunan rencana kerja, keuangan dan aset, monitoring dan evaluasi.</p>
+    <p>Untuk melaksanakan tugas tersebut, Sub Bagian ini mempunyai fungsi:</p>
 
-<p>Untuk melaksanakan tugas tersebut, Sub Bagian ini mempunyai fungsi:</p>
+    <ul class="custom-list grid-list">
+      <li>Penyusunan rencana kerja Sub Bagian.</li>
+      <li>Pengumpulan bahan kebijakan rencana kerja, keuangan dan aset.</li>
+      <li>Pelaksanaan urusan administrasi sesuai ketentuan.</li>
+      <li>Pemberian dukungan pelaksanaan tugas sekretariat.</li>
+      <li>Koordinasi dan fasilitasi kegiatan.</li>
+      <li>Pengendalian dan pengawasan pelaksanaan tugas.</li>
+      <li>Pemberian saran kepada Sekretaris.</li>
+      <li>Monitoring, evaluasi dan penyusunan laporan.</li>
+      <li>Pelaksanaan fungsi lain sesuai ketentuan.</li>
+    </ul>
+  </div>
 
-<ul class="pretty-list">
-  <li>Penyusunan rencana kerja Sub Bagian Rencana Kerja, Keuangan dan Aset.</li>
-  <li>Pengumpulan bahan dan perumusan kebijakan di bidang penyusunan rencana kerja, keuangan dan aset, serta monitoring dan evaluasi.</li>
-  <li>Pelaksanaan urusan di bidang tersebut sesuai ketentuan peraturan.</li>
-  <li>Pemberian dukungan terhadap pelaksanaan tugas di lingkungan Sekretariat.</li>
-  <li>Pelaksanaan koordinasi dan fasilitasi.</li>
-  <li>Pengendalian dan pengawasan pelaksanaan tugas.</li>
-  <li>Pemberian saran dan pertimbangan kepada sekretaris.</li>
-  <li>Monitoring, evaluasi, dan penyusunan laporan.</li>
-  <li>Pelaksanaan fungsi lain sesuai ketentuan.</li>
-</ul>
-</div>
+  <!-- BAGIAN 2 -->
+  <div class="section-card">
+    <h2>Bagian Umum dan Aparatur</h2>
 
+    <p>Mempunyai tugas mengumpulkan dan mengolah bahan kebijakan di bidang umum dan aparatur serta mengendalikan pelaksanaan kegiatan sesuai fungsinya.</p>
 
-<!-- =============================
-     BAGIAN 2
-============================== -->
-<div class="section-card">
-<h2>2. Bagian Umum dan Aparatur</h2>
+    <p>Fungsi Sub Bagian:</p>
 
-<p>Mempunyai tugas mengumpulkan dan mengolah bahan kebijakan di bidang umum dan aparatur serta mengendalikan pelaksanaan kegiatan sesuai fungsinya.</p>
+    <ul class="custom-list grid-list">
+      <li>Penyusunan rencana kerja Sub Bagian.</li>
+      <li>Pengumpulan bahan kebijakan di bidang umum dan aparatur.</li>
+      <li>Dukungan pelaksanaan tugas sekretariat.</li>
+      <li>Koordinasi dan fasilitasi bidang umum dan aparatur.</li>
+      <li>Pelaksanaan urusan umum sesuai ketentuan.</li>
+      <li>Pengendalian dan pengawasan pelaksanaan tugas.</li>
+      <li>Pemberian saran kepada Sekretaris.</li>
+      <li>Monitoring, evaluasi dan laporan.</li>
+      <li>Pelaksanaan fungsi lain sesuai ketentuan.</li>
+    </ul>
+  </div>
 
-<p>Untuk melaksanakan tugas tersebut, Sub Bagian ini mempunyai fungsi:</p>
+  <!-- RENJA & DOKUMEN -->
+  <div class="section-card">
+    <h2>Renja Keuangan & Aset</h2>
 
-<ul class="pretty-list">
-  <li>Penyusunan rencana kerja Sub Bagian Umum dan Aparatur.</li>
-  <li>Pengumpulan bahan dan perumusan kebijakan di bidang umum dan aparatur.</li>
-  <li>Pemberian dukungan terhadap pelaksanaan tugas sekretariat.</li>
-  <li>Pelaksanaan koordinasi dan fasilitasi.</li>
-  <li>Pelaksanaan urusan umum dan aparatur sesuai ketentuan.</li>
-  <li>Pengendalian dan pengawasan pelaksanaan tugas.</li>
-  <li>Pemberian saran dan pertimbangan kepada sekretaris.</li>
-  <li>Monitoring, evaluasi, dan penyusunan laporan.</li>
-  <li>Pelaksanaan fungsi lain sesuai ketentuan.</li>
-</ul>
-</div>
+    <div class="link-list">
+      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Renstra DPMD 2018-2023</span></div><div class="btn-arrow">➜</div></a>
+      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">DPA 2023</span></div><div class="btn-arrow">➜</div></a>
+      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">DPA 2022 (No Data)</span></div><div class="btn-arrow">➜</div></a>
+      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Laporan Kinerja 2022</span></div><div class="btn-arrow">➜</div></a>
+      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Laporan Keuangan 2022</span></div><div class="btn-arrow">➜</div></a>
+      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Pengadaan Barang Jasa 2020</span></div><div class="btn-arrow">➜</div></a>
+      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Daftar Barang 2020</span></div><div class="btn-arrow">➜</div></a>
+      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Rencana Kerja 2023</span></div><div class="btn-arrow">➜</div></a>
+      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">CALK</span></div><div class="btn-arrow">➜</div></a>
+      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">LRA 2023</span></div><div class="btn-arrow">➜</div></a>
+      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Daftar Aset</span></div><div class="btn-arrow">➜</div></a>
+      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Neraca</span></div><div class="btn-arrow">➜</div></a>
+    </div>
 
-
-<!-- =============================
-       RENJA & DOKUMEN
-============================== -->
-<div class="section-card">
-<h2>Renja Keuangan & Aset</h2>
-
-<div class="link-list">
-  <a class="link-item" href="#">📄 Renstra DPMD 2018-2023</a>
-  <a class="link-item" href="#">📄 DPA 2023</a>
-  <a class="link-item" href="#">📄 DPA 2022 (No Data)</a>
-  <a class="link-item" href="#">📄 Laporan Kinerja 2022 (LAKIP)</a>
-  <a class="link-item" href="#">📄 Laporan Keuangan 2022</a>
-  <a class="link-item" href="#">📄 Laporan Pengadaan Barang Jasa 2020</a>
-  <a class="link-item" href="#">📄 Laporan Daftar Barang 2020</a>
-  <a class="link-item" href="#">📄 Rencana Kerja Tahun 2023</a>
-  <a class="link-item" href="#">📄 CALK</a>
-  <a class="link-item" href="#">📄 LRA 2023</a>
-  <a class="link-item" href="#">📄 Daftar Aset</a>
-  <a class="link-item" href="#">📄 Neraca</a>
-</div>
-
-</div>
+  </div>
 
 </div>

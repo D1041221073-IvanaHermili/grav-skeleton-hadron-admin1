@@ -8,190 +8,279 @@ process:
 ---
 
 <style>
-/* ================================
-   WRAPPER
-================================ */
+/* ===== GLOBAL VARIABLES (SAMA DENGAN PROFIL BADAN) ===== */
+:root {
+  --primary-color: #0d6e4f;
+  --primary-light: #e6f5f0;
+  --text-dark: #1f2937;
+  --text-muted: #4b5563;
+  --radius-card: 16px;
+  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
+  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* ===== PAGE WRAPPER ===== */
 .page-wrapper {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 40px 20px;
 }
 
-/* ================================
-   TITLE
-================================ */
-.section-title {
+/* ===== HEADER ===== */
+.header-container {
   text-align: center;
-  margin: 0 0 40px 0;
-  padding-bottom: 15px;
-  border-bottom: 3px solid #0d6e4f;
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #0d6e4f;
+  margin-bottom: 50px;
 }
 
-/* ================================
-   CARD
-================================ */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 16px;
+  background: var(--primary-light);
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== CARD STYLE ===== */
 .section-card {
   background: #ffffff;
-  padding: 30px 35px;
-  margin-bottom: 35px;
-  border-radius: 18px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(13,110,79,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ================================
-   HEADING TIAP CARD
-================================ */
+.section-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
 .section-card h2,
 .section-card h3 {
-  color: #0d6e4f;
+  color: var(--primary-color);
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 18px;
-  font-size: 1.65rem;
+  font-size: 1.75rem;
+  border-bottom: 2px solid var(--primary-light);
+  padding-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 25px;
 }
 
-/* ================================
-   PARAGRAPH
-================================ */
+/* ===== PARAGRAPH ===== */
 .section-card p {
-  color: #444;
-  line-height: 1.65;
-  margin-bottom: 15px;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  line-height: 1.7;
   text-align: justify;
+  margin-bottom: 18px;
 }
 
-/* ================================
-   LIST ANGKA CANTIK
-================================ */
-.pretty-list {
-  list-style: none;
-  counter-reset: num;
-  padding-left: 0;
+/* ===== PASAL / REGULASI BOX (SAMA DENGAN PROFIL BADAN) ===== */
+.regulasi-box {
+  background-color: var(--primary-light);
+  padding: 15px 20px;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 25px;
 }
 
-.pretty-list li {
-  counter-increment: num;
-  background: #f0fdf4;
-  margin-bottom: 14px;
-  padding: 16px 20px 16px 55px;
-  border-radius: 12px;
-  border-left: 6px solid #0d6e4f;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  color: #064e3b;
-  font-size: 1.07rem;
-  line-height: 1.55;
-  position: relative;
+.regulasi-box p {
+  margin: 0;
+  font-size: 0.97rem;
+  color: var(--text-dark);
 }
 
-.pretty-list li::before {
-  content: counter(num) ".";
-  position: absolute;
-  left: 18px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #0d6e4f;
-  font-weight: 800;
-  font-size: 1.2rem;
+.regulasi-box strong {
+  color: var(--primary-color);
 }
 
-/* ================================
-   PUBLIKASI PKD — LINK LIST (SAMA PERSIS DENGAN PROFIL)
-================================ */
+/* ===== LIST STYLE ===== */
+ul.custom-list {
+  list-style: disc;
+  margin-left: 22px;
+  padding-left: 10px;
+}
+
+ul.custom-list li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-dark);
+}
+
+/* ===== GRID LIST ===== */
+.grid-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+  }
+}
+
+/* ===== LINK BUTTON ===== */
 .link-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 20px;
 }
 
 .link-btn {
-  background: #0d6e4f;
-  color: #ffffff !important;
-  padding: 14px 18px;
-  border-radius: 12px;
-  text-align: center;
-  font-weight: 600;
-  transition: 0.25s ease;
-  display: block;
-  width: 100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 20px;
+  border-radius:12px;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  text-decoration:none !important;
+  transition: .2s ease;
 }
 
 .link-btn:hover {
-  background: #0b5d42;
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-hover);
   transform: translateY(-2px);
+}
+
+.btn-content {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.icon-box {
+  width:40px;
+  height:40px;
+  background:var(--primary-light);
+  border-radius:8px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:var(--primary-color);
+  font-size: 20px;
+}
+
+.btn-text {
+  font-weight:600;
+  color:var(--text-dark);
+}
+
+.btn-arrow {
+  color:var(--text-muted);
+  transition:.2s;
+}
+
+.link-btn:hover .btn-arrow {
+  color:var(--primary-color);
+  transform:translateX(4px);
 }
 </style>
 
+
+
 <div class="page-wrapper">
 
-<div class="section-title">Bidang Penataan dan Kerjasama Desa</div>
+  <div class="header-container">
+    <div class="section-title">Bidang Penataan & Kerjasama Desa</div>
+    <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
+  </div>
 
-<!-- =======================
-      CARD 1 – Tupoksi
-========================= -->
-<div class="section-card">
-<h2>Tupoksi Penataan dan Kerjasama Desa</h2>
+  <!-- TUGAS BIDANG -->
+  <div class="section-card">
+    <h2>Bidang Penataan dan Kerjasama Desa</h2>
 
-<p>Untuk melaksanakan tugas sebagaimana dimaksud dalam Pasal 20, Bidang Penataan dan Kerjasama Desa mempunyai fungsi sebagai berikut:</p>
+    <p>
+      Bidang Penataan dan Kerjasama Desa mempunyai tugas menyiapkan bahan dan merumuskan kebijakan teknis di bidang penataan desa, kerjasama desa dan kawasan perdesaan, kelembagaan, sarana dan prasarana pelayanan pemerintahan, serta bertanggungjawab memimpin seluruh kegiatan pelayanan dan administrasi di bidang penataan dan kerjasama desa.
+    </p>
+  </div>
 
-<ul class="pretty-list">
-<li>Penyusunan program kerja Bidang Penataan dan Kerjasama Desa.</li>
-<li>Penyiapan bahan dan perumusan kebijakan teknis di bidang penataan desa, kerjasama desa dan kawasan perdesaan, kelembagaan, sarana dan prasarana pelayanan pemerintahan.</li>
-<li>Penyelenggaraan urusan pemerintahan di bidang penataan desa, kerjasama desa dan kawasan perdesaan, kelembagaan, sarana dan prasarana pelayanan pemerintahan sesuai ketentuan peraturan perundang-undangan.</li>
-<li>Pemberian dukungan terhadap penyelenggaraan pemerintahan daerah di bidang penataan desa, kerjasama desa dan kawasan perdesaan, kelembagaan, sarana dan prasarana pelayanan pemerintahan sesuai ketentuan peraturan perundang-undangan.</li>
-<li>Pengoordinasian terhadap pelaksanaan tugas dan fungsi di bidang penataan desa, kerjasama desa dan kawasan perdesaan, kelembagaan, sarana dan prasarana pelayanan pemerintahan.</li>
-<li>Pembinaan dan pengawasan terhadap pelaksanaan tugas dan fungsi di bidang penataan desa, kerjasama desa dan kawasan perdesaan, kelembagaan, sarana dan prasarana pelayanan pemerintahan sesuai ketentuan peraturan perundang-undangan.</li>
-<li>Pelaksanaan monitoring, evaluasi dan pelaporan terhadap pelaksanaan tugas dan fungsi di bidang penataan desa, kerjasama desa dan kawasan perdesaan, kelembagaan, sarana dan prasarana pelayanan pemerintahan.</li>
-<li>Pemberian saran dan pertimbangan kepada Kepala Dinas berkenaan dengan tugas dan fungsi di bidang penataan desa, kerjasama desa dan kawasan perdesaan, kelembagaan, sarana dan prasarana pelayanan pemerintahan.</li>
-<li>Pelaksanaan fungsi lain yang diberikan oleh Kepala Dinas di bidang penataan dan kerjasama desa sesuai ketentuan peraturan perundang-undangan.</li>
-</ul>
-</div>
+  <!-- SEKSI PENATAAN DESA -->
+  <div class="section-card">
+    <h3>Seksi Penataan Desa</h3>
 
-<!-- =======================
-      CARD – Seksi 1
-========================= -->
-<div class="section-card">
-<h3>Seksi Penataan Desa</h3>
-<p>Seksi Penataan Desa sebagaimana dimaksud dalam Pasal 29 ayat (1) huruf a, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang penataan desa, serta mengendalikan pelaksanaan kegiatan sesuai dengan tugas dan fungsinya.</p>
-</div>
+    <div class="regulasi-box">
+      <p><strong>Dasar Pasal:</strong> Pasal 29 ayat (1) huruf a.</p>
+    </div>
 
-<!-- =======================
-      CARD – Seksi 2
-========================= -->
-<div class="section-card">
-<h3>Seksi Kerjasama Desa dan Kawasan Perdesaan</h3>
-<p>Seksi Kerjasama Desa dan Kawasan Perdesaan sebagaimana dimaksud dalam Pasal 29 ayat (1) huruf b, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang kerjasama desa dan kawasan perdesaan, serta mengendalikan pelaksanaan kegiatan sesuai dengan tugas dan fungsinya.</p>
-</div>
+    <p>
+      Seksi Penataan Desa sebagaimana dimaksud dalam Pasal 29 ayat (1) huruf a, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang penataan desa, serta mengendalikan pelaksanaan kegiatan sesuai dengan tugas dan fungsinya.
+    </p>
+  </div>
 
-<!-- =======================
-      CARD – Seksi 3
-========================= -->
-<div class="section-card">
-<h3>Seksi Kelembagaan, Sarana dan Prasarana Pelayanan Pemerintahan</h3>
-<p>Seksi Kelembagaan, Sarana dan Prasarana Pelayanan Pemerintahan sebagaimana dimaksud dalam Pasal 29 ayat (1) huruf c, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang kelembagaan, sarana dan prasarana kegiatan sesuai dengan tugas dan fungsinya.</p>
-</div>
+  <!-- SEKSI KERJASAMA DESA -->
+  <div class="section-card">
+    <h3>Seksi Kerjasama Desa dan Kawasan Perdesaan</h3>
 
-<!-- =======================
-      CARD – Publikasi PKD (SUDAH MODEL LINK-LIST)
-========================= -->
-<div class="section-card">
-<h2>Publikasi PKD</h2>
+    <div class="regulasi-box">
+      <p><strong>Dasar Pasal:</strong> Pasal 29 ayat (1) huruf b.</p>
+    </div>
 
-<div class="link-list">
+    <p>
+      Seksi Kerjasama Desa dan Kawasan Perdesaan sebagaimana dimaksud dalam pasal 29 ayat (1) huruf b, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang kerjasama desa dan kawasan perdesaan, serta mengendalikan pelaksanaan kegiatan sesuai dengan tugas dan fungsinya.
+    </p>
+  </div>
 
-  <a class="link-btn" href="https://docs.google.com/spreadsheets/d/1SEQYqoTcddxn5kHEaNRxlYAhlTqaGD1P/edit?gid=129243836#gid=129243836" target="_blank">
-    Data BUMDESMA 2020
-  </a>
+  <!-- SEKSI KELEMBAGAAN -->
+  <div class="section-card">
+    <h3>Seksi Kelembagaan, Sarana dan Prasarana Pelayanan Pemerintahan</h3>
 
-  <a class="link-btn" href="https://docs.google.com/spreadsheets/d/13HrJ6N5X0dt1jTI6WkjiC4e29wY1cBJR/edit?rtpof=true&sd=true" target="_blank">
-    Data Kawasan 2019
-  </a>
+    <div class="regulasi-box">
+      <p><strong>Dasar Pasal:</strong> Pasal 29 ayat (1) huruf c.</p>
+    </div>
 
-</div>
+    <p>
+      Seksi Kelembagaan, Sarana dan Prasarana Pelayanan Pemerintahan sebagaimana dimaksud dalam Pasal 29 ayat (1) huruf c, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang kelembagaan, sarana dan prasarana kegiatan sesuai dengan tugas dan fungsinya.
+    </p>
+  </div>
 
-</div>
+  <!-- PUBLIKASI -->
+  <div class="section-card">
+    <h2>Publikasi PKD</h2>
+
+    <div class="link-list">
+
+      <a class="link-btn" href="https://docs.google.com/spreadsheets/d/1SEQYqoTcddxn5kHEaNRxlYAhlTqaGD1P/edit?gid=129243836#gid=129243836" target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">Data BUMDESMA 2020</span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+
+      <a class="link-btn" href="https://docs.google.com/spreadsheets/d/13HrJ6N5X0dt1jTI6WkjiC4e29wY1cBJR/edit?rtpof=true&sd=true" target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">Data Kawasan 2019</span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+
+    </div>
+  </div>
 
 </div>
