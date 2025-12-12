@@ -13,7 +13,7 @@ content:
         by: folder
         dir: asc
 display_child_page_titles: true
-published: true
+published: false
 ---
 
 [div class="columns"]
