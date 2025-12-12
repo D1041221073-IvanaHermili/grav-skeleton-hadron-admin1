@@ -1,21 +1,24 @@
 ---
-title: Multi Section page
+title: 'Multi Section page'
 published: true
 hide_page_title: true
 content:
-  items: '@self.children'
-  order:
-    by: folder
-    dir: asc
-  limit: 0
-  taxonomy:
-    filter: [ view1,view2 ]
+    items: '@self.children'
+    order:
+        by: folder
+        dir: asc
+    limit: 0
+    taxonomy:
+        filter:
+            - view1
+            - view2
 child_type: section
 sitemap:
-  changefreq: never
-  priority: 0.3
-  lastmod: 01-08-2025
-date: 01-08-2025
+    changefreq: never
+    priority: 0.3
+    lastmod: 01-08-2025
+date: '01-08-2025 00:00'
+hide_next_prev_page_buttons: false
 ---
 
 [div class="sections-page-title"]

@@ -7,156 +7,279 @@ process:
 ---
 
 <style>
+/* =====================================
+   GLOBAL TEMPLATE VARIABLES
+===================================== */
+:root {
+  --primary-color: #0d6e4f;
+  --primary-light: #e6f5f0;
+  --text-dark: #1f2937;
+  --text-muted: #4b5563;
+  --radius-card: 16px;
+  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
+  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* WRAPPER */
 .page-wrapper {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 40px 20px;
 }
 
-/* Title */
-.section-title {
+/* HEADER */
+.header-container {
   text-align: center;
-  margin: 0 0 40px 0;
-  padding-bottom: 15px;
-  border-bottom: 3px solid #0d6e4f;
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #0d6e4f;
+  margin-bottom: 45px;
 }
 
-/* Card */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 16px;
+  background: var(--primary-light);
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CARD */
 .section-card {
   background: #ffffff;
-  padding: 28px 30px;
-  margin-bottom: 35px;
-  border-radius: 18px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(13,110,79,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
 }
 
 .section-card h2 {
-  color: #0d6e4f !important;
-  font-weight: 700 !important;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.75rem;
+  border-bottom: 2px solid var(--primary-light);
+  padding-bottom: 10px;
+  display: inline-block;
   margin-top: 0;
-  margin-bottom: 18px;
-  font-size: 1.6rem !important;
+  margin-bottom: 25px;
 }
 
-/* Links */
+/* LINK LIST */
 .link-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 20px;
 }
 
 .link-btn {
-  background: #0d6e4f !important;
-  color: #ffffff !important;
-  padding: 14px 18px;
-  border-radius: 12px;
-  text-align: center;
-  font-weight: 600;
-  transition: 0.25s ease;
-  display: block;
-  width: 100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 20px;
+  border-radius:12px;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  text-decoration:none !important;
+  transition: .2s ease;
 }
 
 .link-btn:hover {
-  background: #0b5d42;
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-hover);
   transform: translateY(-2px);
 }
 
+.btn-content {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.icon-box {
+  width:40px;
+  height:40px;
+  background:var(--primary-light);
+  border-radius:8px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:var(--primary-color);
+  font-size: 20px;
+}
+
+.btn-text {
+  font-weight:600;
+  color:var(--text-dark);
+}
+
+.btn-arrow {
+  color:var(--text-muted);
+  transition:.2s;
+}
+
+.link-btn:hover .btn-arrow {
+  color:var(--primary-color);
+  transform:translateX(4px);
+}
 </style>
 
 
 <div class="page-wrapper">
 
-<div class="section-title">Umum Aparatur</div>
+  <!-- ======================
+        HEADER
+  ========================= -->
+  <div class="header-container">
+    <div class="section-title">Umum Aparatur</div>
+    <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
+  </div>
 
 
-<!-- =======================
-      SOP Pedoman Pengelolaan Organisasi
-=========================== -->
-<div class="section-card">
-<h2>SOP Pedoman Pengelolaan Organisasi</h2>
+  <!-- ======================
+        SOP PENGELOLAAN ORGANISASI
+  ========================= -->
+  <div class="section-card">
+    <h2>SOP Pedoman Pengelolaan Organisasi</h2>
 
-<div class="link-list">
-  <a class="link-btn" href="https://drive.google.com/file/d/1-Ue3HuVHSE2b0Q4Cq4gBauweoF0g4dm5/view" target="_blank">SOP Penyusunan Rencana Strategis DPMD</a>
+    <div class="link-list">
+      <a class="link-btn" href="https://drive.google.com/file/d/1-Ue3HuVHSE2b0Q4Cq4gBauweoF0g4dm5/view" target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">SOP Penyusunan Rencana Strategis DPMD</span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
 
-  <a class="link-btn" href="https://drive.google.com/file/d/1Wgnr3BZwLtsi52BX3L0xRQ_1tFXP81GN/view" target="_blank">SOP Penyusunan Rencana Kerja Tahunan DPMD</a>
+      <a class="link-btn" href="https://drive.google.com/file/d/1Wgnr3BZwLtsi52BX3L0xRQ_1tFXP81GN/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Penyusunan Rencana Kerja Tahunan DPMD</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-  <a class="link-btn" href="https://drive.google.com/file/d/1L5FPdXhHPexGM9Tu8C3IUR6fH6rJnJdx/view" target="_blank">SOP Penyusunan Indikator Kinerja Utama DPMD</a>
+      <a class="link-btn" href="https://drive.google.com/file/d/1L5FPdXhHPexGM9Tu8C3IUR6fH6rJnJdx/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Penyusunan Indikator Kinerja Utama DPMD</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-  <a class="link-btn" href="https://drive.google.com/file/d/1W2TxmFY0alKq88RKPj4TqX_IHyKNMu_a/view" target="_blank">SOP Penyusunan Penetapan Kinerja DPMD</a>
+      <a class="link-btn" href="https://drive.google.com/file/d/1W2TxmFY0alKq88RKPj4TqX_IHyKNMu_a/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Penyusunan Penetapan Kinerja DPMD</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-  <a class="link-btn" href="https://drive.google.com/file/d/1x1FQakTXfy7EYUzKRFe_uueZncLDtsF_/view" target="_blank">SOP LAKIP DPMD</a>
+      <a class="link-btn" href="https://drive.google.com/file/d/1x1FQakTXfy7EYUzKRFe_uueZncLDtsF_/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP LAKIP DPMD</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-  <a class="link-btn" href="https://drive.google.com/file/d/1dOw4wL1WOcJ6G1V6ZvXD5q1gW3PngZbh/view" target="_blank">SOP LPPD & LKPJ DPMD</a>
-</div>
-</div>
-
-
-<!-- =======================
-      SOP Pengelolaan Administrasi
-=========================== -->
-<div class="section-card">
-<h2>SOP Pedoman Pengelolaan Administrasi</h2>
-
-<div class="link-list">
-
-  <a class="link-btn" href="https://drive.google.com/file/d/1toX_Pzr2xQDNX-0e3RKdXc5gYTILqjqt/view" target="_blank">SOP Administrasi Surat Masuk</a>
-
-  <a class="link-btn" href="https://drive.google.com/file/d/1_C9b6QZo4xWfJTRb7NZfgtEXSGxYyoJ5/view" target="_blank">SOP Administrasi Surat Keluar</a>
-
-  <a class="link-btn" href="https://drive.google.com/file/d/1VgA2Me8uJIayL2l_CNzgrij70PoKWLPc/view" target="_blank">SOP Prosedur Penyusunan SOP</a>
-
-  <a class="link-btn" href="https://drive.google.com/file/d/16-VjZG_jGri6todsBy2LbBPtEACm1bUU/view" target="_blank">SOP Penyusunan DUK</a>
-
-</div>
-</div>
+      <a class="link-btn" href="https://drive.google.com/file/d/1dOw4wL1WOcJ6G1V6ZvXD5q1gW3PngZbh/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP LPPD & LKPJ DPMD</span></div><div class="btn-arrow">➜</div>
+      </a>
+    </div>
+  </div>
 
 
-<!-- =======================
-      SOP Pedoman Kepegawaian
-=========================== -->
-<div class="section-card">
-<h2>SOP Pedoman Kepegawaian</h2>
+  <!-- ======================
+        SOP ADMINISTRASI
+  ========================= -->
+  <div class="section-card">
+    <h2>SOP Pedoman Pengelolaan Administrasi</h2>
 
-<div class="link-list">
+    <div class="link-list">
+      <a class="link-btn" href="https://drive.google.com/file/d/1toX_Pzr2xQDNX-0e3RKdXc5gYTILqjqt/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Administrasi Surat Masuk</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-  <a class="link-btn" href="https://drive.google.com/file/d/1cfhaWAxJE7ixWXqNqD_guqLG1-9svwDk/view" target="_blank">SOP Usulan Formasi PNS</a>
+      <a class="link-btn" href="https://drive.google.com/file/d/1_C9b6QZo4xWfJTRb7NZfgtEXSGxYyoJ5/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Administrasi Surat Keluar</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-  <a class="link-btn" href="https://drive.google.com/file/u/1/d/1qY5lAZ9jhg9TD6iHBUI-L1ZLrPsIheDd/view" target="_blank">SOP Izin Cuti ASN</a>
+      <a class="link-btn" href="https://drive.google.com/file/d/1VgA2Me8uJIayL2l_CNzgrij70PoKWLPc/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Prosedur Penyusunan SOP</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-  <a class="link-btn" href="https://drive.google.com/file/d/1PSAQtcPn_meTQYyigQWIKrh2eic0wTuJ/view" target="_blank">SOP Usulan Kenaikan Pangkat</a>
-
-  <a class="link-btn" href="https://drive.google.com/file/d/1D0bjJCptuc5nGROWH5B5scw9wvx4JPSL/view" target="_blank">SOP Kenaikan Gaji Berkala</a>
-
-  <a class="link-btn" href="https://drive.google.com/file/d/1FaSbzHtCeUni4GUfSooKOmsJfqYu6DzL/view" target="_blank">SOP Diklat, Beasiswa, & Tugas Belajar</a>
-
-</div>
-</div>
+      <a class="link-btn" href="https://drive.google.com/file/d/16-VjZG_jGri6todsBy2LbBPtEACm1bUU/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Penyusunan DUK</span></div><div class="btn-arrow">➜</div>
+      </a>
+    </div>
+  </div>
 
 
-<!-- =======================
-      SOP Pengelolaan Keuangan
-=========================== -->
-<div class="section-card">
-<h2>SOP Pedoman Pengelolaan Keuangan</h2>
+  <!-- ======================
+        SOP KEPEGAWAIAN
+  ========================= -->
+  <div class="section-card">
+    <h2>SOP Pedoman Kepegawaian</h2>
 
-<div class="link-list">
+    <div class="link-list">
+      <a class="link-btn" href="https://drive.google.com/file/d/1cfhaWAxJE7ixWXqNqD_guqLG1-9svwDk/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Usulan Formasi PNS</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-  <a class="link-btn" href="https://drive.google.com/file/d/1vDKDiBLu6cZFqicI0-wptJBMnoxjzr4B/view" target="_blank">SOP Belanja GU</a>
+      <a class="link-btn" href="https://drive.google.com/file/u/1/d/1qY5lAZ9jhg9TD6iHBUI-L1ZLrPsIheDd/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Izin Cuti ASN</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-  <a class="link-btn" href="https://drive.google.com/file/d/1f7uc7UO21JJcMhkKodoU7o1ZHL_oOUWs/view" target="_blank">SOP Belanja TU</a>
+      <a class="link-btn" href="https://drive.google.com/file/d/1PSAQtcPn_meTQYyigQWIKrh2eic0wTuJ/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Usulan Kenaikan Pangkat</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-  <a class="link-btn" href="https://drive.google.com/file/d/1Hd38dmJVmcjPSNF8LR3dVgzdIKmt5vGK/view" target="_blank">SOP Belanja LS</a>
+      <a class="link-btn" href="https://drive.google.com/file/d/1D0bjJCptuc5nGROWH5B5scw9wvx4JPSL/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Kenaikan Gaji Berkala</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-  <a class="link-btn" href="https://drive.google.com/file/d/1QdG1LbIRvL6FVW0iawAy2wfLbRHLh9rb/view" target="_blank">SOP Belanja UP</a>
+      <a class="link-btn" href="https://drive.google.com/file/d/1FaSbzHtCeUni4GUfSooKOmsJfqYu6DzL/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Diklat, Beasiswa, & Tugas Belajar</span></div><div class="btn-arrow">➜</div>
+      </a>
+    </div>
+  </div>
 
-  <a class="link-btn" href="https://drive.google.com/file/d/1_gjSPAyTvONBFITt4l5bsdNsBCUKbQDN/view" target="_blank">SOP Belanja Tidak Langsung Gaji, Tunjangan, & TPP</a>
 
-</div>
-</div>
+  <!-- ======================
+        SOP KEUANGAN
+  ========================= -->
+  <div class="section-card">
+    <h2>SOP Pedoman Pengelolaan Keuangan</h2>
+
+    <div class="link-list">
+
+      <a class="link-btn" href="https://drive.google.com/file/d/1vDKDiBLu6cZFqicI0-wptJBMnoxjzr4B/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Belanja GU</span></div><div class="btn-arrow">➜</div>
+      </a>
+
+      <a class="link-btn" href="https://drive.google.com/file/d/1f7uc7UO21JJcMhkKodoU7o1ZHL_oOUWs/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Belanja TU</span></div><div class="btn-arrow">➜</div>
+      </a>
+
+      <a class="link-btn" href="https://drive.google.com/file/d/1Hd38dmJVmcjPSNF8LR3dVgzdIKmt5vGK/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Belanja LS</span></div><div class="btn-arrow">➜</div>
+      </a>
+
+      <a class="link-btn" href="https://drive.google.com/file/d/1QdG1LbIRvL6FVW0iawAy2wfLbRHLh9rb/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Belanja UP</span></div><div class="btn-arrow">➜</div>
+      </a>
+
+      <a class="link-btn" href="https://drive.google.com/file/d/1_gjSPAyTvONBFITt4l5bsdNsBCUKbQDN/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Belanja Tidak Langsung Gaji, Tunjangan, & TPP</span></div><div class="btn-arrow">➜</div>
+      </a>
+
+    </div>
+  </div>
 
 </div>
