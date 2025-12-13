@@ -1,8 +1,9 @@
 ---
 title: Contact
 process:
-  twig: true
-  markdown: true
+    markdown: true
+    twig: true
+media_order: 'jdih.jpg,jdih.png,lapor.png,logo-dpmd.png,ppid.png,sikedip.png,SEKAMPADI.png'
 ---
 
 <style>
@@ -129,6 +130,12 @@ process:
     <a href="https://sikedip.kalbarprov.go.id/" target="_blank" class="partner-logo">
       {% markdown %}
 ![SIKEDIP](sikedip.png)
+      {% endmarkdown %}
+    </a>
+      
+    <a href="https://sekampadi.kalbarprov.go.id/" target="_blank" class="partner-logo">
+      {% markdown %}
+![SEKAMPADI](SEKAMPADI.png)
       {% endmarkdown %}
     </a>
 
