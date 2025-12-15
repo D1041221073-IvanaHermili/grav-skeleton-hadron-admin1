@@ -1,6 +1,7 @@
 ---
 title: Maklumat
 date: '13-12-2025 10:43'
+media_order: 'VISI, MISI, DAN MOTTO PELAYANAN PUBLIK_page-0001.jpg,Maklumat Pelayanan Publik_page-0001.jpg'
 ---
 
 <style>
