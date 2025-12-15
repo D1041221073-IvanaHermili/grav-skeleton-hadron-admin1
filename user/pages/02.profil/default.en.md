@@ -12,6 +12,7 @@ media_order: 688093ffadf80-2025-07-23.jpg
 sidebar:
     display: false
     show_toc: false
+redirect: '#'
 ---
 
 <style>
@@ -122,7 +123,7 @@ sidebar:
     Pada tahun 2016, berdasarkan Peraturan Daerah Provinsi Kalimantan Barat Nomor 8 Tahun 2016 dan Peraturan Gubernur Nomor 107 Tahun 2016, BPMPD resmi berubah menjadi 
     <strong>Dinas Pemberdayaan Masyarakat dan Desa (Dinas PMD)</strong>.
   </p>
-</div]
+</div>
 
 [/div]
 [/div]
