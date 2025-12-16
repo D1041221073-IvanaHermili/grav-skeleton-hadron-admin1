@@ -2,7 +2,7 @@
 title: 'Profil Pejabat'
 date: '26-11-2025 06:26'
 visible: true
-media_order: 'Profil-Pimpinan-Dinas-PMD-Kalbar-2023-3-pdf.jpg,2025-LHKPN-Hendra-Bachtiar.jpg,2024-LHKPN-HENDRA-BACHTIAR.jpeg,2023-LHKPN-KADIS-2022_images-extracted-1-768x1081.jpg'
+media_order: 'Profil-Pimpinan-Dinas-PMD-Kalbar-2023-3-pdf.jpg,2025-LHKPN-Hendra-Bachtiar.jpg,2024-LHKPN-HENDRA-BACHTIAR.jpeg,2023-LHKPN-KADIS-2022_images-extracted-1-768x1081.jpg,2025-LHKPN Hendra Bachtiar.pdf,Profil Kadis DPMD.png'
 process:
     markdown: true
     twig: true
@@ -226,7 +226,7 @@ body {
     <div class="lhkpn-card">
       <div class="lhkpn-img-container">
         {% markdown %}
-![2023](2023-LHKPN-KADIS-2022_images-extracted-1-768x1081.jpg)
+![Profil%20Kadis%20DPMD](Profil%20Kadis%20DPMD.png "Profil%20Kadis%20DPMD")
         {% endmarkdown %}
       </div>
       <div class="lhkpn-footer">
