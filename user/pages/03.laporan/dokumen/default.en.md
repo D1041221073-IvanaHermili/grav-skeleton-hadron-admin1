@@ -1,11 +1,14 @@
 ---
-title: 'Bidang PKD'
+title: Dokumen
 date: '26-11-2025 06:26'
 visible: true
 process:
     markdown: true
     twig: true
-published: false
+published: true
+page-toc:
+    anchors:
+        link: false
 ---
 
 <style>
@@ -203,80 +206,31 @@ ul.custom-list li {
 </style>
 
 
-
 <div class="page-wrapper">
 
   <div class="header-container">
-    <div class="section-title">Bidang Penataan & Kerjasama Desa</div>
+    <div class="section-title">Dokumen</div>
     <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
-  </div>
-
-  <!-- TUGAS BIDANG -->
-  <div class="section-card">
-    <h2>Bidang Penataan dan Kerjasama Desa</h2>
-
-    <p>
-      Bidang Penataan dan Kerjasama Desa mempunyai tugas menyiapkan bahan dan merumuskan kebijakan teknis di bidang penataan desa, kerjasama desa dan kawasan perdesaan, kelembagaan, sarana dan prasarana pelayanan pemerintahan, serta bertanggungjawab memimpin seluruh kegiatan pelayanan dan administrasi di bidang penataan dan kerjasama desa.
-    </p>
-  </div>
-
-  <!-- SEKSI PENATAAN DESA -->
-  <div class="section-card">
-    <h3>Seksi Penataan Desa</h3>
-
-    <div class="regulasi-box">
-      <p><strong>Dasar Pasal:</strong> Pasal 29 ayat (1) huruf a.</p>
-    </div>
-
-    <p>
-      Seksi Penataan Desa sebagaimana dimaksud dalam Pasal 29 ayat (1) huruf a, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang penataan desa, serta mengendalikan pelaksanaan kegiatan sesuai dengan tugas dan fungsinya.
-    </p>
-  </div>
-
-  <!-- SEKSI KERJASAMA DESA -->
-  <div class="section-card">
-    <h3>Seksi Kerjasama Desa dan Kawasan Perdesaan</h3>
-
-    <div class="regulasi-box">
-      <p><strong>Dasar Pasal:</strong> Pasal 29 ayat (1) huruf b.</p>
-    </div>
-
-    <p>
-      Seksi Kerjasama Desa dan Kawasan Perdesaan sebagaimana dimaksud dalam pasal 29 ayat (1) huruf b, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang kerjasama desa dan kawasan perdesaan, serta mengendalikan pelaksanaan kegiatan sesuai dengan tugas dan fungsinya.
-    </p>
-  </div>
-
-  <!-- SEKSI KELEMBAGAAN -->
-  <div class="section-card">
-    <h3>Seksi Kelembagaan, Sarana dan Prasarana Pelayanan Pemerintahan</h3>
-
-    <div class="regulasi-box">
-      <p><strong>Dasar Pasal:</strong> Pasal 29 ayat (1) huruf c.</p>
-    </div>
-
-    <p>
-      Seksi Kelembagaan, Sarana dan Prasarana Pelayanan Pemerintahan sebagaimana dimaksud dalam Pasal 29 ayat (1) huruf c, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang kelembagaan, sarana dan prasarana kegiatan sesuai dengan tugas dan fungsinya.
-    </p>
   </div>
 
   <!-- PUBLIKASI -->
   <div class="section-card">
-    <h2>Publikasi PKD</h2>
+    <h2>Dokumen</h2>
 
     <div class="link-list">
 
-      <a class="link-btn" href="https://docs.google.com/spreadsheets/d/1SEQYqoTcddxn5kHEaNRxlYAhlTqaGD1P/edit?gid=129243836#gid=129243836" target="_blank">
+      <a class="link-btn" href="" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
-          <span class="btn-text">Data BUMDESMA 2020</span>
+          <span class="btn-text">Test</span>
         </div>
         <div class="btn-arrow">➜</div>
       </a>
 
-      <a class="link-btn" href="https://docs.google.com/spreadsheets/d/13HrJ6N5X0dt1jTI6WkjiC4e29wY1cBJR/edit?rtpof=true&sd=true" target="_blank">
+      <a class="link-btn" href="" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
-          <span class="btn-text">Data Kawasan 2019</span>
+          <span class="btn-text">Test</span>
         </div>
         <div class="btn-arrow">➜</div>
       </a>

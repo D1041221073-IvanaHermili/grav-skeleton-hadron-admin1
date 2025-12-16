@@ -5,6 +5,9 @@ visible: true
 process:
     markdown: true
     twig: true
+page-toc:
+    anchors:
+        link: false
 ---
 
 <style>

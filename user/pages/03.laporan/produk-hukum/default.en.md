@@ -1,11 +1,14 @@
 ---
-title: 'Bidang P2MD'
+title: 'Produk Hukum'
 date: '26-11-2025 06:26'
 visible: true
 process:
     markdown: true
     twig: true
-published: false
+published: true
+page-toc:
+    anchors:
+        link: false
 ---
 
 <style>
@@ -201,42 +204,74 @@ ul.custom-list li::before {
 <div class="page-wrapper">
 
   <div class="header-container">
-    <div class="section-title">Bidang Pembangunan dan Pemberdayaan Masyarakat Desa</div>
+    <div class="section-title">Produk Hukum</div>
     <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
   </div>
 
   <div class="section-card">
-    <h2>Tupoksi Bidang P2MD</h2>
-
-    <p>Bidang Pembangunan dan Pemberdayaan masyarakat desa mempunyai tugas menyiapkan bahan, menyelenggarakan perumusan dan pelaksanaan kebijakan teknis di bidang pemberdayaan masyarakat dan lembaga desa, pembangunan dan pelayanan sosial dasar, pengembangan ekonomi, sumber daya alam dan teknologi tepat guna, serta bertanggung jawab memimpin seluruh kegiatan pelayanan dan administrasi di bidang pembangunan dan pemberdayaan masyarakat desa.</p>
-
-    <p>Untuk melaksanakan tugas, Bidang Pembangunan dan Pemberdayaan Masyarakat Desa mempunyai fungsi:</p>
-
-    <!-- === LIST DIGANTI AGAR SESUAI TEMPLATE === -->
-    <ul class="custom-list grid-list">
-      <li>Menyusun program kerja Bidang Pembangunan dan Pemberdayaan Masyarakat Desa.</li>
-      <li>Menyiapkan bahan dan perumusan kebijakan teknis dibidang pemberdayaan masyarakat dan lembaga desa, pembangunan dan pelayanan sosial dasar, pengembangan ekonomi, sumber daya alam dan teknologi tepat guna.</li>
-      <li>Penyelenggaraan urusan pemerintahan di bidang pemberdayaan masyarakat dan lembaga desa, pembangunan dan pelayanan sosial dasar, pengembangan ekonomi, sumber daya alam dan teknologi tepat guna sesuai ketentuan peraturan perundang-undangan.</li>
-      <li>Pemberian dukungan terhadap penyelenggaraan pemerintah daerah di bidang pemberdayaan masyarakat dan lembaga desa, pembangunan dan pelayanan sosial dasar, pengembangan ekonomi, sumber daya alam dan teknologi tepat guna sesuai ketentuan peraturan perundang-undangan.</li>
-      <li>Pengordinasian terhadap pelaksanaan tugas dan fungsi di bidang pemberdayaan masyarakat dan lembaga desa, pembangunan dan pelayanan sosial dasar, pengembangan ekonomi, sumber daya alam dan teknologi tepat guna.</li>
-      <li>Pembinaan dan pengawasan terhadap pelaksanaan tugas dan fungsi di bidang pemberdayayaan masyarakat dan lembaga desa, pembangunan dan pelayanan sosial dasar, pengembangan ekonomi, sumber daya alam dan lingkungan tepat guna.</li>
-      <li>Pemberian saran dan pertimbangan kepada kepala dinas berkenaan dengan tugas dan fungsi di bidang pemberdayaan masyarakat dan lembaga desa, pembangunan dan pelayanan sosial dasar, pengembangan ekonomi, sumber daya alam dan teknologi tepat guna.</li>
-      <li>Pelaksanaan fungsi lain yang diberikan oleh kepala dinas di bidang pembangunan dan pemberdayaan masyarakat desa sesuai ketentuan peraturan perundang-undangan.</li>
-    </ul>
-  </div>
-
-  <div class="section-card">
-    <h2>Publikasi P2MD</h2>
+    <h2>Peraturan Perundang-Undangan</h2>
 
     <div class="link-list">
-      <a class="link-btn" href="https://drive.google.com/file/d/1T4irXl5K_4XwMv_FLWiuEjg5Bhusppow/view" target="_blank">
+      <a class="link-btn" href="https://drive.google.com/file/d/1asCekBWEqzt477U8JUU4rqFj7wbRB7HM/view" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
-          <span class="btn-text">RAD IDM 2020</span>
+          <span class="btn-text">PERKIP 1 TAHUN 2021 TENTANG STANDAR LAYANAN INFORMASI PUBLIK</span>
         </div>
         <div class="btn-arrow">➜</div>
       </a>
     </div>
+      
+     <div class="link-list">
+      <a class="link-btn" href="https://drive.google.com/file/d/1gIQJ7LAuZuPLmDN5D4gSXpy7c5ku9vOc/view" target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">SK Kepala Dinas PMD Tentang Tim Pelayanan Publik</span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+    </div>
+      
+    <div class="link-list">
+      <a class="link-btn" href="https://dpmd.kalbarprov.go.id/assets/img/dpmd-content/SK-Desa-Sasaran-Percepatan-Peningkatan-Status-Kemajuan-dan-Kemandirian-Desa-Provinsi-Kalimantan-Barat-Tahun-2023.pdf" target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">SK Desa Sasaran Percepatan Peningkatan Status dan Kemajuan Desa di Prov. Kalbar</span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+    </div>
+      
+    <div class="link-list">
+      <a class="link-btn" href="https://drive.google.com/file/d/187hoOT3GE5GP7nzESQj1ys3FcqWpCZq6/view" target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">Peraturan Komisi Informasi Republik Indonesia Nomor 1 Tahun 2021 Tentang Standar Layanan Informasi Publik</span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+    </div>
+      
+    <div class="link-list">
+      <a class="link-btn" href="https://drive.google.com/file/d/1Q0lbwkjR9WhuK9wjpthqDU-QCmhHGA9l/view" target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">PERGUB KALBAR Nomor 122 Tahun 2021 Tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi serta Tata Kerja Dinas Pemberdayaan Masyarakat dan Desa Provinsi Kalimantan Barat</span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+    </div>
+      
+    <div class="link-list">
+      <a class="link-btn" href="https://drive.google.com/file/d/1mSVfkEhGNC7fFstI7ozZnZ5s0QSYQdgP/view" target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">Undang-Undang Nomor 5 Tahun 2009 Tentang Pelayanan Publik</span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+    </div>
+      
+      
   </div>
 
 </div>
