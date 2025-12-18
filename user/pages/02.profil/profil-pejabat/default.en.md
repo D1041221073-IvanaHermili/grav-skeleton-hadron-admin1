@@ -332,6 +332,33 @@ body {
     <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
   </div>
 
+  <!-- GUBERNUR DAN WAKIL GUBERNUR -->
+  <div class="section-card">
+    <h2>Gubernur dan Wakil Gubernur</h2>
+    <div class="officials-grid">
+      <div class="official-card-small">
+        <div class="photo-frame-styled">
+          {% markdown %}![Gubernur](3Gub-RiaNorsan-PDUB.png){% endmarkdown %}
+        </div>
+        <div class="info-content">
+          <h4>Drs. H. Ria Norsan, M.M., M.H.</h4>
+          <p>Gubernur Kalbar</p>
+        </div>
+      </div>
+
+      <div class="official-card-small">
+        <div class="photo-frame-styled">
+          {% markdown %}![Wakil Gubernur](4WagubKalbar-KrisantusKurniawan-PDUB.png){% endmarkdown %}
+        </div>
+        <div class="info-content">
+          <h4>Krisantus Kurniawan, SIP., M. Si.</h4>
+          <p>Wakil Gubernur Kalbar</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEPALA DINAS -->
   <div class="section-card">
     <h2>Kepala Dinas</h2>
     <div class="wiki-content">
@@ -366,6 +393,7 @@ body {
     </div>
   </div>
 
+  <!-- SEKRETARIS -->
   <div class="section-card">
     <h2>Sekretaris Dinas</h2>
     <div class="official-layout">
@@ -385,31 +413,6 @@ body {
         <div class="detail-item">
           <span class="detail-label">NIP</span>
           <span class="detail-value">: 196911271997022006</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section-card">
-    <h2>Gubernur dan Wakil Gubernur</h2>
-    <div class="officials-grid">
-      <div class="official-card-small">
-        <div class="photo-frame-styled">
-          {% markdown %}![Gubernur](3Gub-RiaNorsan-PDUB.png){% endmarkdown %}
-        </div>
-        <div class="info-content">
-          <h4>Gubernur Kalbar</h4>
-          <p>dr. Harisson, M.Kes</p>
-        </div>
-      </div>
-
-      <div class="official-card-small">
-        <div class="photo-frame-styled">
-          {% markdown %}![Wakil Gubernur](4WagubKalbar-KrisantusKurniawan-PDUB.png){% endmarkdown %}
-        </div>
-        <div class="info-content">
-          <h4>Wakil Gubernur Kalbar</h4>
-          <p>Krisantus Kurniawan</p>
         </div>
       </div>
     </div>
