@@ -1,89 +1,131 @@
 ---
 title: 'Jadwal dan Standar Biaya'
 date: '13-12-2025 10:45'
+visible: true
+process:
+    markdown: true
+    twig: true
+media_order: '17.-Jadwal-Pelayanan-2048x2048.png,III-10BIAYATARIF_page-0001.jpg'
+
 ---
 
 <style>
-/* ===== GOOGLE FONTS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+/* ===== GLOBAL VARIABLES & RESET ===== */
+:root {
+  --primary-color: #0d6e4f;
+  --primary-light: #e6f5f0;
+  --text-dark: #1f2937;
+  --text-muted: #4b5563;
+  --radius-card: 16px;
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
+}
 
-* {
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* ===== PAGE WRAPPER ===== */
+.page-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 /* ===== HEADER ===== */
-.section-title {
+.header-container {
   text-align: center;
-  margin: 0 0 40px 0;
-  padding: 25px 30px;
-  background: linear-gradient(135deg, #0d6e4f 0%, #0a5540 100%);
-  border-radius: 20px;
-  font-size: 2.4rem;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 2.5rem;
   font-weight: 800;
-  color: #ffffff;
-  box-shadow: 0 8px 25px rgba(13, 110, 79, 0.25);
-  position: relative;
-  overflow: hidden;
+  color: var(--primary-color);
+  margin: 0;
+  letter-spacing: -0.5px;
 }
 
-.section-title::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.12), transparent);
-  transform: rotate(45deg);
-  animation: shine 3s infinite;
-}
-
-@keyframes shine {
-  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+.section-subtitle {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 16px;
+  background: var(--primary-light);
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* ===== CARD STYLE ===== */
-.profile-card {
+.section-card {
   background: #ffffff;
-  padding: 35px 28px;
-  margin: 0 auto 35px auto;
-  border-radius: 16px;
-  max-width: 900px;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.profile-card h2, .profile-card h3 {
+.section-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ===== CARD TITLE ===== */
+.section-card h2 {
   text-align: center;
-  color: #064e3b;
+  color: var(--primary-color);
+  font-size: 1.75rem;
   font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 28px;
+  border-bottom: 2px solid var(--primary-light);
+  padding-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.profile-card img {
+/* ===== CARD IMAGE ===== */
+.section-image img {
   width: 100%;
-  border-radius: 12px;
-  margin: 20px 0;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  margin-top: 15px;
 }
 </style>
 
-<!-- ===== HEADER ===== -->
-<div class="section-title">Pelayanan Publik</div>
+<div class="page-wrapper">
 
-<!-- ===== KONTEN DIKONVERSI MENJADI KARTU PER SUB-BAB ===== -->
+  <!-- HEADER -->
+  <div class="header-container">
+    <div class="section-title">Jadwal dan Standar Biaya</div>
+    <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
+  </div>
 
-<div class="profile-card">
-{% markdown %}
-# Jadwal Pelayanan
+  <!-- CARD 1 -->
+  <div class="section-card">
+    <h2>Jadwal Pelayanan</h2>
+    <div class="section-image">
+      {% markdown %}
 ![Jadwal](17.-Jadwal-Pelayanan-2048x2048.png)
-{% endmarkdown %}
-</div>
+      {% endmarkdown %}
+    </div>
+  </div>
 
-<div class="profile-card">
-{% markdown %}
-# Standar Biaya Layanan  
-Berikut Standar Biaya Pelayanan sesuai dengan Surat Keputusan Kepala Dinas Pemberdayaan Masyarakat dan Desa Provinsi Kalimantan Barat Nomor 006/DPMD/2021.
-
-![Biaya Layanan](III%2010%20BIAYATARIF_page-0001.jpg)
-{% endmarkdown %}
+  <!-- CARD 2 -->
+  <div class="section-card">
+    <h2>Standar Biaya Layanan</h2>
+    <div class="section-image">
+      {% markdown %}
+![Biaya Layanan](III-10BIAYATARIF_page-0001.jpg)
+      {% endmarkdown %}
+    </div>
+  </div>
 </div>

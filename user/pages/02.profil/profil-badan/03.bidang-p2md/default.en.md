@@ -4,17 +4,18 @@ date: '15-12-2025 13:30'
 ---
 
 <style>
-/* ===== GLOBAL VARIABLES (SAMA DENGAN TEMPLATE) ===== */
+/* ===== GLOBAL VARIABLES (KONSISTEN DENGAN HALAMAN SEBELUMNYA) ===== */
 :root {
   --primary-color: #0d6e4f;
   --primary-light: #e6f5f0;
   --text-dark: #1f2937;
   --text-muted: #4b5563;
   --radius-card: 16px;
-  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
-  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
 }
 
+/* ===== BASE ===== */
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: #f9fafb;
@@ -54,32 +55,36 @@ body {
   letter-spacing: 1px;
 }
 
-/* ===== CARD ===== */
+/* ===== CARD (SAMA TEMPLATE SEBELUMNYA) ===== */
 .section-card {
   background: #ffffff;
   padding: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(13,110,79,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
-.section-card h2,
-.section-card h3 {
+/* ===== CARD TITLE ===== */
+.section-card h2 {
+  text-align: center;
   color: var(--primary-color);
+  font-size: 1.75rem;
   font-weight: 700;
   margin-top: 0;
-  font-size: 1.75rem;
+  margin-bottom: 28px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
   display: inline-block;
-  margin-bottom: 25px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ===== PARAGRAPH ===== */
@@ -91,7 +96,7 @@ body {
   margin-bottom: 18px;
 }
 
-/* ===== LIST STYLE (DARI TEMPLATE BIDANG PEMDES) ===== */
+/* ===== LIST STYLE ===== */
 ul.custom-list {
   list-style: none;
   padding: 0;
@@ -102,8 +107,8 @@ ul.custom-list li {
   position: relative;
   padding-left: 32px;
   margin-bottom: 12px;
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: var(--text-dark);
 }
 
@@ -111,7 +116,7 @@ ul.custom-list li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 7px;
+  top: 8px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -119,11 +124,11 @@ ul.custom-list li::before {
   box-shadow: 0 0 4px rgba(79,127,114,0.4);
 }
 
-/* GRID LIST TEMPLATE */
+/* ===== GRID LIST ===== */
 .grid-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 8px;
+  gap: 10px;
 }
 
 @media (min-width: 768px) {
@@ -133,7 +138,7 @@ ul.custom-list li::before {
   }
 }
 
-/* ===== LINK BUTTON (SAMA PERSIS TEMPLATE) ===== */
+/* ===== LINK BUTTON (KONSISTEN) ===== */
 .link-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -141,57 +146,56 @@ ul.custom-list li::before {
 }
 
 .link-btn {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:14px 20px;
-  border-radius:12px;
-  background:#fff;
-  border:1px solid #e5e7eb;
-  text-decoration:none !important;
-  transition: .2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  text-decoration: none !important;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 
 .link-btn:hover {
   border-color: var(--primary-color);
   box-shadow: var(--shadow-hover);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .btn-content {
-  display:flex;
-  align-items:center;
-  gap:12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .icon-box {
-  width:40px;
-  height:40px;
-  background:var(--primary-light);
-  border-radius:8px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  color:var(--primary-color);
+  width: 40px;
+  height: 40px;
+  background: var(--primary-light);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
   font-size: 20px;
 }
 
 .btn-text {
-  font-weight:600;
-  color:var(--text-dark);
+  font-weight: 600;
+  color: var(--text-dark);
 }
 
 .btn-arrow {
-  color:var(--text-muted);
-  transition:.2s;
+  color: var(--text-muted);
+  transition: .25s ease;
 }
 
 .link-btn:hover .btn-arrow {
-  color:var(--primary-color);
-  transform:translateX(4px);
+  color: var(--primary-color);
+  transform: translateX(4px);
 }
 </style>
-
 
 <div class="page-wrapper">
 
@@ -207,7 +211,6 @@ ul.custom-list li::before {
 
     <p>Untuk melaksanakan tugas, Bidang Pembangunan dan Pemberdayaan Masyarakat Desa mempunyai fungsi:</p>
 
-    <!-- === LIST DIGANTI AGAR SESUAI TEMPLATE === -->
     <ul class="custom-list grid-list">
       <li>Menyusun program kerja Bidang Pembangunan dan Pemberdayaan Masyarakat Desa.</li>
       <li>Menyiapkan bahan dan perumusan kebijakan teknis dibidang pemberdayaan masyarakat dan lembaga desa, pembangunan dan pelayanan sosial dasar, pengembangan ekonomi, sumber daya alam dan teknologi tepat guna.</li>

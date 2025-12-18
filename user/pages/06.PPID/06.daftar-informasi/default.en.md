@@ -16,12 +16,13 @@ media_order: 'pelanggaran-ppid_001-scaled-2048x1334.jpg,13.-informasi-barjas-a.j
   --text-dark: #1f2937;
   --text-muted: #4b5563;
   --radius-card: 16px;
-  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
-  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
 }
 
+/* ===== BASE ===== */
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: #f9fafb;
 }
 
@@ -61,26 +62,54 @@ body {
 .section-card {
   background: #ffffff;
   padding: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(13,110,79,0.1);
-  transition: .3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
+/* ===== CARD TITLE ===== */
 .section-card h2 {
+  text-align: center;
   color: var(--primary-color);
+  font-size: 1.75rem;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 1.75rem;
+  margin-bottom: 28px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ===== IMAGE CARD ===== */
+.image-card {
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid #e5e7eb;
+  box-shadow:var(--shadow-sm);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  margin-bottom:20px;
+}
+
+.image-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.image-card img {
+  width:100%;
+  height:auto;
+  object-fit:cover;
 }
 
 /* ===== LINK BUTTON GRID ===== */
@@ -99,13 +128,13 @@ body {
   background:#fff;
   border:1px solid #e5e7eb;
   text-decoration:none !important;
-  transition:.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .link-btn:hover {
   border-color: var(--primary-color);
   box-shadow: var(--shadow-hover);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
 
 .btn-content {
@@ -133,37 +162,14 @@ body {
 
 .btn-arrow {
   color:var(--text-muted);
-  transition:.2s;
+  transition:.3s;
 }
 
 .link-btn:hover .btn-arrow {
   color:var(--primary-color);
   transform:translateX(4px);
 }
-
-/* ===== IMAGE CARD ===== */
-.image-card {
-  background:#fff;
-  border-radius:12px;
-  overflow:hidden;
-  border:1px solid #e5e7eb;
-  box-shadow:var(--shadow-sm);
-  transition:.3s;
-  margin-bottom:20px;
-}
-
-.image-card:hover {
-  transform:translateY(-5px);
-  box-shadow:var(--shadow-hover);
-}
-
-.image-card img {
-  width:100%;
-  height:auto;
-  object-fit:cover;
-}
 </style>
-
 
 <div class="page-wrapper">
 
@@ -173,12 +179,9 @@ body {
     <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
   </div>
 
-
-
   <!-- PELANGGARAN PPID -->
   <div class="section-card">
     <h2>Pelanggaran Pelaksanaan PPID Tahun 2021</h2>
-
     <div class="image-card">
       {% markdown %}
 ![pelanggaran](pelanggaran-ppid_001-scaled-2048x1334.jpg)
@@ -186,18 +189,14 @@ body {
     </div>
   </div>
 
-
-
   <!-- INFORMASI PENGADAAN BARANG JASA -->
   <div class="section-card">
     <h2>Informasi Pengadaan Barang Jasa</h2>
-
     <div class="image-card">
       {% markdown %}
 ![13.-informasi-barjas-a](13.-informasi-barjas-a.jpeg)
       {% endmarkdown %}
     </div>
-
     <div class="image-card">
       {% markdown %}
 ![13.-informasi-barjas-b](13.-informasi-barjas-b.jpeg)
@@ -205,12 +204,9 @@ body {
     </div>
   </div>
 
-
-
   <!-- DAFTAR INFORMASI PUBLIK -->
   <div class="section-card">
     <h2>Daftar Informasi Publik</h2>
-
     <div class="link-list">
 
       <a class="link-btn" href="https://drive.google.com/file/d/1IiFobB0G_VH3T2vuIl5WMvnUfXBDBUF9/view" target="_blank">

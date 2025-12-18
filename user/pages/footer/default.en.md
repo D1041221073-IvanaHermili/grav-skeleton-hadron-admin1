@@ -1,9 +1,3 @@
----
-title: Footer
-routable: false
-visible: false
----
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
 <style>
@@ -46,14 +40,12 @@ visible: false
   margin: 8px 0;
 }
 
-/* LINK */
 .dpmd-footer a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 500;
 }
 
-/* HILANGKAN PANAH */
 .dpmd-footer a::after,
 .dpmd-footer a[target="_blank"]::after {
   display: none !important;
@@ -64,7 +56,6 @@ visible: false
   text-decoration: underline;
 }
 
-/* SOCIAL MEDIA */
 .social-icons {
   display: flex;
   gap: 15px;
@@ -74,7 +65,7 @@ visible: false
 .social-icons a {
   width: 38px;
   height: 38px;
-  background: #064e3b; /* HIJAU TUA */
+  background: #064e3b;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -86,13 +77,11 @@ visible: false
 }
 
 .social-icons a:hover {
-  background: #16a34a;  /* HIJAU MUDA */
+  background: #16a34a;
   color: #ffffff;
   transform: translateY(-3px) scale(1.07);
 }
 
-
-/* MAP */
 .map-frame {
   width: 100%;
   height: 200px;
@@ -102,7 +91,6 @@ visible: false
   box-shadow:0 8px 20px rgba(0,0,0,0.25);
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .dpmd-grid {
     grid-template-columns: 1fr;
@@ -153,10 +141,22 @@ visible: false
       </p>
 
       <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+        <!-- Email -->
+        <a href="mailto:dpmd@kalbarprov.go.id" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/Dinas-Pemberdayaan-Masyarakat-dan-Desa-Provinsi-Kalimantan-Barat-100837574907384/" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/dinaspmdkalbar/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- YouTube -->
+        <a href="http://www.youtube.com/@dpmdprov.kalbar6547" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
       </div>
     </div>
 

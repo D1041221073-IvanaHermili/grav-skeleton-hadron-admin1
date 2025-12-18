@@ -12,17 +12,18 @@ page-toc:
 ---
 
 <style>
-/* ===== GLOBAL VARIABLES (SAMA DENGAN TEMPLATE) ===== */
+/* ===== GLOBAL VARIABLES ===== */
 :root {
   --primary-color: #0d6e4f;
   --primary-light: #e6f5f0;
   --text-dark: #1f2937;
   --text-muted: #4b5563;
   --radius-card: 16px;
-  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
-  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
 }
 
+/* ===== BASE ===== */
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: #f9fafb;
@@ -66,28 +67,32 @@ body {
 .section-card {
   background: #ffffff;
   padding: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(13,110,79,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
 .section-card h2,
 .section-card h3 {
+  text-align: center;
   color: var(--primary-color);
   font-weight: 700;
-  margin-top: 0;
   font-size: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 28px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
   display: inline-block;
-  margin-bottom: 25px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ===== PARAGRAPH ===== */
@@ -99,49 +104,7 @@ body {
   margin-bottom: 18px;
 }
 
-/* ===== LIST STYLE (DARI TEMPLATE BIDANG PEMDES) ===== */
-ul.custom-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul.custom-list li {
-  position: relative;
-  padding-left: 32px;
-  margin-bottom: 12px;
-  font-size: 15px;
-  line-height: 1.6;
-  color: var(--text-dark);
-}
-
-ul.custom-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 7px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #88c6b8, #4f7f72);
-  box-shadow: 0 0 4px rgba(79,127,114,0.4);
-}
-
-/* GRID LIST TEMPLATE */
-.grid-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
-}
-
-@media (min-width: 768px) {
-  .grid-list {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
-  }
-}
-
-/* ===== LINK BUTTON (SAMA PERSIS TEMPLATE) ===== */
+/* ===== LINK LIST BUTTON ===== */
 .link-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -157,7 +120,7 @@ ul.custom-list li::before {
   background:#fff;
   border:1px solid #e5e7eb;
   text-decoration:none !important;
-  transition: .2s ease;
+  transition:.25s ease;
 }
 
 .link-btn:hover {
@@ -180,8 +143,7 @@ ul.custom-list li::before {
   display:flex;
   justify-content:center;
   align-items:center;
-  color:var(--primary-color);
-  font-size: 20px;
+  font-size:20px;
 }
 
 .btn-text {
@@ -199,7 +161,6 @@ ul.custom-list li::before {
   transform:translateX(4px);
 }
 </style>
-
 
 <div class="page-wrapper">
 
@@ -219,9 +180,7 @@ ul.custom-list li::before {
         </div>
         <div class="btn-arrow">➜</div>
       </a>
-    </div>
-      
-     <div class="link-list">
+
       <a class="link-btn" href="https://drive.google.com/file/d/1gIQJ7LAuZuPLmDN5D4gSXpy7c5ku9vOc/view" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
@@ -229,9 +188,7 @@ ul.custom-list li::before {
         </div>
         <div class="btn-arrow">➜</div>
       </a>
-    </div>
-      
-    <div class="link-list">
+
       <a class="link-btn" href="https://dpmd.kalbarprov.go.id/assets/img/dpmd-content/SK-Desa-Sasaran-Percepatan-Peningkatan-Status-Kemajuan-dan-Kemandirian-Desa-Provinsi-Kalimantan-Barat-Tahun-2023.pdf" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
@@ -239,9 +196,7 @@ ul.custom-list li::before {
         </div>
         <div class="btn-arrow">➜</div>
       </a>
-    </div>
-      
-    <div class="link-list">
+
       <a class="link-btn" href="https://drive.google.com/file/d/187hoOT3GE5GP7nzESQj1ys3FcqWpCZq6/view" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
@@ -249,9 +204,7 @@ ul.custom-list li::before {
         </div>
         <div class="btn-arrow">➜</div>
       </a>
-    </div>
-      
-    <div class="link-list">
+
       <a class="link-btn" href="https://drive.google.com/file/d/1Q0lbwkjR9WhuK9wjpthqDU-QCmhHGA9l/view" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
@@ -259,9 +212,7 @@ ul.custom-list li::before {
         </div>
         <div class="btn-arrow">➜</div>
       </a>
-    </div>
-      
-    <div class="link-list">
+
       <a class="link-btn" href="https://drive.google.com/file/d/1mSVfkEhGNC7fFstI7ozZnZ5s0QSYQdgP/view" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
@@ -269,9 +220,8 @@ ul.custom-list li::before {
         </div>
         <div class="btn-arrow">➜</div>
       </a>
+
     </div>
-      
-      
   </div>
 
 </div>

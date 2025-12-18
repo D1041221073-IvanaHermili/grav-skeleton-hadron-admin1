@@ -5,106 +5,164 @@ sitemap:
     priority: 0.8
     lastmod: 02-08-2025
 date: '02-08-2025 00:00'
-page-toc:
-    depth: 3
 sidebar:
     display: false
-    show_toc: false
 media_order: a1-program-kegiatan.pdf
 ---
 
 <style>
-/* ===== GOOGLE FONTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 
-/* ===== BASE ===== */
-* {
-  font-family: 'Poppins', sans-serif;
+:root {
+  --primary-color: #0d6e4f;
+  --primary-light: #e6f5f0;
+  --text-dark: #1f2937;
+  --text-muted: #4b5563;
+  --radius-card: 16px;
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
 }
 
-/* ===== TITLE WRAPPER ===== */
-.section-title {
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f9fafb;
+}
+
+.page-wrapper {
+  max-width: 960px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* HEADER */
+.header-container {
   text-align: center;
-  margin: 0 0 40px 0;
-  padding: 25px 30px;
-  background: linear-gradient(135deg, #0d6e4f 0%, #0a5540 100%);
-  border-radius: 20px;
-  font-size: 2.4rem;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 2.5rem;
   font-weight: 800;
-  color: #ffffff;
-  box-shadow: 0 8px 25px rgba(13, 110, 79, 0.25);
-  position: relative;
-  overflow: hidden;
+  color: var(--primary-color);
+  margin: 0;
 }
 
-.section-title::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
-  transform: rotate(45deg);
-  animation: shine 3s infinite;
-}
-
-@keyframes shine {
-  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-}
-
-/* CARD SECTION */
-.profile-card {
-  background: #ffffff;
-  padding: 40px 30px;
-  margin: 0 auto 40px auto;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  max-width: 800px;
-  text-align:center;
-}
-
-.profile-card h2 {
-  margin-top:0;
-  color:#064e3b;
-  font-weight:700;
-}
-
-.profile-card p {
-  color:#444;
-  line-height:1.65;
-  margin-bottom:20px;
-}
-
-/* PDF BUTTON */
-.pdf-link {
+.section-subtitle {
   display: inline-block;
-  padding: 12px 22px;
-  background-color: #15803d;
-  color: #fff !important;          
-  font-weight:600;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: background 0.3s ease;
+  margin-top: 10px;
+  padding: 6px 16px;
+  background: var(--primary-light);
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CARD */
+.section-card {
+  background: #ffffff;
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
+  box-shadow: var(--shadow-sm);
+  transition: .35s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.section-card h2 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 32px;
+  border-bottom: 2px solid var(--primary-light);
+  padding-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+/* ===== PDF BUTTON (CSS ICON – NO ENTITY) ===== */
+.pdf-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  text-decoration: none !important;
+  color: var(--text-dark) !important;
+  font-weight: 600;
+  max-width: 520px;
+  margin: auto;
+  transition: .25s;
+}
+
+/* ICON kiri */
+.pdf-link::before {
+  content: "\1F4C4"; /* 📄 */
+  width: 40px;
+  height: 40px;
+  background: var(--primary-light);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* ARROW kanan */
+.pdf-link::after {
+  content: "\279C"; /* ➜ */
+  margin-left: auto;
+  color: var(--text-muted);
+  transition: .2s;
 }
 
 .pdf-link:hover {
-  background-color: #064e3b;
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.pdf-link:hover::after {
+  color:var(--primary-color);
+  transform:translateX(4px);
 }
 </style>
 
-<!-- HEADER BARU -->
-<div class="section-title">Laporan</div>
+<div class="page-wrapper">
 
-<!-- KALENDER KEGIATAN -->
-<div class="profile-card">
-  <h2>Kalender Kegiatan</h2>
-  <p>
-    Berikut adalah dokumen program kegiatan yang dapat diunduh:
-  </p>
+  <div class="header-container">
+    <div class="section-title">Laporan</div>
+    <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
+  </div>
 
-  {% markdown %}
+  <div class="section-card">
+    <h2>Kalender Kegiatan</h2>
+    <p>Berikut adalah dokumen program kegiatan yang dapat diunduh.</p>
+
+    {% markdown %}
 [Program Kegiatan](a1-program-kegiatan.pdf){.pdf-link}
-  {% endmarkdown %}
+    {% endmarkdown %}
+
+  </div>
+
 </div>

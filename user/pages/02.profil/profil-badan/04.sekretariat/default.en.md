@@ -4,35 +4,34 @@ date: '15-12-2025 13:31'
 ---
 
 <style>
-/* =====================================
-   GLOBAL VARIABLES (SAMA TEMPLATE)
-===================================== */
+/* ===== GLOBAL VARIABLES ===== */
 :root {
   --primary-color: #0d6e4f;
   --primary-light: #e6f5f0;
   --text-dark: #1f2937;
   --text-muted: #4b5563;
   --radius-card: 16px;
-  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
-  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
 }
 
+/* ===== BASE ===== */
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: #f9fafb;
 }
 
-/* WRAPPER */
+/* ===== PAGE WRAPPER ===== */
 .page-wrapper {
   max-width: 960px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 .header-container {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 .section-title {
@@ -56,34 +55,38 @@ body {
   letter-spacing: 1px;
 }
 
-/* CARD */
+/* ===== CARD ===== */
 .section-card {
   background: #ffffff;
   padding: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(13,110,79,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
 .section-card h2 {
+  text-align: center;
   color: var(--primary-color);
-  font-weight: 700;
   font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 28px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
   display: inline-block;
-  margin-top: 0;
-  margin-bottom: 25px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/* PARAGRAPH */
+/* ===== PARAGRAPH ===== */
 .section-card p {
   font-size: 1.05rem;
   color: var(--text-dark);
@@ -92,7 +95,7 @@ body {
   margin-bottom: 18px;
 }
 
-/* LIST STYLE — TEMPLATE STYLE */
+/* ===== LIST STYLE ===== */
 ul.custom-list {
   list-style: none;
   padding: 0;
@@ -103,8 +106,8 @@ ul.custom-list li {
   position: relative;
   padding-left: 32px;
   margin-bottom: 12px;
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: var(--text-dark);
 }
 
@@ -112,7 +115,7 @@ ul.custom-list li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 7px;
+  top: 8px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -120,7 +123,7 @@ ul.custom-list li::before {
   box-shadow: 0 0 4px rgba(79,127,114,0.4);
 }
 
-/* GRID LIST UNTUK LIST PANJANG */
+/* ===== GRID LIST ===== */
 .grid-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -134,7 +137,7 @@ ul.custom-list li::before {
   }
 }
 
-/* LINK LIST (RENJA) */
+/* ===== LINK LIST ===== */
 .link-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -192,7 +195,6 @@ ul.custom-list li::before {
   transform:translateX(4px);
 }
 </style>
-
 
 <div class="page-wrapper">
 

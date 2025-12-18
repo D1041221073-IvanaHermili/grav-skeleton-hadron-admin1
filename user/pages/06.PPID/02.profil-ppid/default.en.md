@@ -7,142 +7,227 @@ media_order: 'STRUKTUR-PPID-2024.pdf,III 3 MAKLUMAT PELAYANAN INFORMASI PUBLIK_p
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 
-* {
-  font-family: 'Poppins', sans-serif;
+/* ===== VARIABLES ===== */
+:root {
+  --primary-color: #0d6e4f;
+  --primary-light: #e6f5f0;
+  --text-dark: #1f2937;
+  --text-muted: #4b5563;
+  --radius-card: 16px;
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* ===== PAGE WRAPPER ===== */
+.page-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ===== HEADER (DIUBAH) ===== */
+.header-container {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .section-title {
-  text-align: center;
-  margin: 0 0 40px 0;
-  padding: 25px 30px;
-  background: linear-gradient(135deg, #0d6e4f, #0a5540);
-  border-radius: 20px;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  color: white;
-  box-shadow: 0 8px 25px rgba(13,110,79,0.25);
-  position: relative;
-  overflow: hidden;
+  color: var(--primary-color);
+  margin: 0;
 }
 
-.section-title::before {
-  content: '';
-  position: absolute;
-  top: -50%; left: -50%;
-  width: 200%; height: 200%;
-  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.15), transparent);
-  transform: rotate(45deg);
-  animation: shine 3s infinite;
+.section-subtitle {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 16px;
+  background: var(--primary-light);
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-@keyframes shine {
-  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-}
-
+/* ===== CARD ===== */
 .sub-card {
   background: #ffffff;
-  padding: 35px 30px;
-  margin: 0 auto 35px auto;
-  border-radius: 16px;
-  max-width: 900px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
+  box-shadow: var(--shadow-sm);
+  transition: .35s ease;
+}
+
+.sub-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
 }
 
 .sub-card h2 {
-  color: #064e3b;
-  font-weight: 700;
   text-align: center;
+  color: var(--primary-color);
+  font-size: 1.75rem;
+  font-weight: 700;
   margin-top: 0;
+  margin-bottom: 32px;
+  border-bottom: 2px solid var(--primary-light);
+  padding-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.sub-card p,
-.sub-card a {
-  color: #444;
-  line-height: 1.65;
-  text-align: center;
+.sub-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+  text-align: justify;
 }
 
 .sub-card img {
   width: 100%;
   border-radius: 12px;
-  margin: 15px 0 25px 0;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  margin-top: 15px;
+}
+
+/* ===== LINK BUTTON (DIUBAH) ===== */
+.link-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 20px;
+}
+
+.link-btn {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 20px;
+  border-radius:12px;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  text-decoration:none !important;
+  transition:.25s ease;
+}
+
+.link-btn:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.btn-content {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.icon-box {
+  width:40px;
+  height:40px;
+  background:var(--primary-light);
+  border-radius:8px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:20px;
+}
+
+.btn-text {
+  font-weight:600;
+  color:var(--text-dark);
+}
+
+.btn-arrow {
+  color:var(--text-muted);
+  transition:.2s;
+}
+
+.link-btn:hover .btn-arrow {
+  color:var(--primary-color);
+  transform:translateX(4px);
 }
 </style>
 
-<div class="section-title">PPID</div>
+<div class="page-wrapper">
 
-<!-- =======================
-      PROFIL PPID
-======================== -->
-<div class="sub-card">
-{% markdown %}
+  <!-- ===== HEADER ===== -->
+  <div class="header-container">
+    <div class="section-title">Profil PPID</div>
+    <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
+  </div>
 
-## Profil PPID
+  <!-- ===== STRUKTUR PPID (PDF BUTTON) ===== -->
+  <div class="sub-card">
+    <h2>Struktur PPID</h2>
+    <div class="link-list">
+      <a class="link-btn" href="STRUKTUR-PPID-2024.pdf" target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">Struktur Organisasi PPID 2024</span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+    </div>
+  </div>
 
-Profil PPID Desa Kalimantan Barat.
+  <!-- ===== TUGAS & FUNGSI ===== -->
+  <div class="sub-card">
+    {% markdown %}
+    ## Tugas dan Fungsi PPID
+    ![I2 Tugas dan Wewenang PPID Pemdes](I2%20Tugas%20dan%20Wewenang%20PPID%20Pemdes_page-0001.jpg)
+    {% endmarkdown %}
+  </div>
 
-{% endmarkdown %}
+  <!-- ===== VISI MISI ===== -->
+  <div class="sub-card">
+    {% markdown %}
+    ## Visi dan Misi PPID
+    ![I4 VISI DAN MISI PPID](I4%20VISI%20DAN%20MISI%20PPID_page-0001.jpg)
+    {% endmarkdown %}
+  </div>
 
-</div>
+  <!-- ===== MAKLUMAT ===== -->
+  <div class="sub-card">
+    {% markdown %}
+    ## Maklumat Pelayanan Informasi Publik
+    ![Maklumat 1](III%203%20MAKLUMAT%20PELAYANAN%20INFORMASI%20PUBLIK_page-0001.jpg)
+    ![Maklumat 2](III%203%20MAKLUMAT%20PELAYANAN%20INFORMASI%20PUBLIK_page-0002.jpg)
+    {% endmarkdown %}
+  </div>
 
-<!-- =======================
-      STRUKTUR PPID
-======================== -->
-<div class="sub-card">
-{% markdown %}
+  <!-- ===== LAPORAN PPID (LINK BUTTON) ===== -->
+  <div class="sub-card">
+    <h2>Laporan PPID</h2>
+    <div class="link-list">
 
-## Struktur PPID
+      <a class="link-btn" href="https://drive.google.com/file/d/1KmjsSGVtklMYnzpySFzzHISKkcd9EGpJ/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Laporan PPID Tahun 2021</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-[STRUKTUR-PPID-2024.pdf](STRUKTUR-PPID-2024.pdf)
+      <a class="link-btn" href="https://dpmd.kalbarprov.go.id/assets/img/dpmd-content/0.-LAPORAN-PPID-2022.pdf" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Laporan PPID Tahun 2022</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-{% endmarkdown %}
+      <a class="link-btn" href="https://drive.google.com/file/d/14ZvrWI8ookxCIB0zLfBBBiuXKbfpdGVg/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Laporan PPID Tahun 2023</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-</div>
+      <a class="link-btn" href="https://drive.google.com/file/d/19y6gyk8tbmbLWXaOzkzNn-qXa2fm7RL0/view" target="_blank">
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Laporan PPID Tahun 2024</span></div><div class="btn-arrow">➜</div>
+      </a>
 
-<!-- =======================
-      TUGAS & FUNGSI PPID
-======================== -->
-<div class="sub-card">
-{% markdown %}
-
-## Tugas dan Fungsi PPID
-
-Tugas dan Wewenang PPID  
-![I2 Tugas dan Wewenang PPID Pemdes](I2%20Tugas%20dan%20Wewenang%20PPID%20Pemdes_page-0001.jpg)
-
-Visi dan Misi PPID  
-![I4 VISI DAN MISI PPID](I4%20VISI%20DAN%20MISI%20PPID_page-0001.jpg)
-
-Maklumat Pelayanan Informasi Publik  
-![Maklumat Pelayanan Informasi 1](III%203%20MAKLUMAT%20PELAYANAN%20INFORMASI%20PUBLIK_page-0001.jpg)  
-![Maklumat Pelayanan Informasi 2](III%203%20MAKLUMAT%20PELAYANAN%20INFORMASI%20PUBLIK_page-0002.jpg)
-
-{% endmarkdown %}
-
-</div>
-
-<!-- =======================
-      LAPORAN PPID
-======================== -->
-<div class="sub-card">
-{% markdown %}
-
-## LAPORAN PPID
-
-[Laporan PPID Tahun 2021](https://drive.google.com/file/d/1KmjsSGVtklMYnzpySFzzHISKkcd9EGpJ/view)
-
-[Laporan PPID Tahun 2022](https://dpmd.kalbarprov.go.id/assets/img/dpmd-content/0.-LAPORAN-PPID-2022.pdf)
-
-[Penyampaian Laporan PPID Tahun 2021 ke Komisi Informasi](https://drive.google.com/file/d/1K4aV_3jttdjLJ9pzacTA3Tfg1otBfz2c/view)
-
-[Laporan PPID Tahun 2023](https://drive.google.com/file/d/14ZvrWI8ookxCIB0zLfBBBiuXKbfpdGVg/view)
-
-[SK Strategi dan Metode Pembinaan, Pengawasan Monitoring dan Evaluasi atas Pelaksanaan Kebijakan Informasi Publik](https://drive.google.com/file/d/1xvNm9DAbd6RtDej3h2Hk7nRndYISt5eN/view)
-
-[Laporan PPID Tahun 2024](https://drive.google.com/file/d/19y6gyk8tbmbLWXaOzkzNn-qXa2fm7RL0/view)
-
-{% endmarkdown %}
+    </div>
+  </div>
 
 </div>

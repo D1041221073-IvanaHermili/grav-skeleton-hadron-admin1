@@ -5,17 +5,18 @@ visible: true
 ---
 
 <style>
-/* ===== GLOBAL VARIABLES & RESET (SAMA PERSIS DENGAN TEMPLATE) ===== */
+/* ===== GLOBAL VARIABLES (KONSISTEN DENGAN HALAMAN SEBELUMNYA) ===== */
 :root {
   --primary-color: #0d6e4f;
   --primary-light: #e6f5f0;
   --text-dark: #1f2937;
   --text-muted: #4b5563;
   --radius-card: 16px;
-  --shadow-sm: 0 2px 8px rgba(13, 110, 79, 0.08);
-  --shadow-hover: 0 8px 20px rgba(13, 110, 79, 0.15);
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
 }
 
+/* ===== BASE ===== */
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: #f9fafb;
@@ -28,7 +29,7 @@ body {
   padding: 40px 20px;
 }
 
-/* ===== TITLE STYLE (SAMA PROFIL BADAN) ===== */
+/* ===== HEADER ===== */
 .header-container {
   text-align: center;
   margin-bottom: 50px;
@@ -55,31 +56,36 @@ body {
   letter-spacing: 1px;
 }
 
-/* ===== CARD STYLE (COPY TEMPLATE) ===== */
+/* ===== CARD (SAMA DENGAN STYLE SEBELUMNYA) ===== */
 .section-card {
   background: #ffffff;
   padding: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(13, 110, 79, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
+/* ===== CARD TITLE ===== */
 .section-card h2 {
+  text-align: center;
   color: var(--primary-color);
+  font-size: 1.75rem;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 25px;
-  font-size: 1.75rem;
+  margin-bottom: 28px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
   display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ===== PARAGRAPH ===== */
@@ -91,7 +97,7 @@ body {
   text-align: justify;
 }
 
-/* ===== LIST STYLE (MODERN, SAMA DENGAN TEMPLATE) ===== */
+/* ===== LIST STYLE ===== */
 ul.custom-list {
   list-style: none;
   padding: 0;
@@ -102,8 +108,8 @@ ul.custom-list li {
   position: relative;
   padding-left: 32px;
   margin-bottom: 12px;
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: var(--text-dark);
 }
 
@@ -111,19 +117,19 @@ ul.custom-list li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 7px;
+  top: 8px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: linear-gradient(135deg, #88c6b8, #4f7f72);
-  box-shadow: 0 0 4px rgba(79, 127, 114, 0.4);
+  box-shadow: 0 0 4px rgba(79,127,114,0.4);
 }
 
-/* GRID-LIST (MENGIKUTI TEMPLATE PROFIL BADAN) */
+/* ===== GRID LIST ===== */
 .grid-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 8px;
+  gap: 10px;
 }
 
 @media (min-width: 768px) {

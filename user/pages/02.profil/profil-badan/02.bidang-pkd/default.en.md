@@ -4,17 +4,18 @@ date: '15-12-2025 13:28'
 ---
 
 <style>
-/* ===== GLOBAL VARIABLES (SAMA DENGAN PROFIL BADAN) ===== */
+/* ===== GLOBAL VARIABLES (KONSISTEN) ===== */
 :root {
   --primary-color: #0d6e4f;
   --primary-light: #e6f5f0;
   --text-dark: #1f2937;
   --text-muted: #4b5563;
   --radius-card: 16px;
-  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
-  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
 }
 
+/* ===== BASE ===== */
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: #f9fafb;
@@ -54,32 +55,37 @@ body {
   letter-spacing: 1px;
 }
 
-/* ===== CARD STYLE ===== */
+/* ===== CARD ===== */
 .section-card {
   background: #ffffff;
   padding: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(13,110,79,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform .35s ease, box-shadow .35s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
+/* ===== CARD TITLE (CENTER & SERAGAM) ===== */
 .section-card h2,
 .section-card h3 {
+  text-align: center;
   color: var(--primary-color);
+  font-size: 1.75rem;
   font-weight: 700;
   margin-top: 0;
-  font-size: 1.75rem;
+  margin-bottom: 28px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
   display: inline-block;
-  margin-bottom: 25px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ===== PARAGRAPH ===== */
@@ -91,18 +97,18 @@ body {
   margin-bottom: 18px;
 }
 
-/* ===== PASAL / REGULASI BOX (SAMA DENGAN PROFIL BADAN) ===== */
+/* ===== REGULASI BOX ===== */
 .regulasi-box {
   background-color: var(--primary-light);
-  padding: 15px 20px;
+  padding: 16px 20px;
   border-left: 4px solid var(--primary-color);
   border-radius: 0 8px 8px 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .regulasi-box p {
   margin: 0;
-  font-size: 0.97rem;
+  font-size: 1rem;
   color: var(--text-dark);
 }
 
@@ -110,32 +116,32 @@ body {
   color: var(--primary-color);
 }
 
-/* ===== LIST STYLE ===== */
+/* ===== LIST STYLE (KONSISTEN) ===== */
 ul.custom-list {
-  list-style: disc;
-  margin-left: 22px;
-  padding-left: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 ul.custom-list li {
+  position: relative;
+  padding-left: 32px;
   margin-bottom: 12px;
-  font-size: 1rem;
-  line-height: 1.65;
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: var(--text-dark);
 }
 
-/* ===== GRID LIST ===== */
-.grid-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
-
-@media (min-width: 768px) {
-  .grid-list {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
-  }
+ul.custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #88c6b8, #4f7f72);
+  box-shadow: 0 0 4px rgba(79,127,114,0.4);
 }
 
 /* ===== LINK BUTTON ===== */
@@ -146,58 +152,56 @@ ul.custom-list li {
 }
 
 .link-btn {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:14px 20px;
-  border-radius:12px;
-  background:#fff;
-  border:1px solid #e5e7eb;
-  text-decoration:none !important;
-  transition: .2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  text-decoration: none !important;
+  transition: .3s ease;
 }
 
 .link-btn:hover {
+  transform: translateY(-4px);
   border-color: var(--primary-color);
   box-shadow: var(--shadow-hover);
-  transform: translateY(-2px);
 }
 
 .btn-content {
-  display:flex;
-  align-items:center;
-  gap:12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .icon-box {
-  width:40px;
-  height:40px;
-  background:var(--primary-light);
-  border-radius:8px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  color:var(--primary-color);
+  width: 42px;
+  height: 42px;
+  background: var(--primary-light);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
   font-size: 20px;
 }
 
 .btn-text {
-  font-weight:600;
-  color:var(--text-dark);
+  font-weight: 600;
+  color: var(--text-dark);
 }
 
 .btn-arrow {
-  color:var(--text-muted);
-  transition:.2s;
+  color: var(--text-muted);
+  transition: .2s ease;
 }
 
 .link-btn:hover .btn-arrow {
-  color:var(--primary-color);
-  transform:translateX(4px);
+  color: var(--primary-color);
+  transform: translateX(4px);
 }
 </style>
-
-
 
 <div class="page-wrapper">
 
@@ -206,60 +210,47 @@ ul.custom-list li {
     <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
   </div>
 
-  <!-- TUGAS BIDANG -->
   <div class="section-card">
     <h2>Bidang Penataan dan Kerjasama Desa</h2>
-
     <p>
       Bidang Penataan dan Kerjasama Desa mempunyai tugas menyiapkan bahan dan merumuskan kebijakan teknis di bidang penataan desa, kerjasama desa dan kawasan perdesaan, kelembagaan, sarana dan prasarana pelayanan pemerintahan, serta bertanggungjawab memimpin seluruh kegiatan pelayanan dan administrasi di bidang penataan dan kerjasama desa.
     </p>
   </div>
 
-  <!-- SEKSI PENATAAN DESA -->
   <div class="section-card">
     <h3>Seksi Penataan Desa</h3>
-
     <div class="regulasi-box">
       <p><strong>Dasar Pasal:</strong> Pasal 29 ayat (1) huruf a.</p>
     </div>
-
     <p>
       Seksi Penataan Desa sebagaimana dimaksud dalam Pasal 29 ayat (1) huruf a, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang penataan desa, serta mengendalikan pelaksanaan kegiatan sesuai dengan tugas dan fungsinya.
     </p>
   </div>
 
-  <!-- SEKSI KERJASAMA DESA -->
   <div class="section-card">
     <h3>Seksi Kerjasama Desa dan Kawasan Perdesaan</h3>
-
     <div class="regulasi-box">
       <p><strong>Dasar Pasal:</strong> Pasal 29 ayat (1) huruf b.</p>
     </div>
-
     <p>
       Seksi Kerjasama Desa dan Kawasan Perdesaan sebagaimana dimaksud dalam pasal 29 ayat (1) huruf b, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang kerjasama desa dan kawasan perdesaan, serta mengendalikan pelaksanaan kegiatan sesuai dengan tugas dan fungsinya.
     </p>
   </div>
 
-  <!-- SEKSI KELEMBAGAAN -->
   <div class="section-card">
     <h3>Seksi Kelembagaan, Sarana dan Prasarana Pelayanan Pemerintahan</h3>
-
     <div class="regulasi-box">
       <p><strong>Dasar Pasal:</strong> Pasal 29 ayat (1) huruf c.</p>
     </div>
-
     <p>
       Seksi Kelembagaan, Sarana dan Prasarana Pelayanan Pemerintahan sebagaimana dimaksud dalam Pasal 29 ayat (1) huruf c, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang kelembagaan, sarana dan prasarana kegiatan sesuai dengan tugas dan fungsinya.
     </p>
   </div>
 
-  <!-- PUBLIKASI -->
   <div class="section-card">
     <h2>Publikasi PKD</h2>
 
     <div class="link-list">
-
       <a class="link-btn" href="https://docs.google.com/spreadsheets/d/1SEQYqoTcddxn5kHEaNRxlYAhlTqaGD1P/edit?gid=129243836#gid=129243836" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
@@ -275,7 +266,6 @@ ul.custom-list li {
         </div>
         <div class="btn-arrow">➜</div>
       </a>
-
     </div>
   </div>
 
