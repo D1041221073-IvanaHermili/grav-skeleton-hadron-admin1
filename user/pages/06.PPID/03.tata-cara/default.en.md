@@ -16,8 +16,8 @@ media_order: 'TATA CARA MEMPEROLEH INFORMASI PUBLIK_page-0001.jpg,3.-TATA-CARA-P
   --text-dark: #1f2937;
   --text-muted: #4b5563;
   --radius-card: 16px;
-  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
-  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
 }
 
 body {
@@ -32,11 +32,10 @@ body {
   padding: 40px 20px;
 }
 
-/* ===== TITLE STYLE ===== */
+/* ===== HEADER ===== */
 .header-container {
   text-align: center;
   margin-bottom: 50px;
-  position: relative;
 }
 
 .section-title {
@@ -64,33 +63,40 @@ body {
 .section-card {
   background: #ffffff;
   padding: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(13,110,79,0.1);
-  transition: 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
+/* ===== CARD TITLE ===== */
 .section-card h2 {
+  text-align: center;
   color: var(--primary-color);
+  font-size: 1.75rem;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 25px;
-  font-size: 1.75rem;
+  margin-bottom: 28px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
   display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+/* ===== CARD IMAGE ===== */
 .section-image img {
   width: 100%;
   border-radius: 10px;
   border: 1px solid #e5e7eb;
+  margin-top: 15px;
 }
 </style>
 

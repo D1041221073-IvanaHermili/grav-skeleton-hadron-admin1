@@ -9,17 +9,18 @@ media_order: 'NILAI IKM 2024_page-0001.jpg,2.-LAPORAN-SKM-TW-II-TH-2022_026-768x
 ---
 
 <style>
-/* ===== GLOBAL VARIABLES ===== */
+/* ===== GLOBAL VARIABLES (KONSISTEN DENGAN TEMPLATE SEBELUMNYA) ===== */
 :root {
   --primary-color: #0d6e4f;
   --primary-light: #e6f5f0;
   --text-dark: #1f2937;
   --text-muted: #4b5563;
   --radius-card: 16px;
-  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
-  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
 }
 
+/* ===== BASE ===== */
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background-color: #f9fafb;
@@ -43,6 +44,7 @@ body {
   font-weight: 800;
   color: var(--primary-color);
   margin: 0;
+  letter-spacing: -0.5px;
 }
 
 .section-subtitle {
@@ -55,32 +57,48 @@ body {
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* ===== CARD ===== */
 .section-card {
   background: #ffffff;
   padding: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(13,110,79,0.1);
-  transition: .3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
+/* ===== CARD TITLE ===== */
 .section-card h2 {
+  text-align: center;
   color: var(--primary-color);
+  font-size: 1.75rem;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 1.75rem;
+  margin-bottom: 28px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ===== CARD PARAGRAPH ===== */
+.section-card p {
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  line-height: 1.7;
+  margin-bottom: 18px;
+  text-align: justify;
 }
 
 /* ===== LINK BUTTON GRID ===== */
@@ -99,13 +117,13 @@ body {
   background:#fff;
   border:1px solid #e5e7eb;
   text-decoration:none !important;
-  transition:.2s ease;
+  transition:.3s ease;
 }
 
 .link-btn:hover {
   border-color: var(--primary-color);
   box-shadow: var(--shadow-hover);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
 
 .btn-content {
@@ -155,7 +173,7 @@ body {
   overflow:hidden;
   border:1px solid #e5e7eb;
   box-shadow:var(--shadow-sm);
-  transition:.3s;
+  transition:.35s ease;
 }
 
 .image-card:hover {
@@ -164,9 +182,9 @@ body {
 }
 
 .image-card img {
-  width:100%;
-  height:260px;
-  object-fit:cover;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 </style>
 
@@ -236,30 +254,27 @@ body {
 
       <div class="image-card">
         {% markdown %}
-
 ![1.-LAPORAN-SKM-TW-I-TH-2022_026-768x1085](1.-LAPORAN-SKM-TW-I-TH-2022_026-768x1085.jpg)
-{% endmarkdown %}
-</div>
+        {% endmarkdown %}
+      </div>
 
       <div class="image-card">
         {% markdown %}
-
 ![2.-LAPORAN-SKM-TW-II-TH-2022_026-768x1085](2.-LAPORAN-SKM-TW-II-TH-2022_026-768x1085.jpg)
-{% endmarkdown %}
-</div>
+        {% endmarkdown %}
+      </div>
 
       <div class="image-card">
         {% markdown %}
-
 ![NILAI IKM 2024_page-0001](NILAI%20IKM%202024_page-0001.jpg)
-{% endmarkdown %}
-</div>
+        {% endmarkdown %}
+      </div>
 
     </div>
 
   </div>
 
-  <!-- LAPORAN Rencana Tindak Lanjut -->
+  <!-- RENCANA TINDAK LANJUT -->
   <div class="section-card">
     <h2>Rencana Tindak Lanjut</h2>
 

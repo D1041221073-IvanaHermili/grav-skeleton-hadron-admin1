@@ -4,35 +4,34 @@ date: '15-12-2025 13:32'
 ---
 
 <style>
-/* =====================================
-   GLOBAL TEMPLATE VARIABLES
-===================================== */
+/* ===== GLOBAL VARIABLES (KONSISTEN TEMPLATE UTAMA) ===== */
 :root {
   --primary-color: #0d6e4f;
   --primary-light: #e6f5f0;
   --text-dark: #1f2937;
   --text-muted: #4b5563;
   --radius-card: 16px;
-  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
-  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
 }
 
+/* ===== BASE ===== */
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: #f9fafb;
 }
 
-/* WRAPPER */
+/* ===== PAGE WRAPPER ===== */
 .page-wrapper {
   max-width: 960px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 .header-container {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 .section-title {
@@ -56,40 +55,46 @@ body {
   letter-spacing: 1px;
 }
 
-/* CARD */
+/* ===== CARD ===== */
 .section-card {
   background: #ffffff;
   padding: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(13,110,79,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
+/* ===== CARD TITLE ===== */
 .section-card h2 {
+  text-align: center;
   color: var(--primary-color);
-  font-weight: 700;
   font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 32px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
   display: inline-block;
-  margin-top: 0;
-  margin-bottom: 25px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/* LINK LIST */
+/* ===== LINK LIST ===== */
 .link-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   gap: 20px;
 }
 
+/* ===== LINK BUTTON ===== */
 .link-btn {
   display:flex;
   justify-content:space-between;
@@ -100,7 +105,7 @@ body {
   border:1px solid #e5e7eb;
   text-decoration:none !important;
   transition: .2s ease;
-}
+  }
 
 .link-btn:hover {
   border-color: var(--primary-color);
@@ -108,10 +113,11 @@ body {
   transform: translateY(-2px);
 }
 
+/* ===== BUTTON CONTENT ===== */
 .btn-content {
-  display:flex;
-  align-items:center;
-  gap:12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .icon-box {
@@ -127,46 +133,37 @@ body {
 }
 
 .btn-text {
-  font-weight:600;
-  color:var(--text-dark);
+  font-weight: 600;
+  color: var(--text-dark);
 }
 
+/* ===== ARROW ===== */
 .btn-arrow {
-  color:var(--text-muted);
+  color: var(--text-muted);
   transition:.2s;
 }
 
 .link-btn:hover .btn-arrow {
-  color:var(--primary-color);
-  transform:translateX(4px);
+  color: var(--primary-color);
+  transform: translateX(4px);
 }
 </style>
 
-
 <div class="page-wrapper">
 
-  <!-- ======================
-        HEADER
-  ========================= -->
+  <!-- ===== HEADER ===== -->
   <div class="header-container">
     <div class="section-title">Umum Aparatur</div>
     <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
   </div>
 
-
-  <!-- ======================
-        SOP PENGELOLAAN ORGANISASI
-  ========================= -->
+  <!-- ===== SOP PENGELOLAAN ORGANISASI ===== -->
   <div class="section-card">
     <h2>SOP Pedoman Pengelolaan Organisasi</h2>
 
     <div class="link-list">
       <a class="link-btn" href="https://drive.google.com/file/d/1-Ue3HuVHSE2b0Q4Cq4gBauweoF0g4dm5/view" target="_blank">
-        <div class="btn-content">
-          <div class="icon-box">📄</div>
-          <span class="btn-text">SOP Penyusunan Rencana Strategis DPMD</span>
-        </div>
-        <div class="btn-arrow">➜</div>
+        <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Penyusunan Rencana Strategis DPMD</span></div><div class="btn-arrow">➜</div>
       </a>
 
       <a class="link-btn" href="https://drive.google.com/file/d/1Wgnr3BZwLtsi52BX3L0xRQ_1tFXP81GN/view" target="_blank">
@@ -191,10 +188,7 @@ body {
     </div>
   </div>
 
-
-  <!-- ======================
-        SOP ADMINISTRASI
-  ========================= -->
+  <!-- ===== SOP ADMINISTRASI ===== -->
   <div class="section-card">
     <h2>SOP Pedoman Pengelolaan Administrasi</h2>
 
@@ -217,10 +211,7 @@ body {
     </div>
   </div>
 
-
-  <!-- ======================
-        SOP KEPEGAWAIAN
-  ========================= -->
+  <!-- ===== SOP KEPEGAWAIAN ===== -->
   <div class="section-card">
     <h2>SOP Pedoman Kepegawaian</h2>
 
@@ -247,15 +238,11 @@ body {
     </div>
   </div>
 
-
-  <!-- ======================
-        SOP KEUANGAN
-  ========================= -->
+  <!-- ===== SOP KEUANGAN ===== -->
   <div class="section-card">
     <h2>SOP Pedoman Pengelolaan Keuangan</h2>
 
     <div class="link-list">
-
       <a class="link-btn" href="https://drive.google.com/file/d/1vDKDiBLu6cZFqicI0-wptJBMnoxjzr4B/view" target="_blank">
         <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Belanja GU</span></div><div class="btn-arrow">➜</div>
       </a>
@@ -275,7 +262,6 @@ body {
       <a class="link-btn" href="https://drive.google.com/file/d/1_gjSPAyTvONBFITt4l5bsdNsBCUKbQDN/view" target="_blank">
         <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">SOP Belanja Tidak Langsung Gaji, Tunjangan, & TPP</span></div><div class="btn-arrow">➜</div>
       </a>
-
     </div>
   </div>
 

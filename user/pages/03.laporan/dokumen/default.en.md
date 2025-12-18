@@ -12,17 +12,18 @@ page-toc:
 ---
 
 <style>
-/* ===== GLOBAL VARIABLES (SAMA DENGAN PROFIL BADAN) ===== */
+/* ===== GLOBAL VARIABLES (KONSISTEN) ===== */
 :root {
   --primary-color: #0d6e4f;
   --primary-light: #e6f5f0;
   --text-dark: #1f2937;
   --text-muted: #4b5563;
   --radius-card: 16px;
-  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
-  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+  --shadow-sm: 0 4px 15px rgba(0,0,0,0.08);
+  --shadow-hover: 0 8px 22px rgba(13,110,79,0.15);
 }
 
+/* ===== BASE ===== */
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: #f9fafb;
@@ -62,32 +63,36 @@ body {
   letter-spacing: 1px;
 }
 
-/* ===== CARD STYLE ===== */
+/* ===== CARD ===== */
 .section-card {
   background: #ffffff;
   padding: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(13,110,79,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
-.section-card h2,
-.section-card h3 {
+/* ===== CARD TITLE ===== */
+.section-card h2 {
+  text-align: center;
   color: var(--primary-color);
+  font-size: 1.75rem;
   font-weight: 700;
   margin-top: 0;
-  font-size: 1.75rem;
+  margin-bottom: 28px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
   display: inline-block;
-  margin-bottom: 25px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ===== PARAGRAPH ===== */
@@ -99,7 +104,7 @@ body {
   margin-bottom: 18px;
 }
 
-/* ===== PASAL / REGULASI BOX (SAMA DENGAN PROFIL BADAN) ===== */
+/* ===== REGULASI / INFO BOX ===== */
 .regulasi-box {
   background-color: var(--primary-light);
   padding: 15px 20px;
@@ -127,8 +132,8 @@ ul.custom-list {
 
 ul.custom-list li {
   margin-bottom: 12px;
-  font-size: 1rem;
-  line-height: 1.65;
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: var(--text-dark);
 }
 
@@ -162,7 +167,7 @@ ul.custom-list li {
   background:#fff;
   border:1px solid #e5e7eb;
   text-decoration:none !important;
-  transition: .2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .link-btn:hover {
@@ -205,7 +210,6 @@ ul.custom-list li {
 }
 </style>
 
-
 <div class="page-wrapper">
 
   <div class="header-container">
@@ -213,7 +217,7 @@ ul.custom-list li {
     <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
   </div>
 
-  <!-- PUBLIKASI -->
+  <!-- DOKUMEN CARD -->
   <div class="section-card">
     <h2>Dokumen</h2>
 

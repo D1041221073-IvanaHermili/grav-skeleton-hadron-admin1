@@ -17,8 +17,8 @@ page-toc:
   --text-dark: #1f2937;
   --text-muted: #4b5563;
   --radius-card: 16px;
-  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
-  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
 }
 
 body {
@@ -34,7 +34,7 @@ body {
 
 .header-container {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 .section-title {
@@ -61,29 +61,34 @@ body {
 .section-card {
   background: #ffffff;
   padding: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(13,110,79,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
 .section-card h2 {
+  text-align: center;
   color: var(--primary-color);
-  font-weight: 700;
   font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 28px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
   display: inline-block;
-  margin-top: 0;
-  margin-bottom: 25px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+/* ===== LINK LIST BUTTONS ===== */
 .link-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -153,7 +158,6 @@ body {
     <h2>Dokumen SAKIP</h2>
 
     <div class="link-list">
-
       <a class="link-btn" href="https://drive.google.com/file/d/1MCkxut_Z_s70QXhUt_TdCSz9k0lMS9xa/view" target="_blank">
         <div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Pedoman Teknis AKIP Internal DPMD</span></div>
         <div class="btn-arrow">➜</div>

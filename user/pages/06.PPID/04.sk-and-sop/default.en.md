@@ -16,10 +16,11 @@ process:
   --text-dark: #1f2937;
   --text-muted: #4b5563;
   --radius-card: 16px;
-  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
-  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+  --shadow-sm: 0 4px 15px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
 }
 
+/* ===== BASE ===== */
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background-color: #f9fafb;
@@ -61,26 +62,32 @@ body {
 .section-card {
   background: #ffffff;
   padding: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(13,110,79,0.1);
-  transition: .3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
+/* ===== CARD TITLE ===== */
 .section-card h2 {
+  text-align: center;
   color: var(--primary-color);
+  font-size: 1.75rem;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 1.75rem;
+  margin-bottom: 28px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ===== LINK BUTTON GRID ===== */
@@ -99,8 +106,8 @@ body {
   background:#fff;
   border:1px solid #e5e7eb;
   text-decoration:none !important;
-  transition:.2s ease;
-}
+  transition: .2s ease;
+  }
 
 .link-btn:hover {
   border-color: var(--primary-color);
@@ -123,22 +130,23 @@ body {
   justify-content:center;
   align-items:center;
   color:var(--primary-color);
-  font-size:20px;
+  font-size: 20px;
 }
 
 .btn-text {
-  font-weight:600;
-  color:var(--text-dark);
+  font-weight: 600;
+  color: var(--text-dark);
 }
 
+/* ===== ARROW ===== */
 .btn-arrow {
-  color:var(--text-muted);
+  color: var(--text-muted);
   transition:.2s;
 }
 
 .link-btn:hover .btn-arrow {
-  color:var(--primary-color);
-  transform:translateX(4px);
+  color: var(--primary-color);
+  transform: translateX(4px);
 }
 
 /* ===== IMAGE GRID ===== */
@@ -155,18 +163,17 @@ body {
   overflow:hidden;
   border:1px solid #e5e7eb;
   box-shadow:var(--shadow-sm);
-  transition:.3s;
+  transition:.3s ease;
 }
 
 .image-card:hover {
-  transform:translateY(-5px);
+  transform:translateY(-6px);
   box-shadow:var(--shadow-hover);
 }
 
 .image-card img {
-  width:100%;
-  height:260px;
-  object-fit:cover;
+  width: 100%;
+  border-radius: 10px;
 }
 </style>
 
@@ -236,7 +243,7 @@ body {
 
   </div>
 
-  <!-- SOP -->
+  <!-- SK -->
   <div class="section-card">
     <h2>SK PPID</h2>
 
@@ -286,7 +293,7 @@ body {
 
   </div>
 
-  <!-- RAPAT -->
+  <!-- DOKUMENTASI RAPAT -->
   <div class="section-card">
     <h2>Dokumentasi Rapat PPID</h2>
 
@@ -294,17 +301,15 @@ body {
 
       <div class="image-card">
         {% markdown %}
-
 ![15-rapat-1](15-rapat-1.png)
 {% endmarkdown %}
-</div>
+      </div>
 
       <div class="image-card">
         {% markdown %}
-
 ![15-rapat-2](15-rapat-2.png)
 {% endmarkdown %}
-</div>
+      </div>
 
     </div>
 

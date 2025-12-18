@@ -15,12 +15,13 @@ process:
   --text-dark: #1f2937;
   --text-muted: #4b5563;
   --radius-card: 16px;
-  --shadow-sm: 0 2px 8px rgba(13,110,79,0.08);
-  --shadow-hover: 0 8px 20px rgba(13,110,79,0.15);
+  --shadow-sm: 0 4px 14px rgba(13,110,79,0.08);
+  --shadow-hover: 0 10px 26px rgba(13,110,79,0.18);
 }
 
+/* ===== BASE ===== */
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: #f9fafb;
 }
 
@@ -62,24 +63,30 @@ body {
   padding: 40px;
   margin-bottom: 30px;
   border-radius: var(--radius-card);
+  border: 1px solid rgba(13,110,79,0.12);
   box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(13,110,79,0.1);
-  transition: .3s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .section-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
 }
 
+/* ===== CARD TITLE ===== */
 .section-card h2 {
+  text-align: center;
   color: var(--primary-color);
+  font-size: 1.75rem;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 1.75rem;
+  margin-bottom: 28px;
   border-bottom: 2px solid var(--primary-light);
   padding-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ===== LINK BUTTON GRID ===== */
@@ -152,9 +159,7 @@ body {
   <!-- PERMOHONAN INFORMASI ONLINE -->
   <div class="section-card">
     <h2>Permohonan Informasi Online</h2>
-
     <div class="link-list">
-
       <a class="link-btn" href="https://layanan-diskominfo.kalbarprov.go.id/PPIDKALBAR-PERMOHONAN/register" target="_blank">
         <div class="btn-content">
           <div class="icon-box">🌐</div>
@@ -162,16 +167,13 @@ body {
         </div>
         <div class="btn-arrow">➜</div>
       </a>
-
     </div>
   </div>
 
   <!-- FORMULIR -->
   <div class="section-card">
     <h2>Formulir Permohonan Informasi</h2>
-
     <div class="link-list">
-
       <a class="link-btn" href="https://drive.google.com/file/d/1Lwy9qLqBiAUSY-wnAaC9eC1IO2BlKvFR/view" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
@@ -203,16 +205,13 @@ body {
         </div>
         <div class="btn-arrow">➜</div>
       </a>
-
     </div>
   </div>
 
   <!-- REGISTER -->
   <div class="section-card">
     <h2>Register Permohonan Informasi</h2>
-
     <div class="link-list">
-
       <a class="link-btn" href="https://drive.google.com/file/d/1bOqFsuSyEiI-gg1B4kkUxklkYJ8KnYL1/view" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📑</div>
@@ -220,7 +219,6 @@ body {
         </div>
         <div class="btn-arrow">➜</div>
       </a>
-
     </div>
   </div>
 
