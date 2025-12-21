@@ -2,7 +2,7 @@
 title: 'Profil Pejabat'
 date: '26-11-2025 06:26'
 visible: true
-media_order: 'foto_kadis.png,2023-LHKPN-KADIS-2022_images-extracted-1-768x1081.jpg,2024-LHKPN-HENDRA-BACHTIAR.jpeg,2025-LHKPN-Hendra-Bachtiar.jpg,3Gub-RiaNorsan-PDUB.png,4WagubKalbar-KrisantusKurniawan-PDUB.png,2025-LHKPN Hendra Bachtiar.pdf,Foto pak gub 2.png,Profil Kadis DPMD.png,Profil-Pimpinan-Dinas-PMD-Kalbar-2023-3-pdf.jpg,4 x 6.jpg'
+media_order: 'foto_kadis.png,2023-LHKPN-KADIS-2022_images-extracted-1-768x1081.jpg,2024-LHKPN-HENDRA-BACHTIAR.jpeg,2025-LHKPN-Hendra-Bachtiar.jpg,3Gub-RiaNorsan-PDUB.png,4WagubKalbar-KrisantusKurniawan-PDUB.png,2025-LHKPN Hendra Bachtiar.pdf,Foto pak gub 2.png,Profil Kadis DPMD.png,Profil-Pimpinan-Dinas-PMD-Kalbar-2023-3-pdf.jpg,4 x 6.jpg,unnamed22.png'
 process:
     markdown: true
     twig: true
@@ -367,7 +367,7 @@ body {
     <div class="wiki-content">
       <div class="wiki-infobox">
         <div class="infobox-img-wrapper">
-          {% markdown %}![Hendra Bachtiar](foto_kadis.png){% endmarkdown %}
+          {% markdown %}![unnamed22](unnamed22.png "unnamed22"){% endmarkdown %}
         </div>
         <div class="infobox-content">
           <div class="info-row"><span class="info-label">Nama</span><span class="info-value">Hendra Bachtiar, ST, MT</span></div>
