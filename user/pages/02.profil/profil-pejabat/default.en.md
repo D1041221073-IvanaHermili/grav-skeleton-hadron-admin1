@@ -2,7 +2,7 @@
 title: 'Profil Pejabat'
 date: '26-11-2025 06:26'
 visible: true
-media_order: 'foto_kadis.png,2023-LHKPN-KADIS-2022_images-extracted-1-768x1081.jpg,2024-LHKPN-HENDRA-BACHTIAR.jpeg,2025-LHKPN-Hendra-Bachtiar.jpg,3Gub-RiaNorsan-PDUB.png,4WagubKalbar-KrisantusKurniawan-PDUB.png'
+media_order: 'foto_kadis.png,2023-LHKPN-KADIS-2022_images-extracted-1-768x1081.jpg,2024-LHKPN-HENDRA-BACHTIAR.jpeg,2025-LHKPN-Hendra-Bachtiar.jpg,3Gub-RiaNorsan-PDUB.png,4WagubKalbar-KrisantusKurniawan-PDUB.png,2025-LHKPN Hendra Bachtiar.pdf,Foto pak gub 2.png,Profil Kadis DPMD.png,Profil-Pimpinan-Dinas-PMD-Kalbar-2023-3-pdf.jpg,4 x 6.jpg'
 process:
     markdown: true
     twig: true
@@ -398,7 +398,7 @@ body {
     <h2>Sekretaris Dinas</h2>
     <div class="official-layout">
       <div class="official-photo">
-        <span style="font-size: 3rem;">📷</span>
+        {% markdown %}![4%20x%206](4%20x%206.jpg "4%20x%206"){% endmarkdown %}
       </div>
       <div class="official-info">
         <h3>Vivi Nurvijah, S.Pd., M.Pd</h3>
