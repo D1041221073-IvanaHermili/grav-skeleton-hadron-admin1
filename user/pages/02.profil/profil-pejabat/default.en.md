@@ -6,6 +6,9 @@ media_order: 'foto_kadis.png,2023-LHKPN-KADIS-2022_images-extracted-1-768x1081.j
 process:
     markdown: true
     twig: true
+page-toc:
+    anchors:
+        link: false
 ---
 
 <style>
