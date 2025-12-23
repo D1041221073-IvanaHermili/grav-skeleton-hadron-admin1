@@ -216,27 +216,6 @@ ul.custom-list li::before {
       Bidang Penataan dan Kerjasama Desa mempunyai tugas menyiapkan bahan dan merumuskan kebijakan teknis di bidang penataan desa, kerjasama desa dan kawasan perdesaan, kelembagaan, sarana dan prasarana pelayanan pemerintahan, serta bertanggungjawab memimpin seluruh kegiatan pelayanan dan administrasi di bidang penataan dan kerjasama desa.
     </p>
   </div>
-    
-    
-  <div class="section-card">
-    <h3>Seksi Kerjasama Desa dan Kawasan Perdesaan</h3>
-    <div class="regulasi-box">
-      <p><strong>Dasar Pasal:</strong> Pasal 29 ayat (1) huruf b.</p>
-    </div>
-    <p>
-      Seksi Kerjasama Desa dan Kawasan Perdesaan sebagaimana dimaksud dalam pasal 29 ayat (1) huruf b, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang kerjasama desa dan kawasan perdesaan, serta mengendalikan pelaksanaan kegiatan sesuai dengan tugas dan fungsinya.
-    </p>
-  </div>
-
-  <div class="section-card">
-    <h3>Seksi Kelembagaan, Sarana dan Prasarana Pelayanan Pemerintahan</h3>
-    <div class="regulasi-box">
-      <p><strong>Dasar Pasal:</strong> Pasal 29 ayat (1) huruf c.</p>
-    </div>
-    <p>
-      Seksi Kelembagaan, Sarana dan Prasarana Pelayanan Pemerintahan sebagaimana dimaksud dalam Pasal 29 ayat (1) huruf c, mempunyai tugas mengumpul dan mengolah bahan kebijakan teknis di bidang kelembagaan, sarana dan prasarana kegiatan sesuai dengan tugas dan fungsinya.
-    </p>
-  </div>
 
   <div class="section-card">
     <h2>Publikasi PKD</h2>

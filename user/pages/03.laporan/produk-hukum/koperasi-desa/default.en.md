@@ -486,7 +486,7 @@ body {
     <div class="link-list">
 
       <a class="link-btn"
-         href=""
+         href="https://drive.google.com/file/d/1FgZIgqfmxYQvuQus5yIn5zWE4zX9epW5/view"
          target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
@@ -498,7 +498,7 @@ body {
       </a>
         
       <a class="link-btn"
-         href=""
+         href="https://drive.google.com/file/d/1wcvsqFU9kf3_dieiHrUOrY8QMWbYjXU9/view"
          target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
@@ -522,7 +522,7 @@ body {
       </a>
         
       <a class="link-btn"
-         href=""
+         href="https://drive.google.com/file/d/1HBYvRUBHkEiqjAtNHCkJOX-HujNhcHuA/view"
          target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
@@ -534,7 +534,7 @@ body {
       </a>
         
       <a class="link-btn"
-         href=""
+         href="https://drive.google.com/file/d/1aYmpqnYBQVSKc9OjFt5B1ckfwj5SwDnR/view"
          target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
@@ -546,7 +546,7 @@ body {
       </a>
         
       <a class="link-btn"
-         href=""
+         href="https://drive.google.com/file/d/1SbORb46Nz8o3p_-MXkdlIZuXldjWNE3h/view"
          target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
@@ -558,84 +558,192 @@ body {
       </a>
         
       <a class="link-btn"
-         href=""
+         href="https://drive.google.com/file/d/1NjC-qheH2dMUNIVqyORXzL2TDnsMRiOy/view"
          target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
           <span class="btn-text">
-            test
+            1.7 B-235_Surat Menko pangan Percepatan Pelaksanaan Mudessus dan Pendirian Kopdeskel MP 14 Mei
           </span>
         </div>
         <div class="btn-arrow">➜</div>
       </a>
         
       <a class="link-btn"
-         href=""
+         href="https://drive.google.com/file/d/1lfaXbe7Yffai6PAAGTiXAi_QjEXlr92n/view"
          target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
           <span class="btn-text">
-            test
+            1.8 SURAT Gub Kalbar PERCEPATAN Bentuk KOPDESKEL 16 Mei
           </span>
         </div>
         <div class="btn-arrow">➜</div>
       </a>
         
       <a class="link-btn"
-         href=""
+         href="https://drive.google.com/file/d/1wzZZuY3iwDACvdEkpecAnkAh0fx5rjRB/view"
          target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
           <span class="btn-text">
-            test
+            1.9 SE No. 23 Tahun 2025, Percepatan Pembentukan Koperasi Desa-Kel Merah Putih 150525
           </span>
         </div>
         <div class="btn-arrow">➜</div>
       </a>
         
       <a class="link-btn"
-         href=""
+         href="https://drive.google.com/file/d/1wxsUaRiA_BT9ypfyDwprf_5rVt3Catwu/view"
          target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
           <span class="btn-text">
-            test
+            1.9a Keputusan Presiden Republik Indonesia Nomor 9 Tahun 2025 Tentang Satuan Tugas Percepatan Pembentukan Koperasi Desa_Kelurahan Merah Putih
           </span>
         </div>
         <div class="btn-arrow">➜</div>
       </a>
         
       <a class="link-btn"
-         href=""
+         href="https://drive.google.com/file/d/1tFZW4ZldRWjEHtiIddsmQQgWLplYL-zS/view"
          target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
           <span class="btn-text">
-            test
+            1.9b Surat Kodefikasi KDMP 27 Mei
           </span>
         </div>
         <div class="btn-arrow">➜</div>
       </a>
         
       <a class="link-btn"
-         href=""
+         href="https://drive.google.com/file/d/1AFqhgoxT9QjnaW_MLAjXttn7Im29Upy7/view"
          target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
           <span class="btn-text">
-            test
+            1.9c Percepatan Proses Legislasi Badan Hukum Koperasi Desa Kelurahan Merah Putih di Tingkat Kecamatan
           </span>
         </div>
         <div class="btn-arrow">➜</div>
       </a>
         
       <a class="link-btn"
-         href=""
+         href="https://drive.google.com/file/d/1fa8oym4fL-aT5cdeEXTAgg8GnzwWCfCK/view"
          target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
           <span class="btn-text">
-            test
+            1.10 SK Gubernur Kalbar Satgas KDMP 2025
+          </span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+        
+      <a class="link-btn"
+         href="https://drive.google.com/file/d/1SSnFE0g2652x1HdgH7RcayJkl1ykVsE7/view"
+         target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">
+            1.11 SURAT GUBERNUR MONITORING TIM SATGAS KDMP 2025
+          </span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+        
+      <a class="link-btn"
+         href="https://drive.google.com/file/d/1s6-7YvWmw4pxLS-urE6B40BT-l4NjVHN/view"
+         target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">
+            1.12 Salinan Kepmen 249 Th 2025 ttg Pendistribusian LPG Tertentu oleh Koperasi Merah Putih
+          </span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+        
+      <a class="link-btn"
+         href="https://drive.google.com/file/d/17lcMbinjjIKNv-3txUrzbRh8kuRCkRPV/view"
+         target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">
+            1.13 PMK 49 2025 Tata Cara Pinjaman Pendanaan KDMP
+          </span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+        
+      <a class="link-btn"
+         href="https://drive.google.com/file/d/1GIfueb5ZSmnYQ7rbX1may6ScreJqA51q/view"
+         target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">
+            08 SE Pemanfaatan BMD dan Aset Desa untuk Mendukung Pengembangan Rencana Bisnis Kegiatan KDKMP !
+          </span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+        
+      <a class="link-btn"
+         href="https://drive.google.com/file/d/19GPVf9taY8g0VqIgI2HF0DEO9MMGj7fy/view"
+         target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">
+            08a Inpres No 17 TAHUN 2025 TENTANG PERCEPATAN PEM…LENGKAPAN KOPERASI DESA, KELURAHAN MERAH PUTIH
+          </span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+        
+      <a class="link-btn"
+         href="https://drive.google.com/file/d/16k1HsYbSxsj7em5kjkTHhgvLVFyZwq2K/view"
+         target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">
+            11a ISI_BUKU SAKU BISNIS KEMITRAAN BUMN
+          </span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+        
+      <a class="link-btn"
+         href="https://drive.google.com/file/d/1d5LUUzmUYHUS4LBbVRlOyoeKYAgmOFBU/view"
+         target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">
+            11b ISI_BUKU SAKU PEMBIAYAAN
+          </span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+        
+      <a class="link-btn"
+         href="https://drive.google.com/file/d/1iS0jdYPd64J3aCVfwuT_3rHBxUp9mBzJ/view"
+         target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">
+            12 SE MENDES Percepatan Musyawarah Desa Khusus KopDes MP
+          </span>
+        </div>
+        <div class="btn-arrow">➜</div>
+      </a>
+        
+      <a class="link-btn"
+         href="https://drive.google.com/file/d/1aOqMU885IgZ4UeRVu-_jwsw2cCL0X2J6/view"
+         target="_blank">
+        <div class="btn-content">
+          <div class="icon-box">📄</div>
+          <span class="btn-text">
+            Narahubung Sistem Informasi Manajemen Koperasi DesaKelurahan Merah Putih (SIMKOPDES)
           </span>
         </div>
         <div class="btn-arrow">➜</div>
