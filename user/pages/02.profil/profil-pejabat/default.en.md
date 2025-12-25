@@ -420,6 +420,64 @@ body {
       </div>
     </div>
   </div>
+    
+        <!-- Kepala Bidang Pembangunan dan Pemberdayaan Masyarakat Desa -->
+  <div class="section-card">
+    <h2>Kepala Bidang Pembangunan dan Pemberdayaan Masyarakat Desa</h2>
+    <div class="official-layout">
+      <div class="official-photo">
+        {% markdown %}![Erni%20Muchsin](Erni%20Muchsin.png "Erni%20Muchsin"){% endmarkdown %}
+      </div>
+      <div class="official-info">
+        <h3>Erni Muchsin</h3>
+        <div class="detail-item">
+          <span class="detail-label">Jabatan</span>
+          <span class="detail-value">: Kepala Bidang Pembangunan dan Pemberdayaan Masyarakat Desa</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Mulai Menjabat</span>
+          <span class="detail-value">: 8 Agustus 2023 – sekarang</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Riwayat Jabatan</span>
+        <ul>
+          <li><strong>28 Juni 2021 – 31 Desember 2021 :</strong> Kepala Seksi Pemberdayaan Masyarakat Dan Lembaga Desa Bidang Pembangunan Dan Pemberdayaan Masyarakat Desa Pada Dinas Pemberdayaan Masyarakat Dan Desa Provinsi Kalimantan Barat</li>
+          <li><strong>31 Desember 2021 – 8 Agustus 2023 :</strong> Penggerak Swadaya Masyarakat Ahli Muda Bidang Pembangunan Dan Pemberdayaan Masyarakat Desa Pada Dinas Pemberdayaan Masyarakat Dan Desa</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- Kepala Sub Bagian Umum dan Aparatur -->
+  <div class="section-card">
+    <h2>Kepala Sub Bagian Umum dan Aparatur</h2>
+    <div class="official-layout">
+      <div class="official-photo">
+        {% markdown %}![Nailul%20Q](Nailul%20Q.png "Nailul%20Q"){% endmarkdown %}
+      </div>
+      <div class="official-info">
+        <h3>Nailul Qomariah, SE</h3>
+        <div class="detail-item">
+          <span class="detail-label">Jabatan</span>
+          <span class="detail-value">: Kepala Sub Bagian Umum dan Aparatur</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Mulai Menjabat</span>
+          <span class="detail-value">: Tahun 2017 sampai Sekarang</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Riwayat Jabatan</span>
+        <ul>
+          <li><strong>Juli 2014 – Januari 2017 :</strong> Kepala Sub Bagian Umum dan Aparatur pada Badan Pemberdayaan
+Masyarakat dan Pemerintahan Desa</li>
+          <li><strong>Januari 2017 - sekarang :</strong> Kepala Sub Bagian Umum dan Aparatur pada Dinas Pemberdayaan
+Masyarakat dan Desa</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="section-card">
     <h2>LHKPN Pimpinan</h2>
