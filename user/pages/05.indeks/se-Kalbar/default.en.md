@@ -1,5 +1,5 @@
 ---
-title: Indeks Desa Se Kalbar
+title: 'Indeks Desa Se Kalbar'
 date: '26-11-2025 06:26'
 visible: true
 process:
@@ -9,6 +9,7 @@ published: true
 page-toc:
     anchors:
         link: false
+media_order: 10.Status-Indeks-Desa-2025-Kalbar.pdf
 ---
 
 <style>
@@ -220,13 +221,11 @@ ul.custom-list li {
   <!-- DOKUMEN CARD -->
   <div class="section-card">
     <h2>Indeks Desa Se Kalbar</h2>
-
     <div class="link-list">
-
-      <a class="link-btn" href="" target="_blank">
+      <a class="link-btn" href="https://dpmdkalbar.online/user/pages/05.indeks/se-Kalbar/10.Status-Indeks-Desa-2025-Kalbar.pdf" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
-          <span class="btn-text">Test</span>
+          <span class="btn-text">Status Indeks Desa 2025 Kalbar</span>
         </div>
         <div class="btn-arrow">➜</div>
       </a>

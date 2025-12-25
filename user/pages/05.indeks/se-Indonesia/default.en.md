@@ -1,5 +1,5 @@
 ---
-title: Indeks Desa Se Indonesia
+title: 'Indeks Desa Se Indonesia'
 date: '26-11-2025 06:26'
 visible: true
 process:
@@ -223,10 +223,10 @@ ul.custom-list li {
 
     <div class="link-list">
 
-      <a class="link-btn" href="" target="_blank">
+      <a class="link-btn" href="https://dpmdkalbar.online/user/pages/05.indeks/se-Indonesia/11%20KepmenDesPDT_343_Tahun_2025_ttg_Status_Kemajuan_dan_Kemandirian_Desa_2025.pdf" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
-          <span class="btn-text">Test</span>
+          <span class="btn-text">KepmenDesPDT 343 Tahun 2025 ttg Status Kemajuan dan Kemandirian Desa 2025</span>
         </div>
         <div class="btn-arrow">➜</div>
       </a>
