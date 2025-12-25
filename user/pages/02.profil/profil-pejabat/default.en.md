@@ -435,7 +435,7 @@ body {
           <span class="detail-value">: Kepala Bidang Pembangunan dan Pemberdayaan Masyarakat Desa</span>
         </div>
         <div class="detail-item">
-          <span class="detail-label">Mulai Menjabat</span>
+          <span class="detail-label">Menjabat</span>
           <span class="detail-value">: 8 Agustus 2023 – sekarang</span>
         </div>
         <div class="detail-item">
@@ -463,7 +463,7 @@ body {
           <span class="detail-value">: Kepala Sub Bagian Umum dan Aparatur</span>
         </div>
         <div class="detail-item">
-          <span class="detail-label">Mulai Menjabat</span>
+          <span class="detail-label">Menjabat</span>
           <span class="detail-value">: Tahun 2017 sampai Sekarang</span>
         </div>
         <div class="detail-item">
