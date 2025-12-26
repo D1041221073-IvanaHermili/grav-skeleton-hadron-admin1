@@ -1,6 +1,7 @@
 ---
 title: Sekretariat
 date: '15-12-2025 13:31'
+media_order: 'RENSTRA-2022.pdf,Neraca.pdf,Daftar-Aset.pdf,SPJ-Fungsional-Per-24-Agustus-2023.pdf,LRA-2022 (1).pdf,RENJA TH 2022 (1).pdf,Laporan Daftar Barang (Audited) 2020 (1).pdf,Laporan Pengadaan DPMD (1).pdf,LRA-2022.pdf,LAKIP-2022.pdf,DPA-BELANJA-2.13.0.00.0.00.01.0000-DINAS-PEMBERDAYAAN-MASYARAKAT-DAN-DESA-Penatausahaan-2023.pdf'
 ---
 
 <style>
@@ -274,20 +275,89 @@ ul.custom-list li::before {
     <h2>Renja Keuangan & Aset</h2>
 
     <div class="link-list">
-      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Renstra DPMD 2018-2023</span></div><div class="btn-arrow">➜</div></a>
-      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">DPA 2023</span></div><div class="btn-arrow">➜</div></a>
-      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">DPA 2022 (No Data)</span></div><div class="btn-arrow">➜</div></a>
-      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Laporan Kinerja 2022</span></div><div class="btn-arrow">➜</div></a>
-      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Laporan Keuangan 2022</span></div><div class="btn-arrow">➜</div></a>
-      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Pengadaan Barang Jasa 2020</span></div><div class="btn-arrow">➜</div></a>
-      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Daftar Barang 2020</span></div><div class="btn-arrow">➜</div></a>
-      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Rencana Kerja 2023</span></div><div class="btn-arrow">➜</div></a>
-      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">CALK</span></div><div class="btn-arrow">➜</div></a>
-      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">LRA 2023</span></div><div class="btn-arrow">➜</div></a>
-      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Daftar Aset</span></div><div class="btn-arrow">➜</div></a>
-      <a class="link-btn" href="#"><div class="btn-content"><div class="icon-box">📄</div><span class="btn-text">Neraca</span></div><div class="btn-arrow">➜</div></a>
+      <a class="link-btn" href="https://dpmdkalbar.online/user/pages/02.profil/profil-badan/04.sekretariat/RENSTRA-2022.pdf" target="_blank">
+          <div class="btn-content"><div class="icon-box">📄</div>
+              <span class="btn-text">Renstra DPMD 2018-2023</span>
+          </div>
+          <div class="btn-arrow">➜</div>
+      </a>
+      <a class="link-btn" href="https://dpmdkalbar.online/user/pages/02.profil/profil-badan/04.sekretariat/DPA-BELANJA-2.13.0.00.0.00.01.0000-DINAS-PEMBERDAYAAN-MASYARAKAT-DAN-DESA-Penatausahaan-2023.pdf" target="_blank">
+          <div class="btn-content">
+              <div class="icon-box">📄</div>
+              <span class="btn-text">DPA 2023</span></div>
+          <div class="btn-arrow">➜</div>
+      </a>
+      <a class="link-btn" href="#">
+          <div class="btn-content">
+              <div class="icon-box">📄</div>
+              <span class="btn-text">DPA 2022 (No Data)</span>
+          </div><div class="btn-arrow">➜</div>
+      </a>
+      <a class="link-btn" href="https://dpmdkalbar.online/user/pages/02.profil/profil-badan/04.sekretariat/LAKIP-2022.pdf" target="_blank">
+          <div class="btn-content">
+              <div class="icon-box">📄</div>
+              <span class="btn-text">Laporan Kinerja 2022</span>
+          </div>
+          <div class="btn-arrow">➜</div>
+      </a>
+      <a class="link-btn" href="https://dpmdkalbar.online/user/pages/02.profil/profil-badan/04.sekretariat/LRA-2022.pdf" target="_blank">
+          <div class="btn-content">
+              <div class="icon-box">📄</div>
+              <span class="btn-text">Laporan Keuangan 2022</span>
+          </div>
+          <div class="btn-arrow">➜</div>
+      </a>
+      <a class="link-btn" href="https://drive.google.com/file/d/19i8Mwag6efjI5iKkHd0DJ6NGWC7lpnj5/view" target="_blank">
+          <div class="btn-content">
+              <div class="icon-box">📄</div>
+              <span class="btn-text">Laporan Pengadaan Barang Jasa 2020</span></div>
+          <div class="btn-arrow">➜</div>
+      </a>
+      <a class="link-btn" href="https://drive.google.com/file/d/10TyYq_lIiuKFdnIK82Z7ZUBOWseJbfR9/view" target="_blank">
+          <div class="btn-content">
+              <div class="icon-box">📄</div>
+              <span class="btn-text">Laporan Daftar Barang 2020</span>
+          </div>
+          <div class="btn-arrow">➜</div>
+      </a>
+      <a class="link-btn" href="https://drive.google.com/file/d/10nK5PgZWc5dCTcuoevDxZkiOL82Jb3-O/view" target="_blank">
+          <div class="btn-content">
+              <div class="icon-box">📄</div>
+              <span class="btn-text">Rencana Kerja 2023</span>
+          </div>
+          <div class="btn-arrow">➜</div>
+      </a>
+      <a class="link-btn" href="https://dpmdkalbar.online/user/pages/02.profil/profil-badan/04.sekretariat/LRA-2022.pdf" target="_blank">
+          <div class="btn-content">
+              <div class="icon-box">📄</div>
+              <span class="btn-text">CALK</span>
+          </div>
+          <div class="btn-arrow">➜</div>
+      </a>
+      <a class="link-btn" href="https://dpmdkalbar.online/user/pages/02.profil/profil-badan/04.sekretariat/SPJ-Fungsional-Per-24-Agustus-2023.pdf" target="_blank">
+          <div class="btn-content">
+              <div class="icon-box">📄</div>
+              <span class="btn-text">LRA 2023</span>
+          </div>
+          <div class="btn-arrow">➜</div>
+      </a>
+      <a class="link-btn" href="https://dpmdkalbar.online/user/pages/02.profil/profil-badan/04.sekretariat/Daftar-Aset.pdf" target="_blank">
+          <div class="btn-content">
+              <div class="icon-box">📄</div>
+              <span class="btn-text">Daftar Aset</span>
+          </div>
+          <div class="btn-arrow">➜</div>
+      </a>
+      <a class="link-btn" href="https://dpmdkalbar.online/user/pages/02.profil/profil-badan/04.sekretariat/Neraca.pdf" target="_blank">
+          <div class="btn-content">
+              <div class="icon-box">📄</div>
+              <span class="btn-text">Neraca</span>
+          </div>
+          <div class="btn-arrow">➜</div>
+      </a>
     </div>
-
+      
+      
   </div>
 
 </div>
