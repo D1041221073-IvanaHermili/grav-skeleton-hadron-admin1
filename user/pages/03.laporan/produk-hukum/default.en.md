@@ -9,6 +9,7 @@ published: true
 page-toc:
     anchors:
         link: false
+media_order: SK-Desa-Sasaran-Percepatan-Peningkatan-Status-Kemajuan-dan-Kemandirian-Desa-Provinsi-Kalimantan-Barat-Tahun-2023.pdf
 ---
 
 <style>
@@ -189,7 +190,7 @@ body {
         <div class="btn-arrow">➜</div>
       </a>
 
-      <a class="link-btn" href="https://dpmd.kalbarprov.go.id/assets/img/dpmd-content/SK-Desa-Sasaran-Percepatan-Peningkatan-Status-Kemajuan-dan-Kemandirian-Desa-Provinsi-Kalimantan-Barat-Tahun-2023.pdf" target="_blank">
+      <a class="link-btn" href="https://dpmdkalbar.online/user/pages/03.laporan/produk-hukum/SK-Desa-Sasaran-Percepatan-Peningkatan-Status-Kemajuan-dan-Kemandirian-Desa-Provinsi-Kalimantan-Barat-Tahun-2023.pdf" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
           <span class="btn-text">SK Desa Sasaran Percepatan Peningkatan Status dan Kemajuan Desa di Prov. Kalbar</span>
