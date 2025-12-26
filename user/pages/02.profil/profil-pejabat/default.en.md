@@ -370,7 +370,7 @@ body {
           {% markdown %}![Profil%20Kadis%20DPMD%20%281%29](Profil%20Kadis%20DPMD%20%281%29.png "Profil%20Kadis%20DPMD%20%281%29"){% endmarkdown %}
         </div>
         <div class="infobox-content">
-          <div class="info-row"><span class="info-label">Nama</span><span class="info-value">Hendra Bachtiar, ST, MT</span></div>
+          <div class="info-row"><span class="info-label">Nama</span><span class="info-value">Ir. Hendra Bachtiar, ST, MT</span></div>
           <div class="info-row"><span class="info-label">Jabatan</span><span class="info-value">Kepala Dinas</span></div>
           <div class="info-row"><span class="info-label">Lahir</span><span class="info-value">13 Des 1969</span></div>
           <div class="info-row"><span class="info-label">Masa Jabatan</span><span class="info-value">2023 - Sekarang</span></div>
