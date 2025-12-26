@@ -1,5 +1,5 @@
 ---
-title: 'Indeks Desa Se Kalbar'
+title: 'Indeks Desa Se-Kalbar'
 date: '26-11-2025 06:26'
 visible: true
 process:
@@ -214,13 +214,13 @@ ul.custom-list li {
 <div class="page-wrapper">
 
   <div class="header-container">
-    <div class="section-title">Indeks Desa Se Kalbar</div>
+    <div class="section-title">Indeks Desa Se-Kalbar</div>
     <span class="section-subtitle">Dinas Pemberdayaan Masyarakat & Desa</span>
   </div>
 
   <!-- DOKUMEN CARD -->
   <div class="section-card">
-    <h2>Indeks Desa Se Kalbar</h2>
+    <h2>Indeks Desa Se-Kalbar</h2>
     <div class="link-list">
       <a class="link-btn" href="https://dpmdkalbar.online/user/pages/05.indeks/se-Kalbar/10.Status-Indeks-Desa-2025-Kalbar.pdf" target="_blank">
         <div class="btn-content">
@@ -230,13 +230,6 @@ ul.custom-list li {
         <div class="btn-arrow">➜</div>
       </a>
 
-      <a class="link-btn" href="" target="_blank">
-        <div class="btn-content">
-          <div class="icon-box">📄</div>
-          <span class="btn-text">Test</span>
-        </div>
-        <div class="btn-arrow">➜</div>
-      </a>
 
     </div>
   </div>
