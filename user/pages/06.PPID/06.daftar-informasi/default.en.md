@@ -5,7 +5,7 @@ visible: true
 process:
     markdown: true
     twig: true
-media_order: 'pelanggaran-ppid_001-scaled-2048x1334.jpg,13.-informasi-barjas-a.jpeg,13.-informasi-barjas-b.jpeg'
+media_order: 'pelanggaran-ppid_001-scaled-2048x1334.jpg,13.-informasi-barjas-a.jpeg,13.-informasi-barjas-b.jpeg,Daftar-Informasi-Publik-PMD-2023.pdf'
 ---
 
 <style>
@@ -217,7 +217,7 @@ body {
         <div class="btn-arrow">➜</div>
       </a>
 
-      <a class="link-btn" href="https://dpmd.kalbarprov.go.id/assets/img/dpmd-content/Daftar-Informasi-Publik-PMD-2023.pdf" target="_blank">
+      <a class="link-btn" href="https://dpmdkalbar.online/user/pages/06.PPID/06.daftar-informasi/Daftar-Informasi-Publik-PMD-2023.pdf" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
           <span class="btn-text">Daftar Informasi Publik Tahun 2022</span>
@@ -225,7 +225,7 @@ body {
         <div class="btn-arrow">➜</div>
       </a>
 
-      <a class="link-btn" href="https://dpmd.kalbarprov.go.id/assets/img/dpmd-content/Daftar-Informasi-Publik-PMD-2023.pdf" target="_blank">
+      <a class="link-btn" href="https://dpmdkalbar.online/user/pages/06.PPID/06.daftar-informasi/Daftar-Informasi-Publik-PMD-2023.pdf" target="_blank">
         <div class="btn-content">
           <div class="icon-box">📄</div>
           <span class="btn-text">Daftar Informasi Publik Tahun 2023</span>
