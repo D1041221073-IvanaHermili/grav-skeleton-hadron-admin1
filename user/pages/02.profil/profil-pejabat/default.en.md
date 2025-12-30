@@ -2,7 +2,7 @@
 title: 'Profil Pejabat'
 date: '26-11-2025 06:26'
 visible: true
-media_order: 'foto_kadis.png,2023-LHKPN-KADIS-2022_images-extracted-1-768x1081.jpg,2024-LHKPN-HENDRA-BACHTIAR.jpeg,2025-LHKPN-Hendra-Bachtiar.jpg,3Gub-RiaNorsan-PDUB.png,4WagubKalbar-KrisantusKurniawan-PDUB.png,2025-LHKPN Hendra Bachtiar.pdf,Foto pak gub 2.png,Profil Kadis DPMD.png,Profil-Pimpinan-Dinas-PMD-Kalbar-2023-3-pdf.jpg,4 x 6.jpg,unnamed22.png,Profil Kadis DPMD (1).png'
+media_order: '2023-LHKPN-KADIS-2022_images-extracted-1-768x1081.jpg,2024-LHKPN-HENDRA-BACHTIAR.jpeg,2025-LHKPN-Hendra-Bachtiar.jpg,3Gub-RiaNorsan-PDUB.png,4WagubKalbar-KrisantusKurniawan-PDUB.png,2025-LHKPN Hendra Bachtiar.pdf,Foto pak gub 2.png,Profil Kadis DPMD.png,Profil-Pimpinan-Dinas-PMD-Kalbar-2023-3-pdf.jpg,4 x 6.jpg,Profil Kadis DPMD (1).png,Erni Muchsin.png,Nailul Q.png'
 process:
     markdown: true
     twig: true
@@ -100,10 +100,10 @@ body {
 .wiki-text ul li,
 .official-info p,
 .detail-value {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   line-height: 1.7;
   color: var(--text-dark);
-  text-align: justify;
+  text-align: left;
 }
 
 /* ===== WIKIPEDIA STYLE LAYOUT (KADIS) ===== */
@@ -135,7 +135,7 @@ body {
   justify-content: space-between;
   padding: 8px 0;
   border-bottom: 1px solid #e5e7eb;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .info-row:last-child { border-bottom: none; }
@@ -184,7 +184,7 @@ body {
   margin-bottom: 8px;
 }
 
-.detail-label { font-weight: 600; min-width: 90px; color: var(--text-muted); }
+.detail-label { font-weight: 600; min-width: 130px; color: var(--text-muted); }
 
 /* ===== GUBERNUR GRID (VERSI TERBARU) ===== */
 .officials-grid {
@@ -378,7 +378,7 @@ body {
       </div>
 
       <div class="wiki-text">
-        <p><strong>Hendra Bachtiar, ST, MT</strong> merupakan sosok pimpinan di Dinas Pemberdayaan Masyarakat dan Desa Provinsi Kalimantan Barat. Beliau resmi menjabat sejak 3 Agustus 2023 dengan fokus utama pada percepatan pembangunan kemandirian desa di seluruh wilayah Kalimantan Barat.</p>
+        <p><strong>Ir. Hendra Bachtiar, ST, MT</strong> merupakan sosok pimpinan di Dinas Pemberdayaan Masyarakat dan Desa Provinsi Kalimantan Barat. Beliau resmi menjabat sejak 3 Agustus 2023 dengan fokus utama pada percepatan pembangunan kemandirian desa di seluruh wilayah Kalimantan Barat.</p>
         
         <h3>Pendidikan</h3>
         <ul>
@@ -421,7 +421,7 @@ body {
     </div>
   </div>
     
-        <!-- Kepala Bidang Pembangunan dan Pemberdayaan Masyarakat Desa -->
+    <!-- Kepala Bidang Pembangunan dan Pemberdayaan Masyarakat Desa -->
   <div class="section-card">
     <h2>Kepala Bidang Pembangunan dan Pemberdayaan Masyarakat Desa</h2>
     <div class="official-layout">
@@ -440,10 +440,12 @@ body {
         </div>
         <div class="detail-item">
           <span class="detail-label">Riwayat Jabatan</span>
-        <ul>
-          <li><strong>28 Juni 2021 – 31 Desember 2021 :</strong> Kepala Seksi Pemberdayaan Masyarakat Dan Lembaga Desa Bidang Pembangunan Dan Pemberdayaan Masyarakat Desa Pada Dinas Pemberdayaan Masyarakat Dan Desa Provinsi Kalimantan Barat</li>
-          <li><strong>31 Desember 2021 – 8 Agustus 2023 :</strong> Penggerak Swadaya Masyarakat Ahli Muda Bidang Pembangunan Dan Pemberdayaan Masyarakat Desa Pada Dinas Pemberdayaan Masyarakat Dan Desa</li>
-        </ul>
+          <span class="detail-value">: 
+        	<ul>
+          		<li><strong>28 Juni 2021 – 31 Desember 2021 :</strong> Kepala Seksi Pemberdayaan Masyarakat Dan Lembaga Desa Bidang Pembangunan Dan Pemberdayaan Masyarakat Desa Pada Dinas Pemberdayaan Masyarakat Dan Desa Provinsi Kalimantan Barat</li>
+          		<li><strong>31 Desember 2021 – 8 Agustus 2023 :</strong> Penggerak Swadaya Masyarakat Ahli Muda Bidang Pembangunan Dan Pemberdayaan Masyarakat Desa Pada Dinas Pemberdayaan Masyarakat Dan Desa</li>
+        	</ul>
+          </span>
         </div>
       </div>
     </div>
@@ -468,12 +470,12 @@ body {
         </div>
         <div class="detail-item">
           <span class="detail-label">Riwayat Jabatan</span>
-        <ul>
-          <li><strong>Juli 2014 – Januari 2017 :</strong> Kepala Sub Bagian Umum dan Aparatur pada Badan Pemberdayaan
-Masyarakat dan Pemerintahan Desa</li>
-          <li><strong>Januari 2017 - sekarang :</strong> Kepala Sub Bagian Umum dan Aparatur pada Dinas Pemberdayaan
-Masyarakat dan Desa</li>
-        </ul>
+          <span class="detail-value">:
+          	<ul>
+          		<li><strong>Juli 2014 – Januari 2017 :</strong> Kepala Sub Bagian Umum dan Aparatur pada Badan Pemberdayaan Masyarakat dan Pemerintahan Desa</li>
+          		<li><strong>Januari 2017 - sekarang :</strong> Kepala Sub Bagian Umum dan Aparatur pada Dinas Pemberdayaan Masyarakat dan Desa</li>
+          	</ul>
+          </span>
         </div>
       </div>
     </div>
