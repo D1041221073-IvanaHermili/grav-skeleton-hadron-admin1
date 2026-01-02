@@ -451,6 +451,66 @@ body {
     </div>
   </div>
     
+    <!-- Kepala Bidang Penataan dan Kerjasama Desa Dinas Pemberdayaan Masyarakat dan Desa -->
+  <div class="section-card">
+    <h2>Kepala Bidang Penataan dan Kerjasama Desa Dinas Pemberdayaan Masyarakat dan Desa</h2>
+    <div class="official-layout">
+      <div class="official-photo">
+        {% markdown %}![EVA%20YULIANTIKA%20SANDOHILPA](EVA%20YULIANTIKA%20SANDOHILPA.png "EVA%20YULIANTIKA%20SANDOHILPA"){% endmarkdown %}
+      </div>
+      <div class="official-info">
+        <h3>EVA YULIANTIKA SANDOHILPA</h3>
+        <div class="detail-item">
+          <span class="detail-label">Jabatan</span>
+          <span class="detail-value">: Kepala Bidang Penataan dan Kerjasama Desa Dinas Pemberdayaan Masyarakat dan Desa</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Menjabat</span>
+          <span class="detail-value">: 30 Oktober 2025 – Sekarang</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Riwayat Jabatan</span>
+          <span class="detail-value">:
+          	<ul>
+                <li><strong>16 Januari 2017 - 31 Desember 2021 :</strong> Kasubbid Pengelolaan Kelembagaan dan Tenaga Pengembang Kompetensi pada BPSDM</li>
+          		<li><strong>7 Desember 2022 – 29 Oktober 2025 :</strong> Analis Pengembangan Kompetensi Ahli Muda pada BPSDM</li>
+          	</ul>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- Kepala Bidang Pemerintahan Desa Dinas Pemberdayaan Masyarakat dan Desa -->
+  <div class="section-card">
+    <h2>Kepala Bidang Pemerintahan Desa Dinas Pemberdayaan Masyarakat dan Desa</h2>
+    <div class="official-layout">
+      <div class="official-photo">
+        {% markdown %}![FENNY%20RAKHMAWATI](FENNY%20RAKHMAWATI.png "FENNY%20RAKHMAWATI"){% endmarkdown %}
+      </div>
+      <div class="official-info">
+        <h3>FENNY RAKHMAWATI</h3>
+        <div class="detail-item">
+          <span class="detail-label">Jabatan</span>
+          <span class="detail-value">: Kepala Bidang Pemerintahan Desa Dinas Pemberdayaan Masyarakat dan Desa</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Menjabat</span>
+          <span class="detail-value">: 13 Juni 2022 – sekarang</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Riwayat Jabatan</span>
+          <span class="detail-value">:
+          	<ul>
+                <li><strong>22 Agustus 2019 – 12 Oktober 2020 :</strong> Kasi Pembinaan dan Pengembangan Tenaga Perpustakaan Dinas Perpustakaan dan Kearsipan Provinsi Kalimantan Barat</li>
+          		<li><strong>12	Oktober 2020 – 13 Juni 2022 :</strong> Kepala Bidang Pembinaan, Pengawasan dan Sistem Informasi Kearsipan Dinas Perpustakaan dan Kearsipan Provinsi Kalimantan Barat</li>
+          	</ul>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+    
     <!-- Kepala Sub Bagian Umum dan Aparatur -->
   <div class="section-card">
     <h2>Kepala Sub Bagian Umum dan Aparatur</h2>
