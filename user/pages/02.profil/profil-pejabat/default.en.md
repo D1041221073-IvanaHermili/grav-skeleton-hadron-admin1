@@ -2,7 +2,7 @@
 title: 'Profil Pejabat'
 date: '26-11-2025 06:26'
 visible: true
-media_order: '2023-LHKPN-KADIS-2022_images-extracted-1-768x1081.jpg,2024-LHKPN-HENDRA-BACHTIAR.jpeg,2025-LHKPN-Hendra-Bachtiar.jpg,3Gub-RiaNorsan-PDUB.png,4WagubKalbar-KrisantusKurniawan-PDUB.png,2025-LHKPN Hendra Bachtiar.pdf,Foto pak gub 2.png,Profil Kadis DPMD.png,Profil-Pimpinan-Dinas-PMD-Kalbar-2023-3-pdf.jpg,4 x 6.jpg,Profil Kadis DPMD (1).png,Erni Muchsin.png,Nailul Q.png'
+media_order: '2023-LHKPN-KADIS-2022_images-extracted-1-768x1081.jpg,2024-LHKPN-HENDRA-BACHTIAR.jpeg,2025-LHKPN-Hendra-Bachtiar.jpg,3Gub-RiaNorsan-PDUB.png,4WagubKalbar-KrisantusKurniawan-PDUB.png,2025-LHKPN Hendra Bachtiar.pdf,Foto pak gub 2.png,Profil Kadis DPMD.png,Profil-Pimpinan-Dinas-PMD-Kalbar-2023-3-pdf.jpg,4 x 6.jpg,Profil Kadis DPMD (1).png,Erni Muchsin.png,Nailul Q.png,FENNY RAKHMAWATI.png,EVA YULIANTIKA SANDOHILPA.png'
 process:
     markdown: true
     twig: true
