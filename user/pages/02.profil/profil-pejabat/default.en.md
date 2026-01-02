@@ -370,7 +370,7 @@ body {
           {% markdown %}![Profil%20Kadis%20DPMD%20%281%29](Profil%20Kadis%20DPMD%20%281%29.png "Profil%20Kadis%20DPMD%20%281%29"){% endmarkdown %}
         </div>
         <div class="infobox-content">
-          <div class="info-row"><span class="info-label">Nama</span><span class="info-value">Ir. Hendra Bachtiar, ST, MT</span></div>
+          <div class="info-row"><span class="info-label">Nama</span><span class="info-value">Ir. Hendra Bachtiar, ST., MT.</span></div>
           <div class="info-row"><span class="info-label">Jabatan</span><span class="info-value">Kepala Dinas</span></div>
           <div class="info-row"><span class="info-label">Lahir</span><span class="info-value">13 Des 1969</span></div>
           <div class="info-row"><span class="info-label">Masa Jabatan</span><span class="info-value">2023 - Sekarang</span></div>
@@ -378,7 +378,7 @@ body {
       </div>
 
       <div class="wiki-text">
-        <p><strong>Ir. Hendra Bachtiar, ST, MT</strong> merupakan sosok pimpinan di Dinas Pemberdayaan Masyarakat dan Desa Provinsi Kalimantan Barat. Beliau resmi menjabat sejak 3 Agustus 2023 dengan fokus utama pada percepatan pembangunan kemandirian desa di seluruh wilayah Kalimantan Barat.</p>
+        <p><strong>Ir. Hendra Bachtiar, ST., MT.</strong> merupakan sosok pimpinan di Dinas Pemberdayaan Masyarakat dan Desa Provinsi Kalimantan Barat. Beliau resmi menjabat sejak 3 Agustus 2023 dengan fokus utama pada percepatan pembangunan kemandirian desa di seluruh wilayah Kalimantan Barat.</p>
         
         <h3>Pendidikan</h3>
         <ul>
@@ -404,7 +404,7 @@ body {
         {% markdown %}![4%20x%206](4%20x%206.jpg "4%20x%206"){% endmarkdown %}
       </div>
       <div class="official-info">
-        <h3>Vivi Nurvijah, S.Pd., M.Pd</h3>
+        <h3>Vivi Nurvijah, S.Pd., M.Pd.</h3>
         <div class="detail-item">
           <span class="detail-label">Jabatan</span>
           <span class="detail-value">: Sekretaris Dinas</span>
@@ -429,7 +429,7 @@ body {
         {% markdown %}![Erni%20Muchsin](Erni%20Muchsin.png "Erni%20Muchsin"){% endmarkdown %}
       </div>
       <div class="official-info">
-        <h3>Erni Muchsin</h3>
+        <h3>Erni Muchsin, SSTP, M.Si.</h3>
         <div class="detail-item">
           <span class="detail-label">Jabatan</span>
           <span class="detail-value">: Kepala Bidang Pembangunan dan Pemberdayaan Masyarakat Desa</span>
@@ -459,7 +459,7 @@ body {
         {% markdown %}![EVA%20YULIANTIKA%20SANDOHILPA](EVA%20YULIANTIKA%20SANDOHILPA.png "EVA%20YULIANTIKA%20SANDOHILPA"){% endmarkdown %}
       </div>
       <div class="official-info">
-        <h3>EVA YULIANTIKA SANDOHILPA</h3>
+        <h3>Eva Yuliantika Sandohilpa, S.STP., MPA.</h3>
         <div class="detail-item">
           <span class="detail-label">Jabatan</span>
           <span class="detail-value">: Kepala Bidang Penataan dan Kerjasama Desa Dinas Pemberdayaan Masyarakat dan Desa</span>
@@ -489,7 +489,7 @@ body {
         {% markdown %}![FENNY%20RAKHMAWATI](FENNY%20RAKHMAWATI.png "FENNY%20RAKHMAWATI"){% endmarkdown %}
       </div>
       <div class="official-info">
-        <h3>FENNY RAKHMAWATI</h3>
+        <h3>Fenny Rakhmawati, S.Sos., M.Si.</h3>
         <div class="detail-item">
           <span class="detail-label">Jabatan</span>
           <span class="detail-value">: Kepala Bidang Pemerintahan Desa Dinas Pemberdayaan Masyarakat dan Desa</span>
@@ -519,7 +519,7 @@ body {
         {% markdown %}![Nailul%20Q](Nailul%20Q.png "Nailul%20Q"){% endmarkdown %}
       </div>
       <div class="official-info">
-        <h3>Nailul Qomariah, SE</h3>
+        <h3>Nailul Qomariah, SE.</h3>
         <div class="detail-item">
           <span class="detail-label">Jabatan</span>
           <span class="detail-value">: Kepala Sub Bagian Umum dan Aparatur</span>
